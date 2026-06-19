@@ -1,0 +1,10 @@
+{
+  "name": "Recetario Video Lab — Itu",
+  "short_name": "Recetario Itu",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff8ed",
+  "theme_color": "#d97706",
+  "description": "Repositorio local de recetas extraídas de vídeos.",
+  "icons": []
+}

@@ -1,0 +1,267 @@
+[
+  {
+    "id": "01",
+    "emoji": "🍫",
+    "title": "Cremoso / natillas de chocolate proteico",
+    "short": "Postre o merienda fría, dulce y proteica.",
+    "type": "Postre / merienda",
+    "need": "Quiero algo dulce/proteico",
+    "category": "Postres y meriendas",
+    "video": "assets/videos/01_cremoso_chocolate_proteico.mp4",
+    "thumb": "assets/thumbs/01_contact_sheet.jpg",
+    "confidence": "Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.",
+    "ingredients": [
+      "3 hojas de gelatina.",
+      "Agua fría para hidratar la gelatina.",
+      "Proteína en polvo sabor neutro o base proteica blanca en polvo. Cantidad no legible con seguridad.",
+      "Agua para mezclar la base proteica.",
+      "Leche; en el vídeo se menciona “medio”, probablemente medio litro.",
+      "Chocolate negro o cobertura de chocolate.",
+      "Azúcar o edulcorante al gusto.",
+      "Vainilla.",
+      "Opcional: creatina, solo si ya la usas y te encaja.",
+      "Opcional: topping tipo crema/nata proteica al servir."
+    ],
+    "steps": [
+      "Pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas.",
+      "Echa la proteína o base proteica neutra en una jarra alta.",
+      "Añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes.",
+      "Pon la leche en un cazo a fuego medio.",
+      "Añade el chocolate al cazo y remueve con varillas hasta que se funda.",
+      "Añade el azúcar o edulcorante y la vainilla al cazo. Este es el momento de ajustar dulzor y aroma.",
+      "Calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte.",
+      "Escurre la gelatina ya hidratada y añádela al cazo caliente. Remueve hasta que se disuelva por completo.",
+      "Vierte la mezcla caliente de chocolate sobre la jarra de la base proteica.",
+      "Bate bien hasta integrar la mezcla caliente con la base proteica.",
+      "Cuela la mezcla para dejarla más fina.",
+      "Reparte en vasos o recipientes. En el vídeo se sirven raciones de unos 190 g.",
+      "Deja enfriar y guarda en nevera una noche para que cuaje bien.",
+      "Sirve frío. Puedes añadir topping proteico o tomarlo tal cual."
+    ],
+    "seasoning": "La vainilla y el azúcar/edulcorante se añaden en el cazo, después de fundir el chocolate y antes de incorporar la gelatina. Ahí se corrige el sabor.",
+    "when_use": "Como postre o merienda proteica en un menú semanal.",
+    "when_not": "No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.",
+    "tips": [
+      "No inventar cantidades exactas: ajusta textura con agua/leche poco a poco.",
+      "Si queda muy espeso antes de enfriar, aligera con un poco de leche.",
+      "Para batch cooking, deja los vasos tapados en nevera."
+    ],
+    "tags": [
+      "dulce",
+      "proteico",
+      "postre",
+      "nevera",
+      "batch cooking"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Gelatina hidratando",
+        "minutes": 5,
+        "note": "Tiempo orientativo hasta que las hojas estén blandas."
+      },
+      {
+        "label": "Nevera para cuajar",
+        "minutes": 480,
+        "note": "Mínimo una noche; si usas menos, revisa textura."
+      }
+    ],
+    "difficulty": "Media",
+    "menu_fit": "Sí, si encaja con la semana"
+  },
+  {
+    "id": "02",
+    "emoji": "🍟",
+    "title": "Patatas fritas en airfryer con pre-cocción en microondas",
+    "short": "Guarnición rápida con patata tierna por dentro y dorada por fuera.",
+    "type": "Guarnición",
+    "need": "Quiero una guarnición rápida",
+    "category": "Guarniciones rápidas",
+    "video": "assets/videos/02_patatas_fritas_airfryer.mp4",
+    "thumb": "assets/thumbs/02_contact_sheet.jpg",
+    "confidence": "Alta en el método general. Tiempos principales visibles: microondas 6 min a 800 W; airfryer unos 15 min a 185–190 ºC; último toque corto de dorado.",
+    "ingredients": [
+      "Patatas.",
+      "Agua para remojar.",
+      "Papel de cocina.",
+      "Aceite de oliva, lo justo para embadurnar.",
+      "Sal al final.",
+      "Opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas."
+    ],
+    "steps": [
+      "Pela las patatas y córtalas en bastones de tamaño parecido.",
+      "Mételas un rato en agua para retirar parte del almidón.",
+      "Escúrrelas muy bien.",
+      "Sécalas con papel de cocina. Este paso importa: cuanto menos humedad, mejor dorado.",
+      "Pasa las patatas a un bol amplio.",
+      "Añade un chorrito pequeño de aceite de oliva, solo lo justo.",
+      "Mezcla con las manos para que todas las patatas queden ligeramente impregnadas.",
+      "Cubre el bol con film transparente apto para microondas.",
+      "Cocina en microondas 6 minutos a 800 W.",
+      "Saca el bol con cuidado: habrá vapor y el film estará caliente.",
+      "Retira el film sin quemarte y deja salir el vapor.",
+      "Pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado.",
+      "Cocina en airfryer a 185–190 ºC durante unos 15 minutos.",
+      "Abre, revisa y remueve o da una vuelta a las patatas.",
+      "Dales un último toque de dorado: 5 minutos más, idealmente a 200 ºC si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido.",
+      "Saca a un plato y sazona al final."
+    ],
+    "seasoning": "La sal y las especias van al final, al sacar las patatas de la airfryer. Si echas pimentón, ajo en polvo o hierbas antes, se pueden quemar o amargar.",
+    "when_use": "Como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal.",
+    "when_not": "No meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. Si ya hay arroz, pasta o pan, mejor alternar.",
+    "tips": [
+      "No llenes la cesta en exceso; si haces muchas, trabaja por tandas.",
+      "El secado previo y el último toque de dorado son la clave.",
+      "Con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer."
+    ],
+    "tags": [
+      "patata",
+      "airfryer",
+      "microondas",
+      "guarnición",
+      "rápida"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Microondas",
+        "minutes": 6,
+        "note": "800 W, bol cubierto con film apto."
+      },
+      {
+        "label": "Airfryer base",
+        "minutes": 15,
+        "note": "185–190 ºC; revisar y remover al acabar."
+      },
+      {
+        "label": "Último dorado",
+        "minutes": 5,
+        "note": "Idealmente a 200 ºC o misma temperatura si ya dora rápido."
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana"
+  },
+  {
+    "id": "03",
+    "emoji": "🧄",
+    "title": "Trenza de pan de ajo y queso",
+    "short": "Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.",
+    "type": "Cena informal / entrante",
+    "need": "Quiero una cena informal contundente",
+    "category": "Cenas informales y entrantes",
+    "video": "assets/videos/03_trenza_pan_ajo_queso.mp4",
+    "thumb": "assets/thumbs/03_contact_sheet.jpg",
+    "confidence": "Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.",
+    "ingredients": [
+      "Masa rectangular tipo hojaldre, pizza o pan.",
+      "Dientes de ajo pelados.",
+      "Aceite de oliva para confitar o dorar los ajos.",
+      "Mantequilla blanda.",
+      "Perejil fresco picado.",
+      "Queso rallado para el relleno, tipo mozzarella o mezcla fundente.",
+      "Queso rallado/parmesano para cubrir.",
+      "Sal con moderación.",
+      "Pimienta.",
+      "Opcional: orégano."
+    ],
+    "steps": [
+      "Pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva.",
+      "Cocina los ajos hasta que estén tiernos y dorados, sin quemarlos.",
+      "Pasa los ajos a un bol y machácalos.",
+      "Añade mantequilla blanda al bol.",
+      "Añade perejil fresco picado.",
+      "Añade sal, pimienta y, si quieres, orégano. Ojo con la sal porque el queso ya aporta bastante.",
+      "Mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas.",
+      "Extiende la masa rectangular sobre papel de horno.",
+      "Coloca una franja generosa de queso rallado en el centro de la masa.",
+      "Haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso.",
+      "Cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno.",
+      "Pasa la trenza a una bandeja de horno si no la tenías ya encima.",
+      "Unta toda la superficie con la pasta de ajo, mantequilla y perejil.",
+      "Espolvorea queso rallado o parmesano por encima.",
+      "Hornea hasta que la masa esté dorada y el queso fundido. Referencia útil: 190 ºC durante 20–25 minutos, revisando desde el minuto 18.",
+      "Deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe."
+    ],
+    "seasoning": "La sal, pimienta y orégano se añaden dentro de la pasta de ajo, mantequilla y perejil, antes de untar la trenza. Así el sabor queda repartido.",
+    "when_use": "Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.",
+    "when_not": "No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.",
+    "tips": [
+      "Acompáñala con ensalada para compensar.",
+      "No quemes los ajos: ajo quemado = amargor.",
+      "Si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado."
+    ],
+    "tags": [
+      "ajo",
+      "queso",
+      "horno",
+      "pan",
+      "vegetariana"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Horno orientativo",
+        "minutes": 22,
+        "note": "Referencia operativa: hornear hasta dorar y queso fundido."
+      }
+    ],
+    "difficulty": "Media",
+    "menu_fit": "Sí, si encaja con la semana"
+  },
+  {
+    "id": "04",
+    "emoji": "🥑",
+    "title": "Truco para que el guacamole no se oxide",
+    "short": "Técnica de conservación con papel húmedo en contacto y film.",
+    "type": "Técnica / conservación",
+    "need": "Quiero conservar guacamole",
+    "category": "Técnicas y trucos",
+    "video": "assets/videos/04_guacamole_no_oxida.mp4",
+    "thumb": "assets/thumbs/04_contact_sheet.jpg",
+    "confidence": "Alta: el truco se explica y se ve con claridad en el vídeo.",
+    "ingredients": [
+      "Guacamole o aguacate machacado.",
+      "Papel de cocina.",
+      "Agua para humedecer el papel.",
+      "Film transparente.",
+      "Recipiente, mejor si tiene tapa."
+    ],
+    "steps": [
+      "Prepara el guacamole y pásalo a un recipiente.",
+      "Alisa la superficie del guacamole.",
+      "Moja un trozo de papel de cocina.",
+      "Escurre el papel: debe quedar húmedo, no chorreando.",
+      "Coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie.",
+      "Presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole.",
+      "Cubre el recipiente con film transparente para que el papel no se seque.",
+      "Guarda en la nevera.",
+      "Cuando vayas a usarlo, retira el film y luego el papel húmedo."
+    ],
+    "seasoning": "No se sazona al conservar. Si preparas el guacamole desde cero, ajusta sal, lima/limón, cilantro, pimienta o picante antes de poner el papel húmedo y el film.",
+    "when_use": "Cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación.",
+    "when_not": "No es una receta principal. Es una técnica auxiliar de conservación.",
+    "tips": [
+      "La clave es que no haya aire tocando el guacamole.",
+      "El papel húmedo evita que la superficie se reseque.",
+      "Funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona."
+    ],
+    "tags": [
+      "guacamole",
+      "aguacate",
+      "conservación",
+      "batch cooking",
+      "truco"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Revisión nevera",
+        "minutes": 1440,
+        "note": "Comprueba al día siguiente que el papel sigue húmedo y en contacto."
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana"
+  }
+]

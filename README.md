@@ -1,24 +1,41 @@
-# 🍳 Recetario Video Lab — Itu v2
+# Recetario Video Lab — Itu v3
 
-Mini web local con recetas extraídas de los 4 vídeos.
+Repositorio local de recetas extraídas de vídeos, con fichas paso a paso, vídeos locales y modo cocinar.
 
-## Cómo usar
+## Qué cambia en v3
 
-1. Descomprime el ZIP.
-2. Abre `index.html` con doble clic.
-3. Si algún navegador no reproduce los vídeos desde archivo local, ejecuta `run_local.bat` y abre `http://localhost:8000`.
+- `index.html` genera tarjetas, fichas, filtros y navegación desde los datos de recetas.
+- Búsqueda sin tildes: `video` encuentra `vídeo`.
+- Filtros automáticos por tipo y necesidad.
+- Estado vacío cuando no hay resultados.
+- Labels accesibles para buscador y filtros.
+- Botones descriptivos para lector de pantalla.
+- Modo cocinar con checklist de ingredientes y pasos.
+- Temporizadores útiles por receta.
+- Favoritos y estado local: pendiente, vista, cocinada, la repetiría, dominada.
+- Botón copiar con fallback si el portapapeles falla.
+- PWA/offline básica cuando se abre con servidor local.
 
-## Qué corrige esta versión
+## Cómo abrir
 
-- Las fichas completas ya no dependen de que JavaScript construya todo el contenido.
-- Los vídeos están incrustados directamente en cada ficha.
-- Cada ficha tiene paso a paso más completo extraído del vídeo.
-- Se indica explícitamente cuándo añadir sal, especias, vainilla, edulcorante u otros sazonadores.
+Opción simple:
 
-## Estructura
+1. Abre `index.html` con doble clic.
+2. Los vídeos deberían reproducirse si el navegador permite archivos locales.
 
-- `index.html`: web local.
-- `assets/videos/`: vídeos originales.
-- `assets/thumbs/`: miniaturas/contact sheets.
-- `recetas_md/`: fichas en Markdown.
-- `data/recetas_video_lab_v2.json`: datos estructurados.
+Opción recomendada:
+
+1. Ejecuta `run_local.bat` o `run_local.ps1`.
+2. Abre la dirección local que indique Python, normalmente `http://localhost:8000`.
+
+## Datos
+
+La copia principal de datos de esta versión está en:
+
+- `data/recetas_video_lab_v3.json`
+
+Se conserva también el JSON v2 por compatibilidad.
+
+## Nota
+
+El progreso de favoritos, estados y checks se guarda solo en el navegador mediante `localStorage`. No se envía nada a internet.

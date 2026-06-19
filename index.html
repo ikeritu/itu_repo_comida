@@ -3,364 +3,396 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>🍳 Recetario Video Lab — Itu v2</title>
-  <meta name="description" content="Repositorio local de recetas extraídas de vídeos con fichas paso a paso y vídeo local.">
+  <title>🍳 Recetario Video Lab — Itu v3</title>
+  <meta name="description" content="Repositorio local de recetas extraídas de vídeos con modo cocinar, favoritos, filtros accesibles y vídeos locales.">
+  <meta name="theme-color" content="#d97706">
+  <link rel="manifest" href="manifest.webmanifest">
   <style>
     :root {
-      --bg:#fff8ed; --paper:#ffffff; --paper2:#fffdf8; --text:#24211e; --muted:#6d645b; --line:rgba(80,58,32,.16);
-      --brand:#d97706; --brand2:#92400e; --green:#166534; --red:#9f1239; --shadow:0 18px 46px rgba(76,49,15,.12); --r:24px;
+      --bg:#fff8ed; --paper:#ffffff; --paper2:#fffdf8; --text:#24211e; --muted:#6d645b; --soft:#f7ead7;
+      --line:rgba(80,58,32,.16); --brand:#d97706; --brand2:#92400e; --green:#166534; --red:#9f1239;
+      --blue:#1d4ed8; --shadow:0 18px 46px rgba(76,49,15,.12); --r:24px; --focus:0 0 0 4px rgba(217,119,6,.25);
     }
-    [data-theme="dark"] { --bg:#15120f; --paper:#211c17; --paper2:#1b1713; --text:#f7efe5; --muted:#cabca7; --line:rgba(255,237,213,.14); --brand:#f59e0b; --brand2:#fbbf24; --green:#86efac; --red:#fda4af; --shadow:0 18px 46px rgba(0,0,0,.36); }
+    [data-theme="dark"] { --bg:#15120f; --paper:#211c17; --paper2:#1b1713; --text:#f7efe5; --muted:#cabca7; --soft:#2a221b; --line:rgba(255,237,213,.14); --brand:#f59e0b; --brand2:#fbbf24; --green:#86efac; --red:#fda4af; --blue:#93c5fd; --shadow:0 18px 46px rgba(0,0,0,.36); }
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 0 0,rgba(245,158,11,.22),transparent 34rem),linear-gradient(180deg,var(--bg),var(--paper2));color:var(--text)}
-    a{color:inherit} button,input,select{font:inherit} code{background:rgba(0,0,0,.06);padding:.12rem .32rem;border-radius:8px} [data-theme="dark"] code{background:rgba(255,255,255,.08)}
+    a{color:inherit} button,input,select{font:inherit} button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:none;box-shadow:var(--focus)}
+    code{background:rgba(0,0,0,.06);padding:.12rem .32rem;border-radius:8px} [data-theme="dark"] code{background:rgba(255,255,255,.08)}
     .wrap{max-width:1180px;margin:auto;padding:24px} .topbar{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px;flex-wrap:wrap}
     .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.62);padding:9px 13px;border-radius:999px;font-weight:850;color:var(--muted)} [data-theme="dark"] .pill{background:rgba(255,255,255,.05)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--paper);text-decoration:none;font-weight:850;cursor:pointer;box-shadow:0 8px 18px rgba(0,0,0,.04)} .btn:hover{transform:translateY(-1px)} .btn.primary{background:var(--brand);color:#fff;border-color:transparent}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:10px 14px;background:var(--paper);color:var(--text);text-decoration:none;font-weight:850;cursor:pointer;box-shadow:0 8px 18px rgba(0,0,0,.04);transition:transform .15s ease, background .15s ease} .btn:hover{transform:translateY(-1px)} .btn.primary{background:var(--brand);color:#fff;border-color:transparent} .btn.danger{border-color:rgba(159,18,57,.25)} .btn.small{padding:8px 11px;font-size:13px}
     .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch} .panel,.hero-card,.quick-nav{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);backdrop-filter:blur(12px)} [data-theme="dark"] .panel,[data-theme="dark"] .hero-card,[data-theme="dark"] .quick-nav{background:rgba(33,28,23,.84)}
-    .hero-card{padding:32px} h1{font-size:clamp(40px,7vw,76px);line-height:.94;letter-spacing:-.06em;margin:0 0 16px} .lead{font-size:19px;line-height:1.55;color:var(--muted);max-width:64ch;margin:0} .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .hero-card{padding:32px} h1{font-size:clamp(38px,6.5vw,74px);line-height:.94;letter-spacing:-.06em;margin:0 0 16px} .lead{font-size:19px;line-height:1.55;color:var(--muted);max-width:68ch;margin:0} .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
     .quick-nav{padding:22px} .quick-nav h2{margin:0 0 14px} .need-list{display:grid;gap:10px} .need-item{display:flex;gap:12px;align-items:center;text-decoration:none;border:1px solid var(--line);border-radius:18px;padding:13px;background:rgba(255,255,255,.38)} [data-theme="dark"] .need-item{background:rgba(255,255,255,.04)} .need-item small{display:block;color:var(--muted);margin-top:3px} .need-emoji{font-size:28px}
-    .toolbar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto auto;gap:12px;margin:26px 0 22px;padding:15px} input,select{border:1px solid var(--line);background:var(--paper);color:var(--text);border-radius:999px;padding:12px 14px;font-weight:750} select{min-width:210px}
+    .toolbar{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto auto auto;gap:12px;margin:26px 0 22px;padding:15px;align-items:end} .field{display:grid;gap:6px} label{font-weight:900;color:var(--brand2);font-size:13px} input,select{border:1px solid var(--line);background:var(--paper);color:var(--text);border-radius:999px;padding:12px 14px;font-weight:750} select{min-width:190px} .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .section-head{display:flex;justify-content:space-between;align-items:end;margin:28px 0 14px;gap:10px} .section-head h2{margin:0;font-size:30px;letter-spacing:-.035em} .count{font-weight:850;color:var(--muted)}
     .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px} .card{overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);box-shadow:var(--shadow);display:flex;flex-direction:column} .thumb{position:relative;display:block;aspect-ratio:16/9;background:#000;overflow:hidden} .thumb img{width:100%;height:100%;object-fit:cover;display:block} .badge{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.68);color:#fff;border-radius:999px;padding:8px 11px;font-weight:900}
     .card-body{padding:18px;display:grid;gap:12px;flex:1} .eyebrow{margin:0;color:var(--brand2);font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:950} .card h3{font-size:25px;line-height:1.05;letter-spacing:-.035em;margin:0} .card p{margin:0;color:var(--muted);line-height:1.45} .chips{display:flex;gap:8px;flex-wrap:wrap} .chip{border:1px solid var(--line);border-radius:999px;padding:6px 9px;color:var(--muted);font-size:12px;font-weight:850} .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+    .state-row{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center;border-top:1px solid var(--line);padding-top:12px} .state-row select{width:100%;min-width:0} .favorite{min-width:44px}
+    .empty{padding:24px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--r);background:var(--paper)}
     .rules{padding:18px;margin-top:24px;overflow:auto} table{width:100%;border-collapse:collapse} th,td{padding:13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} th{color:var(--brand2);font-size:12px;text-transform:uppercase;letter-spacing:.08em} tr:last-child td{border-bottom:0}
-    .recipe-list{display:grid;gap:22px} .recipe-detail{display:grid;grid-template-columns:.88fr 1.12fr;gap:20px;padding:18px;scroll-margin-top:90px} .video-col{display:grid;gap:12px;align-content:start;position:sticky;top:92px} .video-shell{background:#000;border-radius:22px;overflow:hidden;border:1px solid var(--line)} video{display:block;width:100%;max-height:76vh;background:#000} .video-actions{display:flex;gap:8px;flex-wrap:wrap} .micro{font-size:13px;color:var(--muted);margin:0;line-height:1.45} .notice{border:1px solid rgba(159,18,57,.24);background:rgba(159,18,57,.07);border-radius:18px;padding:13px;color:var(--text);line-height:1.45}
+    .recipe-list{display:grid;gap:22px} .recipe-detail{display:grid;grid-template-columns:.88fr 1.12fr;gap:20px;padding:18px;scroll-margin-top:100px} .video-col{display:grid;gap:12px;align-content:start;position:sticky;top:100px} .video-shell{background:#000;border-radius:22px;overflow:hidden;border:1px solid var(--line)} video{display:block;width:100%;max-height:76vh;background:#000} .video-actions{display:flex;gap:8px;flex-wrap:wrap} .micro{font-size:13px;color:var(--muted);margin:0;line-height:1.45} .notice{border:1px solid rgba(159,18,57,.24);background:rgba(159,18,57,.07);border-radius:18px;padding:13px;color:var(--text);line-height:1.45}
     .content-col{display:grid;gap:14px} .content-col h2{font-size:34px;line-height:1.05;letter-spacing:-.04em;margin:0} .lead-small{font-size:17px;color:var(--muted);line-height:1.5;margin:0} .meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px} .meta-grid>div,.box{border:1px solid var(--line);background:rgba(255,255,255,.36);border-radius:18px;padding:14px} [data-theme="dark"] .meta-grid>div,[data-theme="dark"] .box{background:rgba(255,255,255,.04)} .meta-grid b,.box h3{display:block;margin:0 0 8px;color:var(--brand2);font-size:14px;text-transform:uppercase;letter-spacing:.06em} .meta-grid p,.box p{margin:0;line-height:1.5} .box ul,.box ol{margin:0;padding-left:23px} .box li{margin:8px 0;line-height:1.45} .steps li::marker{font-weight:900;color:var(--brand)} .seasoning{border-color:rgba(22,101,52,.28);background:rgba(22,101,52,.08)!important}
+    .cook-modal{border:0;border-radius:28px;padding:0;width:min(980px,94vw);max-height:92vh;background:var(--paper);color:var(--text);box-shadow:0 30px 90px rgba(0,0,0,.38)} .cook-modal::backdrop{background:rgba(0,0,0,.58);backdrop-filter:blur(3px)} .cook-head{position:sticky;top:0;z-index:2;background:var(--paper);border-bottom:1px solid var(--line);padding:18px;display:flex;justify-content:space-between;gap:12px;align-items:start} .cook-head h2{margin:0;font-size:clamp(24px,4vw,42px);line-height:1} .cook-body{padding:18px;display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;overflow:auto} .checklist{display:grid;gap:8px} .checkitem{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:11px;background:rgba(255,255,255,.38)} [data-theme="dark"] .checkitem{background:rgba(255,255,255,.04)} .checkitem input{margin-top:3px;min-width:18px} .checkitem span{line-height:1.45} .checkitem input:checked+span{text-decoration:line-through;color:var(--muted)} .timers{display:grid;gap:8px} .timer-card{border:1px solid var(--line);border-radius:16px;padding:12px;background:var(--paper2);display:grid;gap:8px} .timer-time{font-size:24px;font-weight:950;color:var(--brand2)} .timer-actions{display:flex;gap:8px;flex-wrap:wrap}
     .footer{margin-top:28px;padding:18px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap} .hidden{display:none!important} .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:12px 16px;border-radius:999px;font-weight:900;opacity:0;transition:.2s;z-index:50} .toast.show{opacity:1;transform:translateX(-50%)}
-    @media(max-width:920px){.hero,.recipe-detail,.toolbar,.meta-grid{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .video-col{position:static} select{min-width:0;width:100%} .hero-card{padding:24px}}
-    @media print{.topbar,.toolbar,.cards,video,.video-actions{display:none!important} body{background:#fff} .panel,.hero-card,.quick-nav,.card,.box{box-shadow:none;background:#fff} .recipe-detail{grid-template-columns:1fr;break-inside:avoid}}
+    @media(max-width:980px){.hero,.recipe-detail,.toolbar,.meta-grid,.cook-body{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .video-col{position:static} select{min-width:0;width:100%} .hero-card{padding:24px} .toolbar{position:static}}
+    @media(max-width:620px){.wrap{padding:14px} h1{font-size:42px} .topbar .actions,.actions,.video-actions{width:100%} .btn{width:100%} .section-head{align-items:start;flex-direction:column} .cook-head{flex-direction:column}}
+    @media print{.topbar,.toolbar,.cards,video,.video-actions,.quick-nav,.cook-modal{display:none!important} body{background:#fff} .panel,.hero-card,.quick-nav,.card,.box{box-shadow:none;background:#fff} .recipe-detail{grid-template-columns:1fr;break-inside:avoid}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
-      <span class="pill">🍳 Repositorio local · formato prompt library · v2</span>
-      <div class="actions"><button class="btn" id="themeBtn" type="button">🌙 Modo oscuro</button><button class="btn" onclick="window.print()" type="button">🖨️ Imprimir</button><a class="btn primary" href="#fichas-completas">Ver fichas completas</a></div>
+      <span class="pill" id="versionPill">🍳 Recetario local · v3</span>
+      <div class="actions">
+        <button class="btn" id="themeBtn" type="button">🌙 Modo oscuro</button>
+        <button class="btn" id="resetBtn" type="button">🧹 Limpiar progreso</button>
+        <button class="btn" onclick="window.print()" type="button">🖨️ Imprimir</button>
+        <a class="btn primary" href="#fichas-completas">Ver fichas completas</a>
+      </div>
     </div>
+
     <header class="hero">
       <section class="hero-card">
         <h1>Recetario Video Lab — Itu</h1>
-        <p class="lead">Repositorio local de recetas extraídas de vídeos. Esta versión deja las fichas completas renderizadas en HTML desde el inicio: aunque el buscador falle, los vídeos y el paso a paso siguen visibles.</p>
-        <div class="meta"><span class="pill">4 piezas</span><span class="pill">Vídeos locales</span><span class="pill">Sin internet</span><span class="pill">Paso a paso extraído</span><span class="pill">Sazonadores señalados</span></div>
+        <p class="lead">Repositorio local de recetas extraídas de vídeos. Esta versión usa los datos de recetas como fuente principal, genera tarjetas y fichas automáticamente, añade modo cocinar, favoritos, estado local, búsqueda sin tildes y filtros accesibles.</p>
+        <div class="meta" id="heroMeta"></div>
       </section>
       <aside class="quick-nav">
         <h2>🧭 Vista rápida por necesidad</h2>
-        <div class="need-list"><a href="#receta-01" class="need-item"><span class="need-emoji">🍫</span><span><b>Quiero algo dulce/proteico</b><small>Cremoso / natillas de chocolate proteico · Postre / merienda</small></span></a><a href="#receta-02" class="need-item"><span class="need-emoji">🍟</span><span><b>Quiero una guarnición rápida</b><small>Patatas fritas en airfryer con pre-cocción en microondas · Guarnición</small></span></a><a href="#receta-03" class="need-item"><span class="need-emoji">🧄</span><span><b>Quiero una cena informal contundente</b><small>Trenza de pan de ajo y queso · Cena informal / entrante</small></span></a><a href="#receta-04" class="need-item"><span class="need-emoji">🥑</span><span><b>Quiero conservar guacamole</b><small>Truco para que el guacamole no se oxide · Técnica / conservación</small></span></a></div>
+        <div class="need-list" id="needList"></div>
       </aside>
     </header>
 
     <section class="panel toolbar" aria-label="Búsqueda y filtros">
-      <input id="search" type="search" placeholder="Buscar receta, ingrediente, necesidad, etiqueta…">
-      <select id="typeFilter"><option value="all">Todos los tipos</option><option value="Cena informal / entrante">Cena informal / entrante</option><option value="Guarnición">Guarnición</option><option value="Postre / merienda">Postre / merienda</option><option value="Técnica / conservación">Técnica / conservación</option></select>
-      <select id="needFilter"><option value="all">Todas las necesidades</option><option value="Quiero algo dulce/proteico">Quiero algo dulce/proteico</option><option value="Quiero conservar guacamole">Quiero conservar guacamole</option><option value="Quiero una cena informal contundente">Quiero una cena informal contundente</option><option value="Quiero una guarnición rápida">Quiero una guarnición rápida</option></select>
+      <div class="field">
+        <label for="search">Buscar</label>
+        <input id="search" type="search" placeholder="Buscar receta, ingrediente, necesidad, etiqueta…" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="typeFilter">Tipo</label>
+        <select id="typeFilter"></select>
+      </div>
+      <div class="field">
+        <label for="needFilter">Necesidad</label>
+        <select id="needFilter"></select>
+      </div>
+      <div class="field">
+        <label for="stateFilter">Estado</label>
+        <select id="stateFilter">
+          <option value="all">Todos</option>
+          <option value="favorite">Favoritas</option>
+          <option value="pendiente">Pendiente</option>
+          <option value="vista">Vista</option>
+          <option value="cocinada">Cocinada</option>
+          <option value="repetiria">La repetiría</option>
+          <option value="dominada">Dominada</option>
+        </select>
+      </div>
     </section>
 
-    <section>
-      <div class="section-head"><h2>📚 Fichas rápidas</h2><span class="count" id="count">4 / 4 piezas</span></div>
-      <div class="cards" id="cards">
-      <article class="card recipe-card" data-type="Postre / merienda" data-need="Quiero algo dulce/proteico" data-search="cremoso / natillas de chocolate proteico postre o merienda fría, dulce y proteica. postre / merienda quiero algo dulce/proteico postres y meriendas como postre o merienda proteica en un menú semanal. no usar como cena principal. tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate. 3 hojas de gelatina. agua fría para hidratar la gelatina. proteína en polvo sabor neutro o base proteica blanca en polvo. cantidad no legible con seguridad. agua para mezclar la base proteica. leche; en el vídeo se menciona “medio”, probablemente medio litro. chocolate negro o cobertura de chocolate. azúcar o edulcorante al gusto. vainilla. opcional: creatina, solo si ya la usas y te encaja. opcional: topping tipo crema/nata proteica al servir. pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas. echa la proteína o base proteica neutra en una jarra alta. añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes. pon la leche en un cazo a fuego medio. añade el chocolate al cazo y remueve con varillas hasta que se funda. añade el azúcar o edulcorante y la vainilla al cazo. este es el momento de ajustar dulzor y aroma. calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte. escurre la gelatina ya hidratada y añádela al cazo caliente. remueve hasta que se disuelva por completo. vierte la mezcla caliente de chocolate sobre la jarra de la base proteica. bate bien hasta integrar la mezcla caliente con la base proteica. cuela la mezcla para dejarla más fina. reparte en vasos o recipientes. en el vídeo se sirven raciones de unos 190 g. deja enfriar y guarda en nevera una noche para que cuaje bien. sirve frío. puedes añadir topping proteico o tomarlo tal cual. no inventar cantidades exactas: ajusta textura con agua/leche poco a poco. si queda muy espeso antes de enfriar, aligera con un poco de leche. para batch cooking, deja los vasos tapados en nevera. dulce proteico postre nevera batch cooking">
-        <a class="thumb" href="#receta-01" aria-label="Abrir ficha de Cremoso / natillas de chocolate proteico">
-          <img src="assets/thumbs/01_contact_sheet.jpg" alt="Miniaturas del vídeo Cremoso / natillas de chocolate proteico" loading="lazy">
-          <span class="badge">🍫 01</span>
-        </a>
-        <div class="card-body">
-          <p class="eyebrow">Postres y meriendas · Postre / merienda</p>
-          <h3>Cremoso / natillas de chocolate proteico</h3>
-          <p>Postre o merienda fría, dulce y proteica.</p>
-          <div class="chips"><span class="chip">#dulce</span><span class="chip">#proteico</span><span class="chip">#postre</span><span class="chip">#nevera</span><span class="chip">#batch cooking</span></div>
-          <div class="actions"><a class="btn primary" href="#receta-01">Abrir ficha</a><a class="btn" href="assets/videos/01_cremoso_chocolate_proteico.mp4" target="_blank">🎬 Abrir vídeo</a></div>
+    <section aria-labelledby="rapidas-title">
+      <div class="section-head">
+        <div>
+          <h2 id="rapidas-title">⚡ Fichas rápidas</h2>
+          <p class="micro">Usa los filtros para encontrar receta por necesidad, ingrediente, etiqueta o estado.</p>
         </div>
-      </article>
-      <article class="card recipe-card" data-type="Guarnición" data-need="Quiero una guarnición rápida" data-search="patatas fritas en airfryer con pre-cocción en microondas guarnición rápida con patata tierna por dentro y dorada por fuera. guarnición quiero una guarnición rápida guarniciones rápidas como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal. no meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. si ya hay arroz, pasta o pan, mejor alternar. patatas. agua para remojar. papel de cocina. aceite de oliva, lo justo para embadurnar. sal al final. opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas. pela las patatas y córtalas en bastones de tamaño parecido. mételas un rato en agua para retirar parte del almidón. escúrrelas muy bien. sécalas con papel de cocina. este paso importa: cuanto menos humedad, mejor dorado. pasa las patatas a un bol amplio. añade un chorrito pequeño de aceite de oliva, solo lo justo. mezcla con las manos para que todas las patatas queden ligeramente impregnadas. cubre el bol con film transparente apto para microondas. cocina en microondas 6 minutos a 800 w. saca el bol con cuidado: habrá vapor y el film estará caliente. retira el film sin quemarte y deja salir el vapor. pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado. cocina en airfryer a 185–190 ºc durante unos 15 minutos. abre, revisa y remueve o da una vuelta a las patatas. dales un último toque de dorado: 5 minutos más, idealmente a 200 ºc si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido. saca a un plato y sazona al final. no llenes la cesta en exceso; si haces muchas, trabaja por tandas. el secado previo y el último toque de dorado son la clave. con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer. patata airfryer microondas guarnición rápida">
-        <a class="thumb" href="#receta-02" aria-label="Abrir ficha de Patatas fritas en airfryer con pre-cocción en microondas">
-          <img src="assets/thumbs/02_contact_sheet.jpg" alt="Miniaturas del vídeo Patatas fritas en airfryer con pre-cocción en microondas" loading="lazy">
-          <span class="badge">🍟 02</span>
-        </a>
-        <div class="card-body">
-          <p class="eyebrow">Guarniciones rápidas · Guarnición</p>
-          <h3>Patatas fritas en airfryer con pre-cocción en microondas</h3>
-          <p>Guarnición rápida con patata tierna por dentro y dorada por fuera.</p>
-          <div class="chips"><span class="chip">#patata</span><span class="chip">#airfryer</span><span class="chip">#microondas</span><span class="chip">#guarnición</span><span class="chip">#rápida</span></div>
-          <div class="actions"><a class="btn primary" href="#receta-02">Abrir ficha</a><a class="btn" href="assets/videos/02_patatas_fritas_airfryer.mp4" target="_blank">🎬 Abrir vídeo</a></div>
-        </div>
-      </article>
-      <article class="card recipe-card" data-type="Cena informal / entrante" data-need="Quiero una cena informal contundente" data-search="trenza de pan de ajo y queso masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil. cena informal / entrante quiero una cena informal contundente cenas informales y entrantes como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras. no es una cena ligera. si el menú semanal ya lleva queso, pan o masas, no la fuerces. masa rectangular tipo hojaldre, pizza o pan. dientes de ajo pelados. aceite de oliva para confitar o dorar los ajos. mantequilla blanda. perejil fresco picado. queso rallado para el relleno, tipo mozzarella o mezcla fundente. queso rallado/parmesano para cubrir. sal con moderación. pimienta. opcional: orégano. pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva. cocina los ajos hasta que estén tiernos y dorados, sin quemarlos. pasa los ajos a un bol y machácalos. añade mantequilla blanda al bol. añade perejil fresco picado. añade sal, pimienta y, si quieres, orégano. ojo con la sal porque el queso ya aporta bastante. mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas. extiende la masa rectangular sobre papel de horno. coloca una franja generosa de queso rallado en el centro de la masa. haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso. cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno. pasa la trenza a una bandeja de horno si no la tenías ya encima. unta toda la superficie con la pasta de ajo, mantequilla y perejil. espolvorea queso rallado o parmesano por encima. hornea hasta que la masa esté dorada y el queso fundido. referencia útil: 190 ºc durante 20–25 minutos, revisando desde el minuto 18. deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe. acompáñala con ensalada para compensar. no quemes los ajos: ajo quemado = amargor. si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado. ajo queso horno pan vegetariana">
-        <a class="thumb" href="#receta-03" aria-label="Abrir ficha de Trenza de pan de ajo y queso">
-          <img src="assets/thumbs/03_contact_sheet.jpg" alt="Miniaturas del vídeo Trenza de pan de ajo y queso" loading="lazy">
-          <span class="badge">🧄 03</span>
-        </a>
-        <div class="card-body">
-          <p class="eyebrow">Cenas informales y entrantes · Cena informal / entrante</p>
-          <h3>Trenza de pan de ajo y queso</h3>
-          <p>Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.</p>
-          <div class="chips"><span class="chip">#ajo</span><span class="chip">#queso</span><span class="chip">#horno</span><span class="chip">#pan</span><span class="chip">#vegetariana</span></div>
-          <div class="actions"><a class="btn primary" href="#receta-03">Abrir ficha</a><a class="btn" href="assets/videos/03_trenza_pan_ajo_queso.mp4" target="_blank">🎬 Abrir vídeo</a></div>
-        </div>
-      </article>
-      <article class="card recipe-card" data-type="Técnica / conservación" data-need="Quiero conservar guacamole" data-search="truco para que el guacamole no se oxide técnica de conservación con papel húmedo en contacto y film. técnica / conservación quiero conservar guacamole técnicas y trucos cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación. no es una receta principal. es una técnica auxiliar de conservación. guacamole o aguacate machacado. papel de cocina. agua para humedecer el papel. film transparente. recipiente, mejor si tiene tapa. prepara el guacamole y pásalo a un recipiente. alisa la superficie del guacamole. moja un trozo de papel de cocina. escurre el papel: debe quedar húmedo, no chorreando. coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie. presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole. cubre el recipiente con film transparente para que el papel no se seque. guarda en la nevera. cuando vayas a usarlo, retira el film y luego el papel húmedo. la clave es que no haya aire tocando el guacamole. el papel húmedo evita que la superficie se reseque. funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona. guacamole aguacate conservación batch cooking truco">
-        <a class="thumb" href="#receta-04" aria-label="Abrir ficha de Truco para que el guacamole no se oxide">
-          <img src="assets/thumbs/04_contact_sheet.jpg" alt="Miniaturas del vídeo Truco para que el guacamole no se oxide" loading="lazy">
-          <span class="badge">🥑 04</span>
-        </a>
-        <div class="card-body">
-          <p class="eyebrow">Técnicas y trucos · Técnica / conservación</p>
-          <h3>Truco para que el guacamole no se oxide</h3>
-          <p>Técnica de conservación con papel húmedo en contacto y film.</p>
-          <div class="chips"><span class="chip">#guacamole</span><span class="chip">#aguacate</span><span class="chip">#conservación</span><span class="chip">#batch cooking</span><span class="chip">#truco</span></div>
-          <div class="actions"><a class="btn primary" href="#receta-04">Abrir ficha</a><a class="btn" href="assets/videos/04_guacamole_no_oxida.mp4" target="_blank">🎬 Abrir vídeo</a></div>
-        </div>
-      </article></div>
+        <div class="count" id="count" aria-live="polite"></div>
+      </div>
+      <div class="cards" id="cards"></div>
+      <div class="empty hidden" id="emptyState">No hay recetas que coincidan con esa búsqueda. Prueba quitando algún filtro.</div>
     </section>
 
-    <section class="rules panel">
-      <h2 style="margin:0 0 12px;letter-spacing:-.03em;">📌 Reglas para menús semanales</h2>
-      <table><thead><tr><th>Pieza</th><th>Cómo entra en el menú</th><th>Riesgo si se fuerza</th></tr></thead><tbody><tr><td>🍫 Cremoso / natillas de chocolate proteico</td><td>Como postre o merienda proteica en un menú semanal.</td><td>No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.</td></tr><tr><td>🍟 Patatas fritas en airfryer con pre-cocción en microondas</td><td>Como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal.</td><td>No meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. Si ya hay arroz, pasta o pan, mejor alternar.</td></tr><tr><td>🧄 Trenza de pan de ajo y queso</td><td>Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.</td><td>No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.</td></tr><tr><td>🥑 Truco para que el guacamole no se oxide</td><td>Cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación.</td><td>No es una receta principal. Es una técnica auxiliar de conservación.</td></tr></tbody></table>
+    <section class="panel rules" aria-labelledby="reglas-title">
+      <h2 id="reglas-title">📌 Reglas de uso para menús semanales</h2>
+      <table>
+        <thead><tr><th>Regla</th><th>Aplicación práctica</th></tr></thead>
+        <tbody>
+          <tr><td>Postres no son platos principales</td><td>El cremoso de chocolate sirve como postre o merienda, no como cena.</td></tr>
+          <tr><td>Guarniciones con control</td><td>Las patatas de airfryer encajan bien como acompañamiento, pero no conviene meterlas si ya hay arroz, pasta o pan.</td></tr>
+          <tr><td>Cenas contundentes</td><td>La trenza de pan de ajo y queso debe ir con ensalada o crema para equilibrar.</td></tr>
+          <tr><td>Técnicas auxiliares</td><td>El guacamole no oxidado es un truco de conservación, no una receta principal.</td></tr>
+          <tr><td>Sazonadores visibles</td><td>Cada ficha indica explícitamente cuándo añadir sal, especias, vainilla, lima o condimentos.</td></tr>
+        </tbody>
+      </table>
     </section>
 
-    <section id="fichas-completas">
-      <div class="section-head"><h2>🧩 Fichas completas con vídeo local</h2><span class="count">vídeo + receta paso a paso</span></div>
-      <div class="recipe-list" id="recipeList">
-      <article class="recipe-detail panel" id="receta-01" data-type="Postre / merienda" data-need="Quiero algo dulce/proteico" data-search="cremoso / natillas de chocolate proteico postre o merienda fría, dulce y proteica. postre / merienda quiero algo dulce/proteico postres y meriendas como postre o merienda proteica en un menú semanal. no usar como cena principal. tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate. 3 hojas de gelatina. agua fría para hidratar la gelatina. proteína en polvo sabor neutro o base proteica blanca en polvo. cantidad no legible con seguridad. agua para mezclar la base proteica. leche; en el vídeo se menciona “medio”, probablemente medio litro. chocolate negro o cobertura de chocolate. azúcar o edulcorante al gusto. vainilla. opcional: creatina, solo si ya la usas y te encaja. opcional: topping tipo crema/nata proteica al servir. pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas. echa la proteína o base proteica neutra en una jarra alta. añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes. pon la leche en un cazo a fuego medio. añade el chocolate al cazo y remueve con varillas hasta que se funda. añade el azúcar o edulcorante y la vainilla al cazo. este es el momento de ajustar dulzor y aroma. calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte. escurre la gelatina ya hidratada y añádela al cazo caliente. remueve hasta que se disuelva por completo. vierte la mezcla caliente de chocolate sobre la jarra de la base proteica. bate bien hasta integrar la mezcla caliente con la base proteica. cuela la mezcla para dejarla más fina. reparte en vasos o recipientes. en el vídeo se sirven raciones de unos 190 g. deja enfriar y guarda en nevera una noche para que cuaje bien. sirve frío. puedes añadir topping proteico o tomarlo tal cual. no inventar cantidades exactas: ajusta textura con agua/leche poco a poco. si queda muy espeso antes de enfriar, aligera con un poco de leche. para batch cooking, deja los vasos tapados en nevera. dulce proteico postre nevera batch cooking">
-        <div class="video-col">
-          <div class="video-shell">
-            <video controls playsinline preload="metadata" poster="assets/thumbs/01_contact_sheet.jpg">
-              <source src="assets/videos/01_cremoso_chocolate_proteico.mp4" type="video/mp4">
-              Tu navegador no puede reproducir el vídeo. Usa el enlace “Abrir vídeo original”.
-            </video>
-          </div>
-          <div class="video-actions">
-            <a class="btn primary" href="assets/videos/01_cremoso_chocolate_proteico.mp4" target="_blank">🎬 Abrir vídeo original</a>
-            <button class="btn" type="button" onclick="copySection('receta-01')">📋 Copiar ficha</button>
-          </div>
-          <p class="micro"><b>Ruta local:</b> <code>assets/videos/01_cremoso_chocolate_proteico.mp4</code></p>
-          <div class="notice"><b>Confianza de extracción:</b><br>Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.</div>
-        </div>
-        <div class="content-col">
-          <p class="eyebrow">Postres y meriendas · Postre / merienda</p>
-          <h2>🍫 Cremoso / natillas de chocolate proteico</h2>
-          <p class="lead-small">Postre o merienda fría, dulce y proteica.</p>
-          <div class="meta-grid">
-            <div><b>Cuándo usarla</b><p>Como postre o merienda proteica en un menú semanal.</p></div>
-            <div><b>Cuándo NO usarla</b><p>No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.</p></div>
-          </div>
-          <section class="box"><h3>Ingredientes / material</h3><ul><li>3 hojas de gelatina.</li>
-<li>Agua fría para hidratar la gelatina.</li>
-<li>Proteína en polvo sabor neutro o base proteica blanca en polvo. Cantidad no legible con seguridad.</li>
-<li>Agua para mezclar la base proteica.</li>
-<li>Leche; en el vídeo se menciona “medio”, probablemente medio litro.</li>
-<li>Chocolate negro o cobertura de chocolate.</li>
-<li>Azúcar o edulcorante al gusto.</li>
-<li>Vainilla.</li>
-<li>Opcional: creatina, solo si ya la usas y te encaja.</li>
-<li>Opcional: topping tipo crema/nata proteica al servir.</li></ul></section>
-          <section class="box steps"><h3>Paso a paso extraído del vídeo</h3><ol><li>Pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas.</li>
-<li>Echa la proteína o base proteica neutra en una jarra alta.</li>
-<li>Añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes.</li>
-<li>Pon la leche en un cazo a fuego medio.</li>
-<li>Añade el chocolate al cazo y remueve con varillas hasta que se funda.</li>
-<li>Añade el azúcar o edulcorante y la vainilla al cazo. Este es el momento de ajustar dulzor y aroma.</li>
-<li>Calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte.</li>
-<li>Escurre la gelatina ya hidratada y añádela al cazo caliente. Remueve hasta que se disuelva por completo.</li>
-<li>Vierte la mezcla caliente de chocolate sobre la jarra de la base proteica.</li>
-<li>Bate bien hasta integrar la mezcla caliente con la base proteica.</li>
-<li>Cuela la mezcla para dejarla más fina.</li>
-<li>Reparte en vasos o recipientes. En el vídeo se sirven raciones de unos 190 g.</li>
-<li>Deja enfriar y guarda en nevera una noche para que cuaje bien.</li>
-<li>Sirve frío. Puedes añadir topping proteico o tomarlo tal cual.</li></ol></section>
-          <section class="box seasoning"><h3>🧂 Cuándo añadir especias o sazonadores</h3><p>La vainilla y el azúcar/edulcorante se añaden en el cazo, después de fundir el chocolate y antes de incorporar la gelatina. Ahí se corrige el sabor.</p></section>
-          <section class="box"><h3>Consejos y ajustes</h3><ul><li>No inventar cantidades exactas: ajusta textura con agua/leche poco a poco.</li>
-<li>Si queda muy espeso antes de enfriar, aligera con un poco de leche.</li>
-<li>Para batch cooking, deja los vasos tapados en nevera.</li></ul></section>
-          <div class="chips"><span class="chip">#dulce</span><span class="chip">#proteico</span><span class="chip">#postre</span><span class="chip">#nevera</span><span class="chip">#batch cooking</span></div>
-        </div>
-      </article>
-      <article class="recipe-detail panel" id="receta-02" data-type="Guarnición" data-need="Quiero una guarnición rápida" data-search="patatas fritas en airfryer con pre-cocción en microondas guarnición rápida con patata tierna por dentro y dorada por fuera. guarnición quiero una guarnición rápida guarniciones rápidas como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal. no meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. si ya hay arroz, pasta o pan, mejor alternar. patatas. agua para remojar. papel de cocina. aceite de oliva, lo justo para embadurnar. sal al final. opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas. pela las patatas y córtalas en bastones de tamaño parecido. mételas un rato en agua para retirar parte del almidón. escúrrelas muy bien. sécalas con papel de cocina. este paso importa: cuanto menos humedad, mejor dorado. pasa las patatas a un bol amplio. añade un chorrito pequeño de aceite de oliva, solo lo justo. mezcla con las manos para que todas las patatas queden ligeramente impregnadas. cubre el bol con film transparente apto para microondas. cocina en microondas 6 minutos a 800 w. saca el bol con cuidado: habrá vapor y el film estará caliente. retira el film sin quemarte y deja salir el vapor. pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado. cocina en airfryer a 185–190 ºc durante unos 15 minutos. abre, revisa y remueve o da una vuelta a las patatas. dales un último toque de dorado: 5 minutos más, idealmente a 200 ºc si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido. saca a un plato y sazona al final. no llenes la cesta en exceso; si haces muchas, trabaja por tandas. el secado previo y el último toque de dorado son la clave. con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer. patata airfryer microondas guarnición rápida">
-        <div class="video-col">
-          <div class="video-shell">
-            <video controls playsinline preload="metadata" poster="assets/thumbs/02_contact_sheet.jpg">
-              <source src="assets/videos/02_patatas_fritas_airfryer.mp4" type="video/mp4">
-              Tu navegador no puede reproducir el vídeo. Usa el enlace “Abrir vídeo original”.
-            </video>
-          </div>
-          <div class="video-actions">
-            <a class="btn primary" href="assets/videos/02_patatas_fritas_airfryer.mp4" target="_blank">🎬 Abrir vídeo original</a>
-            <button class="btn" type="button" onclick="copySection('receta-02')">📋 Copiar ficha</button>
-          </div>
-          <p class="micro"><b>Ruta local:</b> <code>assets/videos/02_patatas_fritas_airfryer.mp4</code></p>
-          <div class="notice"><b>Confianza de extracción:</b><br>Alta en el método general. Tiempos principales visibles: microondas 6 min a 800 W; airfryer unos 15 min a 185–190 ºC; último toque corto de dorado.</div>
-        </div>
-        <div class="content-col">
-          <p class="eyebrow">Guarniciones rápidas · Guarnición</p>
-          <h2>🍟 Patatas fritas en airfryer con pre-cocción en microondas</h2>
-          <p class="lead-small">Guarnición rápida con patata tierna por dentro y dorada por fuera.</p>
-          <div class="meta-grid">
-            <div><b>Cuándo usarla</b><p>Como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal.</p></div>
-            <div><b>Cuándo NO usarla</b><p>No meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. Si ya hay arroz, pasta o pan, mejor alternar.</p></div>
-          </div>
-          <section class="box"><h3>Ingredientes / material</h3><ul><li>Patatas.</li>
-<li>Agua para remojar.</li>
-<li>Papel de cocina.</li>
-<li>Aceite de oliva, lo justo para embadurnar.</li>
-<li>Sal al final.</li>
-<li>Opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas.</li></ul></section>
-          <section class="box steps"><h3>Paso a paso extraído del vídeo</h3><ol><li>Pela las patatas y córtalas en bastones de tamaño parecido.</li>
-<li>Mételas un rato en agua para retirar parte del almidón.</li>
-<li>Escúrrelas muy bien.</li>
-<li>Sécalas con papel de cocina. Este paso importa: cuanto menos humedad, mejor dorado.</li>
-<li>Pasa las patatas a un bol amplio.</li>
-<li>Añade un chorrito pequeño de aceite de oliva, solo lo justo.</li>
-<li>Mezcla con las manos para que todas las patatas queden ligeramente impregnadas.</li>
-<li>Cubre el bol con film transparente apto para microondas.</li>
-<li>Cocina en microondas 6 minutos a 800 W.</li>
-<li>Saca el bol con cuidado: habrá vapor y el film estará caliente.</li>
-<li>Retira el film sin quemarte y deja salir el vapor.</li>
-<li>Pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado.</li>
-<li>Cocina en airfryer a 185–190 ºC durante unos 15 minutos.</li>
-<li>Abre, revisa y remueve o da una vuelta a las patatas.</li>
-<li>Dales un último toque de dorado: 5 minutos más, idealmente a 200 ºC si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido.</li>
-<li>Saca a un plato y sazona al final.</li></ol></section>
-          <section class="box seasoning"><h3>🧂 Cuándo añadir especias o sazonadores</h3><p>La sal y las especias van al final, al sacar las patatas de la airfryer. Si echas pimentón, ajo en polvo o hierbas antes, se pueden quemar o amargar.</p></section>
-          <section class="box"><h3>Consejos y ajustes</h3><ul><li>No llenes la cesta en exceso; si haces muchas, trabaja por tandas.</li>
-<li>El secado previo y el último toque de dorado son la clave.</li>
-<li>Con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer.</li></ul></section>
-          <div class="chips"><span class="chip">#patata</span><span class="chip">#airfryer</span><span class="chip">#microondas</span><span class="chip">#guarnición</span><span class="chip">#rápida</span></div>
-        </div>
-      </article>
-      <article class="recipe-detail panel" id="receta-03" data-type="Cena informal / entrante" data-need="Quiero una cena informal contundente" data-search="trenza de pan de ajo y queso masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil. cena informal / entrante quiero una cena informal contundente cenas informales y entrantes como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras. no es una cena ligera. si el menú semanal ya lleva queso, pan o masas, no la fuerces. masa rectangular tipo hojaldre, pizza o pan. dientes de ajo pelados. aceite de oliva para confitar o dorar los ajos. mantequilla blanda. perejil fresco picado. queso rallado para el relleno, tipo mozzarella o mezcla fundente. queso rallado/parmesano para cubrir. sal con moderación. pimienta. opcional: orégano. pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva. cocina los ajos hasta que estén tiernos y dorados, sin quemarlos. pasa los ajos a un bol y machácalos. añade mantequilla blanda al bol. añade perejil fresco picado. añade sal, pimienta y, si quieres, orégano. ojo con la sal porque el queso ya aporta bastante. mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas. extiende la masa rectangular sobre papel de horno. coloca una franja generosa de queso rallado en el centro de la masa. haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso. cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno. pasa la trenza a una bandeja de horno si no la tenías ya encima. unta toda la superficie con la pasta de ajo, mantequilla y perejil. espolvorea queso rallado o parmesano por encima. hornea hasta que la masa esté dorada y el queso fundido. referencia útil: 190 ºc durante 20–25 minutos, revisando desde el minuto 18. deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe. acompáñala con ensalada para compensar. no quemes los ajos: ajo quemado = amargor. si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado. ajo queso horno pan vegetariana">
-        <div class="video-col">
-          <div class="video-shell">
-            <video controls playsinline preload="metadata" poster="assets/thumbs/03_contact_sheet.jpg">
-              <source src="assets/videos/03_trenza_pan_ajo_queso.mp4" type="video/mp4">
-              Tu navegador no puede reproducir el vídeo. Usa el enlace “Abrir vídeo original”.
-            </video>
-          </div>
-          <div class="video-actions">
-            <a class="btn primary" href="assets/videos/03_trenza_pan_ajo_queso.mp4" target="_blank">🎬 Abrir vídeo original</a>
-            <button class="btn" type="button" onclick="copySection('receta-03')">📋 Copiar ficha</button>
-          </div>
-          <p class="micro"><b>Ruta local:</b> <code>assets/videos/03_trenza_pan_ajo_queso.mp4</code></p>
-          <div class="notice"><b>Confianza de extracción:</b><br>Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.</div>
-        </div>
-        <div class="content-col">
-          <p class="eyebrow">Cenas informales y entrantes · Cena informal / entrante</p>
-          <h2>🧄 Trenza de pan de ajo y queso</h2>
-          <p class="lead-small">Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.</p>
-          <div class="meta-grid">
-            <div><b>Cuándo usarla</b><p>Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.</p></div>
-            <div><b>Cuándo NO usarla</b><p>No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.</p></div>
-          </div>
-          <section class="box"><h3>Ingredientes / material</h3><ul><li>Masa rectangular tipo hojaldre, pizza o pan.</li>
-<li>Dientes de ajo pelados.</li>
-<li>Aceite de oliva para confitar o dorar los ajos.</li>
-<li>Mantequilla blanda.</li>
-<li>Perejil fresco picado.</li>
-<li>Queso rallado para el relleno, tipo mozzarella o mezcla fundente.</li>
-<li>Queso rallado/parmesano para cubrir.</li>
-<li>Sal con moderación.</li>
-<li>Pimienta.</li>
-<li>Opcional: orégano.</li></ul></section>
-          <section class="box steps"><h3>Paso a paso extraído del vídeo</h3><ol><li>Pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva.</li>
-<li>Cocina los ajos hasta que estén tiernos y dorados, sin quemarlos.</li>
-<li>Pasa los ajos a un bol y machácalos.</li>
-<li>Añade mantequilla blanda al bol.</li>
-<li>Añade perejil fresco picado.</li>
-<li>Añade sal, pimienta y, si quieres, orégano. Ojo con la sal porque el queso ya aporta bastante.</li>
-<li>Mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas.</li>
-<li>Extiende la masa rectangular sobre papel de horno.</li>
-<li>Coloca una franja generosa de queso rallado en el centro de la masa.</li>
-<li>Haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso.</li>
-<li>Cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno.</li>
-<li>Pasa la trenza a una bandeja de horno si no la tenías ya encima.</li>
-<li>Unta toda la superficie con la pasta de ajo, mantequilla y perejil.</li>
-<li>Espolvorea queso rallado o parmesano por encima.</li>
-<li>Hornea hasta que la masa esté dorada y el queso fundido. Referencia útil: 190 ºC durante 20–25 minutos, revisando desde el minuto 18.</li>
-<li>Deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe.</li></ol></section>
-          <section class="box seasoning"><h3>🧂 Cuándo añadir especias o sazonadores</h3><p>La sal, pimienta y orégano se añaden dentro de la pasta de ajo, mantequilla y perejil, antes de untar la trenza. Así el sabor queda repartido.</p></section>
-          <section class="box"><h3>Consejos y ajustes</h3><ul><li>Acompáñala con ensalada para compensar.</li>
-<li>No quemes los ajos: ajo quemado = amargor.</li>
-<li>Si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado.</li></ul></section>
-          <div class="chips"><span class="chip">#ajo</span><span class="chip">#queso</span><span class="chip">#horno</span><span class="chip">#pan</span><span class="chip">#vegetariana</span></div>
-        </div>
-      </article>
-      <article class="recipe-detail panel" id="receta-04" data-type="Técnica / conservación" data-need="Quiero conservar guacamole" data-search="truco para que el guacamole no se oxide técnica de conservación con papel húmedo en contacto y film. técnica / conservación quiero conservar guacamole técnicas y trucos cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación. no es una receta principal. es una técnica auxiliar de conservación. guacamole o aguacate machacado. papel de cocina. agua para humedecer el papel. film transparente. recipiente, mejor si tiene tapa. prepara el guacamole y pásalo a un recipiente. alisa la superficie del guacamole. moja un trozo de papel de cocina. escurre el papel: debe quedar húmedo, no chorreando. coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie. presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole. cubre el recipiente con film transparente para que el papel no se seque. guarda en la nevera. cuando vayas a usarlo, retira el film y luego el papel húmedo. la clave es que no haya aire tocando el guacamole. el papel húmedo evita que la superficie se reseque. funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona. guacamole aguacate conservación batch cooking truco">
-        <div class="video-col">
-          <div class="video-shell">
-            <video controls playsinline preload="metadata" poster="assets/thumbs/04_contact_sheet.jpg">
-              <source src="assets/videos/04_guacamole_no_oxida.mp4" type="video/mp4">
-              Tu navegador no puede reproducir el vídeo. Usa el enlace “Abrir vídeo original”.
-            </video>
-          </div>
-          <div class="video-actions">
-            <a class="btn primary" href="assets/videos/04_guacamole_no_oxida.mp4" target="_blank">🎬 Abrir vídeo original</a>
-            <button class="btn" type="button" onclick="copySection('receta-04')">📋 Copiar ficha</button>
-          </div>
-          <p class="micro"><b>Ruta local:</b> <code>assets/videos/04_guacamole_no_oxida.mp4</code></p>
-          <div class="notice"><b>Confianza de extracción:</b><br>Alta: el truco se explica y se ve con claridad en el vídeo.</div>
-        </div>
-        <div class="content-col">
-          <p class="eyebrow">Técnicas y trucos · Técnica / conservación</p>
-          <h2>🥑 Truco para que el guacamole no se oxide</h2>
-          <p class="lead-small">Técnica de conservación con papel húmedo en contacto y film.</p>
-          <div class="meta-grid">
-            <div><b>Cuándo usarla</b><p>Cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación.</p></div>
-            <div><b>Cuándo NO usarla</b><p>No es una receta principal. Es una técnica auxiliar de conservación.</p></div>
-          </div>
-          <section class="box"><h3>Ingredientes / material</h3><ul><li>Guacamole o aguacate machacado.</li>
-<li>Papel de cocina.</li>
-<li>Agua para humedecer el papel.</li>
-<li>Film transparente.</li>
-<li>Recipiente, mejor si tiene tapa.</li></ul></section>
-          <section class="box steps"><h3>Paso a paso extraído del vídeo</h3><ol><li>Prepara el guacamole y pásalo a un recipiente.</li>
-<li>Alisa la superficie del guacamole.</li>
-<li>Moja un trozo de papel de cocina.</li>
-<li>Escurre el papel: debe quedar húmedo, no chorreando.</li>
-<li>Coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie.</li>
-<li>Presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole.</li>
-<li>Cubre el recipiente con film transparente para que el papel no se seque.</li>
-<li>Guarda en la nevera.</li>
-<li>Cuando vayas a usarlo, retira el film y luego el papel húmedo.</li></ol></section>
-          <section class="box seasoning"><h3>🧂 Cuándo añadir especias o sazonadores</h3><p>No se sazona al conservar. Si preparas el guacamole desde cero, ajusta sal, lima/limón, cilantro, pimienta o picante antes de poner el papel húmedo y el film.</p></section>
-          <section class="box"><h3>Consejos y ajustes</h3><ul><li>La clave es que no haya aire tocando el guacamole.</li>
-<li>El papel húmedo evita que la superficie se reseque.</li>
-<li>Funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona.</li></ul></section>
-          <div class="chips"><span class="chip">#guacamole</span><span class="chip">#aguacate</span><span class="chip">#conservación</span><span class="chip">#batch cooking</span><span class="chip">#truco</span></div>
-        </div>
-      </article></div>
+    <section id="fichas-completas" aria-labelledby="fichas-title">
+      <div class="section-head">
+        <h2 id="fichas-title">📚 Fichas completas</h2>
+        <div class="count">Generadas desde datos</div>
+      </div>
+      <div class="recipe-list" id="recipeList"></div>
     </section>
 
-    <footer class="panel footer"><span>🍳 Recetario Video Lab — Itu v2</span><span>Abre <code>index.html</code> o usa <code>run_local.bat</code>. No muevas la carpeta <code>assets/</code>.</span></footer>
+    <footer class="footer panel">
+      <span>Recetario Video Lab — v3 · vídeos locales · datos en <code>data/recetas_video_lab_v3.json</code></span>
+      <span>Funciona sin internet; para vídeos, abre desde carpeta local o servidor local.</span>
+    </footer>
   </div>
-  <div class="toast" id="toast">Ficha copiada</div>
+
+  <dialog class="cook-modal" id="cookModal" aria-labelledby="cookTitle">
+    <div class="cook-head">
+      <div>
+        <p class="eyebrow" id="cookEyebrow"></p>
+        <h2 id="cookTitle"></h2>
+        <p class="lead-small" id="cookSubtitle"></p>
+      </div>
+      <button class="btn" id="closeCook" type="button">Cerrar</button>
+    </div>
+    <div class="cook-body" id="cookBody"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script id="recipes-data" type="application/json">[{"id": "01", "emoji": "🍫", "title": "Cremoso / natillas de chocolate proteico", "short": "Postre o merienda fría, dulce y proteica.", "type": "Postre / merienda", "need": "Quiero algo dulce/proteico", "category": "Postres y meriendas", "video": "assets/videos/01_cremoso_chocolate_proteico.mp4", "thumb": "assets/thumbs/01_contact_sheet.jpg", "confidence": "Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.", "ingredients": ["3 hojas de gelatina.", "Agua fría para hidratar la gelatina.", "Proteína en polvo sabor neutro o base proteica blanca en polvo. Cantidad no legible con seguridad.", "Agua para mezclar la base proteica.", "Leche; en el vídeo se menciona “medio”, probablemente medio litro.", "Chocolate negro o cobertura de chocolate.", "Azúcar o edulcorante al gusto.", "Vainilla.", "Opcional: creatina, solo si ya la usas y te encaja.", "Opcional: topping tipo crema/nata proteica al servir."], "steps": ["Pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas.", "Echa la proteína o base proteica neutra en una jarra alta.", "Añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes.", "Pon la leche en un cazo a fuego medio.", "Añade el chocolate al cazo y remueve con varillas hasta que se funda.", "Añade el azúcar o edulcorante y la vainilla al cazo. Este es el momento de ajustar dulzor y aroma.", "Calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte.", "Escurre la gelatina ya hidratada y añádela al cazo caliente. Remueve hasta que se disuelva por completo.", "Vierte la mezcla caliente de chocolate sobre la jarra de la base proteica.", "Bate bien hasta integrar la mezcla caliente con la base proteica.", "Cuela la mezcla para dejarla más fina.", "Reparte en vasos o recipientes. En el vídeo se sirven raciones de unos 190 g.", "Deja enfriar y guarda en nevera una noche para que cuaje bien.", "Sirve frío. Puedes añadir topping proteico o tomarlo tal cual."], "seasoning": "La vainilla y el azúcar/edulcorante se añaden en el cazo, después de fundir el chocolate y antes de incorporar la gelatina. Ahí se corrige el sabor.", "when_use": "Como postre o merienda proteica en un menú semanal.", "when_not": "No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.", "tips": ["No inventar cantidades exactas: ajusta textura con agua/leche poco a poco.", "Si queda muy espeso antes de enfriar, aligera con un poco de leche.", "Para batch cooking, deja los vasos tapados en nevera."], "tags": ["dulce", "proteico", "postre", "nevera", "batch cooking"], "version": "v3", "timers": [{"label": "Gelatina hidratando", "minutes": 5, "note": "Tiempo orientativo hasta que las hojas estén blandas."}, {"label": "Nevera para cuajar", "minutes": 480, "note": "Mínimo una noche; si usas menos, revisa textura."}], "difficulty": "Media", "menu_fit": "Sí, si encaja con la semana"}, {"id": "02", "emoji": "🍟", "title": "Patatas fritas en airfryer con pre-cocción en microondas", "short": "Guarnición rápida con patata tierna por dentro y dorada por fuera.", "type": "Guarnición", "need": "Quiero una guarnición rápida", "category": "Guarniciones rápidas", "video": "assets/videos/02_patatas_fritas_airfryer.mp4", "thumb": "assets/thumbs/02_contact_sheet.jpg", "confidence": "Alta en el método general. Tiempos principales visibles: microondas 6 min a 800 W; airfryer unos 15 min a 185–190 ºC; último toque corto de dorado.", "ingredients": ["Patatas.", "Agua para remojar.", "Papel de cocina.", "Aceite de oliva, lo justo para embadurnar.", "Sal al final.", "Opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas."], "steps": ["Pela las patatas y córtalas en bastones de tamaño parecido.", "Mételas un rato en agua para retirar parte del almidón.", "Escúrrelas muy bien.", "Sécalas con papel de cocina. Este paso importa: cuanto menos humedad, mejor dorado.", "Pasa las patatas a un bol amplio.", "Añade un chorrito pequeño de aceite de oliva, solo lo justo.", "Mezcla con las manos para que todas las patatas queden ligeramente impregnadas.", "Cubre el bol con film transparente apto para microondas.", "Cocina en microondas 6 minutos a 800 W.", "Saca el bol con cuidado: habrá vapor y el film estará caliente.", "Retira el film sin quemarte y deja salir el vapor.", "Pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado.", "Cocina en airfryer a 185–190 ºC durante unos 15 minutos.", "Abre, revisa y remueve o da una vuelta a las patatas.", "Dales un último toque de dorado: 5 minutos más, idealmente a 200 ºC si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido.", "Saca a un plato y sazona al final."], "seasoning": "La sal y las especias van al final, al sacar las patatas de la airfryer. Si echas pimentón, ajo en polvo o hierbas antes, se pueden quemar o amargar.", "when_use": "Como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal.", "when_not": "No meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. Si ya hay arroz, pasta o pan, mejor alternar.", "tips": ["No llenes la cesta en exceso; si haces muchas, trabaja por tandas.", "El secado previo y el último toque de dorado son la clave.", "Con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer."], "tags": ["patata", "airfryer", "microondas", "guarnición", "rápida"], "version": "v3", "timers": [{"label": "Microondas", "minutes": 6, "note": "800 W, bol cubierto con film apto."}, {"label": "Airfryer base", "minutes": 15, "note": "185–190 ºC; revisar y remover al acabar."}, {"label": "Último dorado", "minutes": 5, "note": "Idealmente a 200 ºC o misma temperatura si ya dora rápido."}], "difficulty": "Fácil", "menu_fit": "Sí, si encaja con la semana"}, {"id": "03", "emoji": "🧄", "title": "Trenza de pan de ajo y queso", "short": "Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.", "type": "Cena informal / entrante", "need": "Quiero una cena informal contundente", "category": "Cenas informales y entrantes", "video": "assets/videos/03_trenza_pan_ajo_queso.mp4", "thumb": "assets/thumbs/03_contact_sheet.jpg", "confidence": "Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.", "ingredients": ["Masa rectangular tipo hojaldre, pizza o pan.", "Dientes de ajo pelados.", "Aceite de oliva para confitar o dorar los ajos.", "Mantequilla blanda.", "Perejil fresco picado.", "Queso rallado para el relleno, tipo mozzarella o mezcla fundente.", "Queso rallado/parmesano para cubrir.", "Sal con moderación.", "Pimienta.", "Opcional: orégano."], "steps": ["Pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva.", "Cocina los ajos hasta que estén tiernos y dorados, sin quemarlos.", "Pasa los ajos a un bol y machácalos.", "Añade mantequilla blanda al bol.", "Añade perejil fresco picado.", "Añade sal, pimienta y, si quieres, orégano. Ojo con la sal porque el queso ya aporta bastante.", "Mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas.", "Extiende la masa rectangular sobre papel de horno.", "Coloca una franja generosa de queso rallado en el centro de la masa.", "Haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso.", "Cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno.", "Pasa la trenza a una bandeja de horno si no la tenías ya encima.", "Unta toda la superficie con la pasta de ajo, mantequilla y perejil.", "Espolvorea queso rallado o parmesano por encima.", "Hornea hasta que la masa esté dorada y el queso fundido. Referencia útil: 190 ºC durante 20–25 minutos, revisando desde el minuto 18.", "Deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe."], "seasoning": "La sal, pimienta y orégano se añaden dentro de la pasta de ajo, mantequilla y perejil, antes de untar la trenza. Así el sabor queda repartido.", "when_use": "Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.", "when_not": "No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.", "tips": ["Acompáñala con ensalada para compensar.", "No quemes los ajos: ajo quemado = amargor.", "Si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado."], "tags": ["ajo", "queso", "horno", "pan", "vegetariana"], "version": "v3", "timers": [{"label": "Horno orientativo", "minutes": 22, "note": "Referencia operativa: hornear hasta dorar y queso fundido."}], "difficulty": "Media", "menu_fit": "Sí, si encaja con la semana"}, {"id": "04", "emoji": "🥑", "title": "Truco para que el guacamole no se oxide", "short": "Técnica de conservación con papel húmedo en contacto y film.", "type": "Técnica / conservación", "need": "Quiero conservar guacamole", "category": "Técnicas y trucos", "video": "assets/videos/04_guacamole_no_oxida.mp4", "thumb": "assets/thumbs/04_contact_sheet.jpg", "confidence": "Alta: el truco se explica y se ve con claridad en el vídeo.", "ingredients": ["Guacamole o aguacate machacado.", "Papel de cocina.", "Agua para humedecer el papel.", "Film transparente.", "Recipiente, mejor si tiene tapa."], "steps": ["Prepara el guacamole y pásalo a un recipiente.", "Alisa la superficie del guacamole.", "Moja un trozo de papel de cocina.", "Escurre el papel: debe quedar húmedo, no chorreando.", "Coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie.", "Presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole.", "Cubre el recipiente con film transparente para que el papel no se seque.", "Guarda en la nevera.", "Cuando vayas a usarlo, retira el film y luego el papel húmedo."], "seasoning": "No se sazona al conservar. Si preparas el guacamole desde cero, ajusta sal, lima/limón, cilantro, pimienta o picante antes de poner el papel húmedo y el film.", "when_use": "Cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación.", "when_not": "No es una receta principal. Es una técnica auxiliar de conservación.", "tips": ["La clave es que no haya aire tocando el guacamole.", "El papel húmedo evita que la superficie se reseque.", "Funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona."], "tags": ["guacamole", "aguacate", "conservación", "batch cooking", "truco"], "version": "v3", "timers": [{"label": "Revisión nevera", "minutes": 1440, "note": "Comprueba al día siguiente que el papel sigue húmedo y en contacto."}], "difficulty": "Fácil", "menu_fit": "Sí, si encaja con la semana"}]</script>
   <script>
-    const $ = (s) => document.querySelector(s);
-    const allItems = () => Array.from(document.querySelectorAll('.recipe-card, .recipe-detail'));
-    function applyFilters() {
-      const q = $('#search').value.trim().toLowerCase();
-      const t = $('#typeFilter').value;
-      const n = $('#needFilter').value;
-      let visibleCards = 0;
-      allItems().forEach(el => {
-        const ok = (!q || (el.dataset.search || '').includes(q)) && (t === 'all' || el.dataset.type === t) && (n === 'all' || el.dataset.need === n);
-        el.classList.toggle('hidden', !ok);
-        if (ok && el.classList.contains('recipe-card')) visibleCards++;
-      });
-      $('#count').textContent = `${visibleCards} / 4 piezas`;
+    const RECIPES = JSON.parse(document.getElementById('recipes-data').textContent);
+    const STORAGE_KEY = 'itu_recetario_video_lab_v3_state';
+    const THEME_KEY = 'itu_recetario_video_lab_theme';
+    const STATE_LABELS = { pendiente:'Pendiente', vista:'Vista', cocinada:'Cocinada', repetiria:'La repetiría', dominada:'Dominada' };
+    const els = {
+      cards: document.getElementById('cards'), recipeList: document.getElementById('recipeList'), needList: document.getElementById('needList'),
+      count: document.getElementById('count'), empty: document.getElementById('emptyState'), search: document.getElementById('search'),
+      type: document.getElementById('typeFilter'), need: document.getElementById('needFilter'), state: document.getElementById('stateFilter'),
+      toast: document.getElementById('toast'), themeBtn: document.getElementById('themeBtn'), resetBtn: document.getElementById('resetBtn'),
+      heroMeta: document.getElementById('heroMeta'), modal: document.getElementById('cookModal'), closeCook: document.getElementById('closeCook'), cookBody: document.getElementById('cookBody'),
+      cookTitle: document.getElementById('cookTitle'), cookSubtitle: document.getElementById('cookSubtitle'), cookEyebrow: document.getElementById('cookEyebrow')
+    };
+    let appState = loadState();
+    let timerHandles = {};
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
     }
-    function copySection(id) {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const text = el.innerText.replace(/\n{3,}/g, '\n\n').trim();
-      navigator.clipboard?.writeText(text).then(() => {
-        const toast = $('#toast'); toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1600);
+    function normalizeText(value) {
+      return String(value ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    }
+    function slugFor(recipe) { return 'receta-' + recipe.id; }
+    function getRecipe(id) { return RECIPES.find(r => r.id === id); }
+    function getEntry(id) {
+      appState[id] ||= { favorite:false, status:'pendiente', checkedIngredients:[], checkedSteps:[] };
+      return appState[id];
+    }
+    function loadState() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+    }
+    function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(appState)); }
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.classList.add('show');
+      window.setTimeout(() => els.toast.classList.remove('show'), 1800);
+    }
+    function uniqueValues(key) { return [...new Set(RECIPES.map(r => r[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'es')); }
+    function recipeHaystack(r) {
+      return normalizeText([r.title, r.short, r.type, r.need, r.category, r.confidence, r.when_use, r.when_not, r.seasoning, ...(r.ingredients||[]), ...(r.steps||[]), ...(r.tips||[]), ...(r.tags||[])].join(' '));
+    }
+    function textList(items) { return (items || []).map(item => `<li>${escapeHtml(item)}</li>`).join(''); }
+    function chips(tags) { return (tags || []).map(tag => `<span class="chip">#${escapeHtml(tag)}</span>`).join(''); }
+
+    function init() {
+      const savedTheme = localStorage.getItem(THEME_KEY);
+      if (savedTheme === 'dark') document.documentElement.dataset.theme = 'dark';
+      updateThemeButton();
+      renderMeta();
+      buildFilters();
+      renderNeedList();
+      renderAll();
+      bindEvents();
+      if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+        navigator.serviceWorker.register('service-worker.js').catch(() => {});
+      }
+    }
+    function renderMeta() {
+      const tags = [`${RECIPES.length} recetas`, 'Vídeos locales', 'Sin internet', 'Modo cocinar', 'Favoritos', 'Sazonadores señalados'];
+      els.heroMeta.innerHTML = tags.map(t => `<span class="pill">${escapeHtml(t)}</span>`).join('');
+    }
+    function buildFilters() {
+      els.type.innerHTML = '<option value="all">Todos los tipos</option>' + uniqueValues('type').map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
+      els.need.innerHTML = '<option value="all">Todas las necesidades</option>' + uniqueValues('need').map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join('');
+    }
+    function renderNeedList() {
+      els.needList.innerHTML = RECIPES.map(r => `<a href="#${slugFor(r)}" class="need-item"><span class="need-emoji">${escapeHtml(r.emoji)}</span><span><b>${escapeHtml(r.need)}</b><small>${escapeHtml(r.title)} · ${escapeHtml(r.type)}</small></span></a>`).join('');
+    }
+    function renderAll() {
+      const visible = filteredRecipes();
+      els.count.textContent = `${visible.length} / ${RECIPES.length} recetas`;
+      els.empty.classList.toggle('hidden', visible.length !== 0);
+      els.cards.innerHTML = visible.map(renderCard).join('');
+      els.recipeList.innerHTML = visible.map(renderDetail).join('');
+    }
+    function filteredRecipes() {
+      const q = normalizeText(els.search.value.trim());
+      const type = els.type.value;
+      const need = els.need.value;
+      const state = els.state.value;
+      return RECIPES.filter(r => {
+        const entry = getEntry(r.id);
+        const matchesQ = !q || recipeHaystack(r).includes(q);
+        const matchesType = type === 'all' || r.type === type;
+        const matchesNeed = need === 'all' || r.need === need;
+        const matchesState = state === 'all' || (state === 'favorite' ? entry.favorite : entry.status === state);
+        return matchesQ && matchesType && matchesNeed && matchesState;
       });
     }
-    window.copySection = copySection;
-    ['input','change'].forEach(evt => { $('#search').addEventListener(evt, applyFilters); $('#typeFilter').addEventListener(evt, applyFilters); $('#needFilter').addEventListener(evt, applyFilters); });
-    const themeBtn = $('#themeBtn');
-    const saved = localStorage.getItem('recetario-theme-v2'); if (saved) document.documentElement.dataset.theme = saved;
-    function refreshTheme() { themeBtn.textContent = document.documentElement.dataset.theme === 'dark' ? '☀️ Modo claro' : '🌙 Modo oscuro'; }
-    refreshTheme();
-    themeBtn.addEventListener('click', () => { const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = next; localStorage.setItem('recetario-theme-v2', next); refreshTheme(); });
+    function renderStateControls(r, context='card') {
+      const entry = getEntry(r.id);
+      const favText = entry.favorite ? '★' : '☆';
+      const favLabel = entry.favorite ? `Quitar de favoritas: ${r.title}` : `Marcar como favorita: ${r.title}`;
+      const options = Object.entries(STATE_LABELS).map(([value,label]) => `<option value="${value}" ${entry.status===value?'selected':''}>${label}</option>`).join('');
+      return `<div class="state-row"><button class="btn favorite" type="button" aria-label="${escapeHtml(favLabel)}" onclick="toggleFavorite('${r.id}')">${favText}</button><select aria-label="Estado de ${escapeHtml(r.title)}" onchange="setStatus('${r.id}', this.value)">${options}</select></div>`;
+    }
+    function renderCard(r) {
+      return `<article class="card" data-id="${escapeHtml(r.id)}">
+        <a class="thumb" href="#${slugFor(r)}" aria-label="Abrir ficha de ${escapeHtml(r.title)}"><img src="${escapeHtml(r.thumb)}" alt="Miniatura del vídeo: ${escapeHtml(r.title)}"><span class="badge">${escapeHtml(r.emoji)} ${escapeHtml(r.type)}</span></a>
+        <div class="card-body">
+          <p class="eyebrow">${escapeHtml(r.category)} · ${escapeHtml(r.need)}</p>
+          <h3>${escapeHtml(r.title)}</h3>
+          <p>${escapeHtml(r.short)}</p>
+          <div class="chips">${chips(r.tags)}</div>
+          <div class="actions">
+            <a class="btn primary" href="#${slugFor(r)}">Abrir ficha</a>
+            <button class="btn" type="button" onclick="openCook('${r.id}')">👨‍🍳 Modo cocinar</button>
+            <a class="btn" href="${escapeHtml(r.video)}" target="_blank" rel="noopener">🎬 Vídeo</a>
+          </div>
+          ${renderStateControls(r)}
+        </div>
+      </article>`;
+    }
+    function renderDetail(r) {
+      return `<article class="recipe-detail panel" id="${slugFor(r)}">
+        <div class="video-col">
+          <div class="video-shell"><video controls playsinline preload="metadata" poster="${escapeHtml(r.thumb)}"><source src="${escapeHtml(r.video)}" type="video/mp4">Tu navegador no puede reproducir el vídeo. Usa el enlace “Abrir vídeo original”.</video></div>
+          <div class="video-actions">
+            <a class="btn primary" href="${escapeHtml(r.video)}" target="_blank" rel="noopener">🎬 Abrir vídeo original</a>
+            <button class="btn" type="button" onclick="openCook('${r.id}')">👨‍🍳 Modo cocinar</button>
+            <button class="btn" type="button" onclick="copyRecipe('${r.id}')">📋 Copiar ficha de ${escapeHtml(r.title)}</button>
+          </div>
+          <p class="micro"><b>Ruta local:</b> <code>${escapeHtml(r.video)}</code></p>
+          <div class="notice"><b>Confianza de extracción:</b><br>${escapeHtml(r.confidence)}</div>
+          ${renderStateControls(r, 'detail')}
+        </div>
+        <div class="content-col">
+          <p class="eyebrow">${escapeHtml(r.category)} · ${escapeHtml(r.type)} · dificultad ${escapeHtml(r.difficulty || 'No indicada')}</p>
+          <h2>${escapeHtml(r.emoji)} ${escapeHtml(r.title)}</h2>
+          <p class="lead-small">${escapeHtml(r.short)}</p>
+          <div class="meta-grid"><div><b>Cuándo usarla</b><p>${escapeHtml(r.when_use)}</p></div><div><b>Cuándo NO usarla</b><p>${escapeHtml(r.when_not)}</p></div></div>
+          <section class="box"><h3>Ingredientes / material</h3><ul>${textList(r.ingredients)}</ul></section>
+          <section class="box steps"><h3>Paso a paso extraído del vídeo</h3><ol>${textList(r.steps)}</ol></section>
+          <section class="box seasoning"><h3>🧂 Cuándo añadir especias o sazonadores</h3><p>${escapeHtml(r.seasoning)}</p></section>
+          ${renderTimersSummary(r)}
+          <section class="box"><h3>Consejos y ajustes</h3><ul>${textList(r.tips)}</ul></section>
+          <div class="chips">${chips(r.tags)}</div>
+        </div>
+      </article>`;
+    }
+    function renderTimersSummary(r) {
+      if (!r.timers || !r.timers.length) return '';
+      return `<section class="box"><h3>⏱️ Temporizadores útiles</h3><ul>${r.timers.map(t => `<li><b>${escapeHtml(t.label)}:</b> ${escapeHtml(t.minutes)} min. ${escapeHtml(t.note || '')}</li>`).join('')}</ul></section>`;
+    }
+    function bindEvents() {
+      [els.search, els.type, els.need, els.state].forEach(el => el.addEventListener('input', renderAll));
+      els.themeBtn.addEventListener('click', toggleTheme);
+      els.resetBtn.addEventListener('click', resetProgress);
+      els.closeCook.addEventListener('click', () => els.modal.close());
+      els.modal.addEventListener('close', stopAllTimers);
+    }
+    function toggleTheme() {
+      const isDark = document.documentElement.dataset.theme === 'dark';
+      document.documentElement.dataset.theme = isDark ? '' : 'dark';
+      localStorage.setItem(THEME_KEY, isDark ? 'light' : 'dark');
+      updateThemeButton();
+    }
+    function updateThemeButton() { els.themeBtn.textContent = document.documentElement.dataset.theme === 'dark' ? '☀️ Modo claro' : '🌙 Modo oscuro'; }
+    function resetProgress() {
+      if (!confirm('¿Borrar favoritos, estados y checks guardados en este navegador?')) return;
+      appState = {}; saveState(); renderAll(); showToast('Progreso local borrado');
+    }
+    window.toggleFavorite = function(id) {
+      const entry = getEntry(id); entry.favorite = !entry.favorite; saveState(); renderAll(); showToast(entry.favorite ? 'Añadida a favoritas' : 'Quitada de favoritas');
+    }
+    window.setStatus = function(id, status) {
+      const entry = getEntry(id); entry.status = status; saveState(); renderAll(); showToast('Estado actualizado');
+    }
+    window.copyRecipe = async function(id) {
+      const r = getRecipe(id); if (!r) return;
+      const lines = [
+        `${r.emoji} ${r.title}`,
+        '',
+        r.short,
+        '',
+        'Ingredientes:',
+        ...(r.ingredients || []).map(item => `- ${item}`),
+        '',
+        'Paso a paso:',
+        ...(r.steps || []).map((step, index) => `${index + 1}. ${step}`),
+        '',
+        'Cuándo añadir especias/sazonadores:',
+        r.seasoning,
+        '',
+        `Vídeo local: ${r.video}`
+      ];
+      const text = lines.join('\n');
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const textarea = document.createElement('textarea'); textarea.value = text; document.body.appendChild(textarea); textarea.select(); document.execCommand('copy'); textarea.remove();
+      }
+      showToast('Ficha copiada');
+    }
+    window.openCook = function(id) {
+      const r = getRecipe(id); if (!r) return;
+      const entry = getEntry(id);
+      els.cookEyebrow.textContent = `${r.category} · ${r.type}`;
+      els.cookTitle.textContent = `${r.emoji} ${r.title}`;
+      els.cookSubtitle.textContent = r.short;
+      els.cookBody.innerHTML = `<section class="box"><h3>Ingredientes checklist</h3><div class="checklist">${renderChecks(r, 'ingredients', r.ingredients)}</div></section>
+        <section class="box"><h3>Pasos de cocina</h3><div class="checklist">${renderChecks(r, 'steps', r.steps, true)}</div></section>
+        <section class="box seasoning"><h3>🧂 Sazonadores</h3><p>${escapeHtml(r.seasoning)}</p></section>
+        <section class="box"><h3>⏱️ Temporizadores</h3><div class="timers">${renderTimers(r)}</div></section>`;
+      entry.status = entry.status === 'pendiente' ? 'vista' : entry.status;
+      saveState(); renderAll();
+      if (typeof els.modal.showModal === 'function') els.modal.showModal(); else location.hash = slugFor(r);
+    }
+    function renderChecks(r, kind, items, numbered=false) {
+      const entry = getEntry(r.id); const key = kind === 'ingredients' ? 'checkedIngredients' : 'checkedSteps';
+      entry[key] ||= [];
+      return (items || []).map((item, index) => {
+        const checked = entry[key].includes(index) ? 'checked' : '';
+        const label = numbered ? `${index+1}. ${item}` : item;
+        return `<label class="checkitem"><input type="checkbox" ${checked} onchange="toggleCheck('${r.id}','${key}',${index},this.checked)"><span>${escapeHtml(label)}</span></label>`;
+      }).join('');
+    }
+    window.toggleCheck = function(id, key, index, checked) {
+      const entry = getEntry(id); entry[key] ||= [];
+      entry[key] = checked ? [...new Set([...entry[key], index])] : entry[key].filter(i => i !== index);
+      saveState();
+    }
+    function renderTimers(r) {
+      if (!r.timers || !r.timers.length) return '<p class="micro">Esta receta no tiene temporizadores claros.</p>';
+      return r.timers.map((t, i) => `<div class="timer-card" id="timer-${r.id}-${i}" data-seconds="${Number(t.minutes)*60}"><b>${escapeHtml(t.label)}</b><p class="micro">${escapeHtml(t.note || '')}</p><div class="timer-time">${formatSeconds(Number(t.minutes)*60)}</div><div class="timer-actions"><button class="btn small primary" type="button" onclick="startTimer('${r.id}',${i})">Iniciar</button><button class="btn small" type="button" onclick="resetTimer('${r.id}',${i})">Reiniciar</button></div></div>`).join('');
+    }
+    function formatSeconds(total) {
+      const seconds = Math.max(0, Math.floor(total));
+      const h = Math.floor(seconds/3600), m = Math.floor((seconds%3600)/60), s = seconds%60;
+      return h ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}` : `${m}:${String(s).padStart(2,'0')}`;
+    }
+    window.startTimer = function(id, index) {
+      const el = document.getElementById(`timer-${id}-${index}`); if (!el) return;
+      const key = `${id}-${index}`; clearInterval(timerHandles[key]);
+      let remaining = Number(el.dataset.remaining || el.dataset.seconds || 0);
+      el.dataset.remaining = remaining;
+      const out = el.querySelector('.timer-time');
+      timerHandles[key] = setInterval(() => {
+        remaining -= 1; el.dataset.remaining = remaining; out.textContent = formatSeconds(remaining);
+        if (remaining <= 0) { clearInterval(timerHandles[key]); showToast('Temporizador terminado'); }
+      }, 1000);
+    }
+    window.resetTimer = function(id, index) {
+      const el = document.getElementById(`timer-${id}-${index}`); if (!el) return;
+      const key = `${id}-${index}`; clearInterval(timerHandles[key]);
+      el.dataset.remaining = el.dataset.seconds; el.querySelector('.timer-time').textContent = formatSeconds(Number(el.dataset.seconds));
+    }
+    function stopAllTimers() { Object.values(timerHandles).forEach(clearInterval); timerHandles = {}; }
+    init();
   </script>
 </body>
 </html>
