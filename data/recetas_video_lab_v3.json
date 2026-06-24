@@ -263,5 +263,77 @@
     ],
     "difficulty": "Fácil",
     "menu_fit": "Sí, si encaja con la semana"
+  },
+  {
+    "id": "05",
+    "emoji": "🍓",
+    "title": "Tartitas infantiles de yogur, queso crema y frambuesas",
+    "short": "Postre o merienda infantil tipo mini cheesecake, con base de galleta y crema de yogur.",
+    "type": "Postre infantil / merienda",
+    "need": "Quiero una merienda infantil fácil",
+    "category": "Recetas infantiles",
+    "video": "assets/videos/05_tartitas_infantiles_yogur_frambuesas.mp4",
+    "thumb": "assets/thumbs/05_tartitas_infantiles_yogur_frambuesas.jpg",
+    "confidence": "Alta: receta añadida a partir del texto proporcionado por Iker y vinculada al vídeo local subido.",
+    "ingredients": [
+      "Galletas aptas para el niño o la niña.",
+      "1–2 cucharadas de leche, añadidas poco a poco.",
+      "Yogur natural.",
+      "Queso crema.",
+      "1 huevo.",
+      "Frambuesas frescas para poner por encima.",
+      "Molde pequeño apto para airfryer u horno."
+    ],
+    "steps": [
+      "Machaca las galletas con un tenedor o con la mano hasta que queden tipo arena.",
+      "Añade la leche poco a poco: empieza con 1 cucharada y añade una segunda solo si hace falta, hasta conseguir una pasta húmeda que se pueda compactar.",
+      "Pon la mezcla de galleta dentro del molde.",
+      "Presiona bien con una cuchara para formar una base compacta.",
+      "En un bol, mezcla el yogur, el queso crema y el huevo.",
+      "Remueve hasta que quede una crema homogénea, sin grumos grandes.",
+      "Vierte la crema encima de la base de galleta.",
+      "Precalienta la airfryer u horno durante 3 minutos a 170 °C.",
+      "Hornea a 160 °C durante 14 minutos.",
+      "Déjalas enfriar 15 minutos antes de sacarlas del molde.",
+      "Añade frambuesas frescas por encima justo antes de servir.",
+      "Sirve y disfruta."
+    ],
+    "seasoning": "No lleva sal ni especias. La fruta se añade al final, cuando las tartitas ya han enfriado. Si algún día quieres aromatizar, una pizca de canela o vainilla iría en la crema, antes de verterla sobre la base, pero en la versión infantil básica mejor dejarla simple.",
+    "when_use": "Como merienda o postre infantil ocasional, especialmente cuando quieres algo blando, sencillo y fácil de preparar en airfryer u horno.",
+    "when_not": "No usar si el niño o la niña no toma todavía huevo, lácteos, gluten/galleta o frutos rojos, o si hay alergias/intolerancias. Para menores de 12 meses conviene revisar ingredientes concretos y evitar galletas azucaradas o miel.",
+    "tips": [
+      "La clave de la base es añadir la leche poco a poco: si te pasas, quedará demasiado blanda.",
+      "Deja enfriar antes de desmoldar para que no se rompan.",
+      "Usa moldes pequeños de silicona si quieres que salgan porciones infantiles fáciles de manejar.",
+      "Para una versión menos dulce, usa yogur natural sin azúcar y galletas sencillas."
+    ],
+    "tags": [
+      "infantil",
+      "merienda",
+      "airfryer",
+      "yogur",
+      "frambuesas",
+      "postre"
+    ],
+    "version": "v3.2",
+    "timers": [
+      {
+        "label": "Precalentar",
+        "minutes": 3,
+        "note": "Airfryer u horno a 170 °C."
+      },
+      {
+        "label": "Horneado",
+        "minutes": 14,
+        "note": "A 160 °C."
+      },
+      {
+        "label": "Enfriado",
+        "minutes": 15,
+        "note": "Antes de sacar del molde."
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, como merienda/postre infantil ocasional"
   }
 ]

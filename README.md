@@ -1,6 +1,19 @@
-# Recetario Video Lab — Itu v3
+# Recetario Video Lab — Itu v3.2
 
-Repositorio local de recetas extraídas de vídeos, con fichas paso a paso, vídeos locales y modo cocinar.
+Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+
+## Qué cambia en v3.2
+
+- Incorporado el vídeo local subido para la receta infantil: `05_tartitas_infantiles_yogur_frambuesas.mp4`.
+- Enlazado el vídeo en `index.html`, JSON de datos, ficha Markdown y caché PWA/offline.
+- Actualizada la miniatura de la receta a partir del vídeo.
+
+## Qué cambia en v3.1
+
+- Añadida receta infantil: `Tartitas infantiles de yogur, queso crema y frambuesas`.
+- Añadido soporte para recetas sin vídeo local, evitando enlaces rotos.
+- Añadida miniatura propia para la receta manual.
+- Añadidos temporizadores de precalentado, horneado y enfriado.
 
 ## Qué cambia en v3
 
