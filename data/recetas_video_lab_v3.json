@@ -335,5 +335,82 @@
     ],
     "difficulty": "Fácil",
     "menu_fit": "Sí, como merienda/postre infantil ocasional"
+  },
+  {
+    "id": "06",
+    "emoji": "🥔",
+    "title": "Ensalada de patata con pollo, manzana verde y huevo",
+    "short": "Plato frío, cremoso, saciante y proteico, con manzana verde en lugar de pepino.",
+    "type": "Comida / cena fría",
+    "need": "Quiero una comida saciante y proteica",
+    "category": "Platos fríos y ensaladas completas",
+    "video": "assets/videos/06_ensalada_patata.mp4",
+    "thumb": "assets/thumbs/06_ensalada_patata.jpg",
+    "confidence": "Media: se distinguen bien los ingredientes principales y el proceso general del vídeo. La versión final sustituye el pepino original por manzana verde por preferencia de Iker. Las cantidades exactas no se leen completas, así que se indican de forma operativa.",
+    "ingredients": [
+      "Patatas cocidas.",
+      "Huevos cocidos.",
+      "Manzana verde cortada en dados pequeños, en sustitución del pepino del vídeo.",
+      "Pollo cocido desmenuzado o troceado.",
+      "Zanahoria cocida en trozos.",
+      "Yogur natural espeso o yogur griego natural.",
+      "1 cucharada de mostaza.",
+      "Un pequeño toque de mahonesa ligera.",
+      "Opcional: sal y pimienta al gusto."
+    ],
+    "steps": [
+      "Pon en un bol una base de yogur natural espeso o yogur griego.",
+      "Añade una cucharada de mostaza.",
+      "Añade un pequeño toque de mahonesa ligera.",
+      "Mezcla bien hasta obtener una salsa cremosa y uniforme.",
+      "Añade al bol las patatas cocidas.",
+      "Añade huevo cocido.",
+      "Añade manzana verde cortada en dados pequeños, mejor al final para que mantenga textura fresca y no se oxide demasiado.",
+      "Añade pollo cocido.",
+      "Añade también zanahoria cocida.",
+      "Mezcla o corta ligeramente dentro del bol para integrar los ingredientes con la salsa.",
+      "Ajusta la textura y remueve hasta que quede una ensalada cremosa.",
+      "Sirve y decora con huevo cocido por encima."
+    ],
+    "seasoning": "La mostaza y la mahonesa ligera se añaden al inicio, mezcladas con el yogur para formar la salsa. Si decides añadir sal o pimienta, hazlo también en ese momento, antes de incorporar la patata, el pollo, la zanahoria y la manzana verde.",
+    "when_use": "Como comida completa fría, cena saciante o plato de batch cooking para dejar hecho con antelación.",
+    "when_not": "No es la mejor opción si buscas una cena muy ligera o si el menú de ese día ya lleva bastante patata, huevo o salsas cremosas.",
+    "tips": [
+      "La manzana verde sustituye al pepino del vídeo: aporta frescor, un punto ácido y textura crujiente.",
+      "Añade la manzana en dados pequeños y mézclala al final para que mantenga mejor la textura.",
+      "Si quieres una textura más ligera, usa yogur natural alto en proteína o yogur griego ligero.",
+      "Puedes dejar algunos trozos grandes de patata o chafarlos un poco para que la salsa quede más integrada.",
+      "Se puede guardar en nevera y servir fría."
+    ],
+    "tags": [
+      "patata",
+      "pollo",
+      "huevo",
+      "manzana verde",
+      "ensalada",
+      "fría",
+      "proteica",
+      "batch cooking"
+    ],
+    "version": "v3.3",
+    "timers": [
+      {
+        "label": "Cocción de patatas",
+        "minutes": 20,
+        "note": "Tiempo orientativo, según tamaño y tipo de patata."
+      },
+      {
+        "label": "Cocción de huevos",
+        "minutes": 10,
+        "note": "Tiempo orientativo para huevo cocido."
+      },
+      {
+        "label": "Enfriado en nevera",
+        "minutes": 30,
+        "note": "Opcional, si quieres tomarla bien fría."
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana"
   }
 ]

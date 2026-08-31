@@ -1,6 +1,14 @@
-# Recetario Video Lab — Itu v3.2
+# Recetario Video Lab — Itu v3.3
 
 Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+
+## Qué cambia en v3.3
+
+- Añadida receta 06: `Ensalada de patata con pollo, manzana verde y huevo`.
+- Enlazado el vídeo local: `06_ensalada_patata.mp4`.
+- Añadida miniatura propia de la receta.
+- Actualizados datos, ficha Markdown y caché PWA/offline.
+- Adaptada la receta sustituyendo el pepino del vídeo por manzana verde.
 
 ## Qué cambia en v3.2
 
