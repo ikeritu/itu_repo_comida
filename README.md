@@ -1,6 +1,13 @@
-# Recetario Video Lab — Itu v3.3
+# Recetario Video Lab — Itu v3.4
 
 Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+
+## Qué cambia en v3.4
+
+- Añadida receta 07: `Minipizzas de garbanzos, cottage, jamón y queso`.
+- Receta extraída del vídeo adjunto y registrada en los datos del recetario.
+- Añadida ficha Markdown completa con temporizadores y modo cocinar.
+- Actualizada la caché PWA/offline a `recetario-video-lab-v3-4`.
 
 ## Qué cambia en v3.3
 

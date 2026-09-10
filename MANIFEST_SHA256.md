@@ -1,8 +1,8 @@
-# MANIFEST SHA256 — Recetario Video Lab v3.3
+# MANIFEST SHA256 — Recetario Video Lab v3.4
 
 | Archivo | SHA256 | Tamaño bytes |
 |---|---:|---:|
-| `README.md` | `f2417f326d08004e140e2b4e00e4ee679ce9d9475bcffdced43671796749cf48` | 2328 |
+| `README.md` | `f9fbb4a763c97cf399ecb4bf0495b0e7c82fda774db1e01bfd82be11acad87aa` | 2642 |
 | `assets/thumbs/01_contact_sheet.jpg` | `971946acd8d86cd3a9f860cc7e8532d2d504ea85d11ff535eecb79e32e301d65` | 382881 |
 | `assets/thumbs/02_contact_sheet.jpg` | `cb5b2182a4459cc46060c6392959e0728bfd0f38772f69227cb2eaf800ab6ec7` | 371770 |
 | `assets/thumbs/03_contact_sheet.jpg` | `edcaa6031442a223536598c2933fe840831eda73cd80d8a662aa3ff7ef3c171e` | 367811 |
@@ -16,8 +16,8 @@
 | `assets/videos/05_tartitas_infantiles_yogur_frambuesas.mp4` | `66b7ab0c2ca9d38857a863c1028684cc65cfba1a91cb8755176be48f92376fb2` | 2519513 |
 | `assets/videos/06_ensalada_patata.mp4` | `1c279fff36e202c21488ed246df592297ef3d162f847dc2341ea583c312cfc59` | 5065289 |
 | `data/recetas_video_lab_v2.json` | `1aea09040878b8b6e8bd5d7abbccc70d6eb28bdf6c68773184947a8146569c76` | 12518 |
-| `data/recetas_video_lab_v3.json` | `8831ab003107c2edb96cc66c1139a90925ec17d81666c35efce0df907bfc97f7` | 19642 |
-| `index.html` | `55de9c88012edee37e1aa6476cb33614c5e1c7b18899c2d7a905a7a6b74adbf9` | 48876 |
+| `data/recetas_video_lab_v3.json` | `8e7d0b2c8953f02de003f4985c48d87d8dece94ec96c073ea98c28bfa7ee47fe` | 25369 |
+| `index.html` | `e4d4501123e52533a9e6caa600da050abcc04d04df8bb358e6e8f7eab22fea4a` | 54106 |
 | `manifest.webmanifest` | `a4ebf6c7a6e1f7c18fccb812529849efa08af40ae6173c51176175670bba2be8` | 306 |
 | `recetas_md/01_cremoso__natillas_de_chocolate_proteico.md` | `332c5202d73b668a68816619ff22dee810ec9fac3c791ca3912baa4b26355a67` | 2775 |
 | `recetas_md/02_patatas_fritas_en_airfryer_con_pre-coccion_en_microondas.md` | `6d29f2f285659d216fdc88183e879c703a124c54b97ab4f1d95911eaf2407248` | 2510 |
@@ -25,6 +25,7 @@
 | `recetas_md/04_truco_para_que_el_guacamole_no_se_oxide.md` | `d63b118580a17fc7fed329b5a0de8a038ae6ee7dd3d2135c4f711473030b3c39` | 1745 |
 | `recetas_md/05_tartitas_infantiles_de_yogur_queso_crema_y_frambuesas.md` | `e95eb03022ae0771a3e68e006572f0fbfebf294c4ac7d1427920d77a40d6e2eb` | 2806 |
 | `recetas_md/06_ensalada_de_patata_con_pollo_manzana_verde_y_huevo.md` | `fe519158b6c05be4eedac972c4c98397d0fcbc560f564adceb47bf9eb6bb974c` | 3210 |
+| `recetas_md/07_minipizzas_de_garbanzos_cottage_jamon_y_queso.md` | `acd7ad4d9360405714b579da75729e27e0083e3f2cf9502958df21e2020e6bfd` | 3354 |
 | `run_local.bat` | `28324491bbf1cb24d7b3fb7af3439f7cc8d67882e3c4d33c5dafb1bd8e6a6738` | 76 |
 | `run_local.ps1` | `f4c07754520d74d3b99406070946b0b7467cf7f14c7db31706d20e6454a686be` | 91 |
-| `service-worker.js` | `3c5009bc060f02bc26a770588718fa32c0963725e43caf0f9187d10e6822c441` | 1201 |
+| `service-worker.js` | `6754477b4b1748c83296c6921ba16f9a3463a5d509b5c9d345daecf99d8f5ce4` | 1201 |

@@ -412,5 +412,79 @@
     ],
     "difficulty": "Fácil",
     "menu_fit": "Sí, si encaja con la semana"
+  },
+  {
+    "id": "07",
+    "emoji": "🍕",
+    "title": "Minipizzas de garbanzos, cottage, jamón y queso",
+    "short": "Minipizzas proteicas y saciantes con base de garbanzos, huevo y queso cottage.",
+    "type": "Cena / airfryer",
+    "need": "Quiero una cena saciante y proteica",
+    "category": "Cenas proteicas rápidas",
+    "video": "",
+    "thumb": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201280%20720%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff7ed%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fed7aa%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%221280%22%20height%3D%22720%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22260%22%20cy%3D%22230%22%20r%3D%22132%22%20fill%3D%22%23f59e0b%22%20opacity%3D%220.22%22/%3E%0A%20%20%3Ccircle%20cx%3D%221010%22%20cy%3D%22520%22%20r%3D%22180%22%20fill%3D%22%23d97706%22%20opacity%3D%220.16%22/%3E%0A%20%20%3Crect%20x%3D%22116%22%20y%3D%22104%22%20width%3D%221048%22%20height%3D%22512%22%20rx%3D%2248%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23d97706%22%20stroke-width%3D%228%22%20opacity%3D%220.94%22/%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22260%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%22104%22%20font-weight%3D%22900%22%3E%F0%9F%8D%95%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22378%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2258%22%20font-weight%3D%22900%22%20fill%3D%22%237c2d12%22%3EMinipizzas%20de%20garbanzos%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22456%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%2392400e%22%3Ecottage%20%C2%B7%20jam%C3%B3n%20cocido%20%C2%B7%20queso%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22530%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%236d645b%22%3ECena%20saciante%20y%20proteica%3C/text%3E%0A%3C/svg%3E",
+    "confidence": "Media-alta: en el vídeo se distinguen 150 g de garbanzos cocidos, huevo, 2 cucharadas de queso cottage, sal, formación de minibases, cocción 12 minutos a 190 ºC, tomate, queso rallado y jamón cocido. El segundo golpe de calor no muestra un tiempo exacto, así que se indica de forma orientativa.",
+    "ingredients": [
+      "150 g de garbanzos cocidos.",
+      "1 huevo.",
+      "2 cucharadas de queso cottage.",
+      "Sal.",
+      "Tomate o salsa de tomate para cubrir las bases.",
+      "Queso rallado.",
+      "Jamón cocido extra en lonchas.",
+      "Opcional: orégano u otras hierbas al gusto."
+    ],
+    "steps": [
+      "Pon 150 g de garbanzos cocidos en una picadora o procesador.",
+      "Añade el huevo.",
+      "Añade 2 cucharadas de queso cottage.",
+      "Añade sal en este momento, antes de triturar la base.",
+      "Tritura hasta conseguir una masa densa y manejable.",
+      "Coloca papel de horno en una bandeja o en la cubeta de la airfryer.",
+      "Forma minibases redondas con ayuda de una cuchara, intentando que queden de grosor parecido.",
+      "Cocina las bases 12 minutos a 190 ºC, en horno o airfryer, hasta que estén firmes y ligeramente doradas.",
+      "Saca las bases con cuidado.",
+      "Pon tomate o salsa de tomate sobre cada base.",
+      "Añade queso rallado.",
+      "Añade jamón cocido extra en trozos o lonchas pequeñas.",
+      "Termina con un poco más de queso rallado por encima.",
+      "Da otro golpe de calor hasta que el queso se funda y se gratine ligeramente. Como referencia, empieza revisando a los 3-5 minutos.",
+      "Sirve caliente."
+    ],
+    "seasoning": "La sal se añade a la mezcla de garbanzos, huevo y queso cottage antes de triturar, para que la base quede sazonada por dentro. Si usas orégano u otras hierbas, añádelas sobre el tomate y el queso antes del segundo golpe de calor, o al final al servir.",
+    "when_use": "Como cena rápida, saciante y proteica, especialmente cuando quieres algo tipo pizza sin hacer una masa tradicional.",
+    "when_not": "No es la mejor opción si ese día ya has metido muchas legumbres, queso o embutido cocido. Tampoco conviene si buscas una cena muy ligera.",
+    "tips": [
+      "Escurre bien los garbanzos para que la masa no quede demasiado líquida.",
+      "Haz las bases finas y similares entre sí para que se cocinen de forma uniforme.",
+      "Si la masa queda muy blanda, déjala reposar unos minutos antes de formar las bases.",
+      "El segundo golpe de calor es solo para fundir el queso y calentar el jamón; revisa pronto para que no se resequen.",
+      "Puedes variar el topping con atún, pavo, verduras muy finas o champiñones laminados."
+    ],
+    "tags": [
+      "garbanzos",
+      "cottage",
+      "huevo",
+      "pizza",
+      "jamón cocido",
+      "queso",
+      "airfryer",
+      "proteica"
+    ],
+    "version": "v3.4",
+    "timers": [
+      {
+        "label": "Cocción de minibases",
+        "minutes": 12,
+        "note": "A 190 ºC, hasta que estén firmes y ligeramente doradas."
+      },
+      {
+        "label": "Golpe final de calor",
+        "minutes": 4,
+        "note": "Orientativo: el vídeo no muestra tiempo exacto; busca queso fundido y algo gratinado."
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana"
   }
 ]
