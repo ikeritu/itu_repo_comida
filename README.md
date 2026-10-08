@@ -1,6 +1,13 @@
-# Recetario Video Lab — Itu v3.4
+# Recetario Video Lab — Itu v3.5
 
 Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+
+## Qué cambia en v3.5
+
+- Añadida receta 08: `Ensalada Big Mac de pasta y pollo`.
+- Añadida miniatura propia: `08_ensalada_big_mac_pasta_pollo.svg`.
+- Actualizados datos, ficha Markdown y caché PWA/offline.
+- La receta se ha extraído del vídeo subido; el vídeo local no se incluye en el repo.
 
 ## Qué cambia en v3.4
 
