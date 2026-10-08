@@ -1,8 +1,8 @@
-# MANIFEST SHA256 — Recetario Video Lab v3.5
+# MANIFEST SHA256 — Recetario Video Lab v3.6
 
 | Archivo | SHA256 | Tamaño bytes |
 |---|---:|---:|
-| `README.md` | `462967ca31aaf92bc3443663eb0ba8f55fc8e02f975fc4893d420ebef36d47c4` | 2942 |
+| `README.md` | `f655480676a847b3017ed0056e02cec2abcbcc249b409737527ee0b622fdc13f` | 2942 |
 | `assets/thumbs/01_contact_sheet.jpg` | `971946acd8d86cd3a9f860cc7e8532d2d504ea85d11ff535eecb79e32e301d65` | 382881 |
 | `assets/thumbs/02_contact_sheet.jpg` | `cb5b2182a4459cc46060c6392959e0728bfd0f38772f69227cb2eaf800ab6ec7` | 371770 |
 | `assets/thumbs/03_contact_sheet.jpg` | `edcaa6031442a223536598c2933fe840831eda73cd80d8a662aa3ff7ef3c171e` | 367811 |
@@ -18,7 +18,7 @@
 | `assets/videos/06_ensalada_patata.mp4` | `1c279fff36e202c21488ed246df592297ef3d162f847dc2341ea583c312cfc59` | 5065289 |
 | `data/recetas_video_lab_v2.json` | `1aea09040878b8b6e8bd5d7abbccc70d6eb28bdf6c68773184947a8146569c76` | 12518 |
 | `data/recetas_video_lab_v3.json` | `ad709cdfda1a39ec85e6417dfe2ec6c8fc752c087df365b1bcce1cb1a745b0a1` | 28922 |
-| `index.html` | `7227ee1b0f874d52a901ca4d9ff04166bd77a7a0a7ebf0d2a8d12684cfab2396` | 57141 |
+| `index.html` | `92e96543c1534c2b32744b84eb6486002a4499eb556f2cb6503916cbb36a9a0c` | 62698 |
 | `manifest.webmanifest` | `a4ebf6c7a6e1f7c18fccb812529849efa08af40ae6173c51176175670bba2be8` | 306 |
 | `recetas_md/01_cremoso__natillas_de_chocolate_proteico.md` | `332c5202d73b668a68816619ff22dee810ec9fac3c791ca3912baa4b26355a67` | 2775 |
 | `recetas_md/02_patatas_fritas_en_airfryer_con_pre-coccion_en_microondas.md` | `6d29f2f285659d216fdc88183e879c703a124c54b97ab4f1d95911eaf2407248` | 2510 |
@@ -30,4 +30,4 @@
 | `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `98868d91b656a0e8bbdc74b67e8ae29f381cd31be9f4bfeb836b40fe19f70310` | 3147 |
 | `run_local.bat` | `28324491bbf1cb24d7b3fb7af3439f7cc8d67882e3c4d33c5dafb1bd8e6a6738` | 76 |
 | `run_local.ps1` | `f4c07754520d74d3b99406070946b0b7467cf7f14c7db31706d20e6454a686be` | 91 |
-| `service-worker.js` | `e5f83d69ecab9fbbc429fe2bafd5c536aabec7904500b7ed51c16a7a672f0378` | 1258 |
+| `service-worker.js` | `bf53d49706b4addf72e3db4e7e7ddc69f8ab5efcd5b77db7568fa338416d3f7d` | 1258 |

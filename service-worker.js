@@ -1,4 +1,4 @@
-const CACHE_NAME = 'recetario-video-lab-v3-5';
+const CACHE_NAME = 'recetario-video-lab-v3-6';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './data/recetas_video_lab_v3.json',
