@@ -1,4 +1,4 @@
-# MANIFEST SHA256 — Recetario Video Lab v3.6
+# MANIFEST SHA256 — Recetario Video Lab v3.7
 
 | Archivo | SHA256 | Tamaño bytes |
 |---|---:|---:|
