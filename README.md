@@ -1,6 +1,11 @@
-# Recetario Video Lab — Itu v3.7
+# Recetario Video Lab — Itu v3.8
 
 Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+
+## Qué cambia en v3.8
+
+- Enlazado el vídeo local de la receta 08: `assets/videos/08_ensalada_big_mac_pasta_pollo.mp4`.
+- Actualizada la caché PWA para que el reproductor local detecte el nuevo vídeo.
 
 ## Qué cambia en v3.7
 

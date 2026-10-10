@@ -495,7 +495,7 @@
     "type": "Comida / cena fría",
     "need": "Quiero una comida saciante y proteica",
     "category": "Ensaladas completas y cenas proteicas",
-    "video": "",
+    "video": "assets/videos/08_ensalada_big_mac_pasta_pollo.mp4",
     "thumb": "assets/thumbs/08_ensalada_big_mac_pasta_pollo.svg",
     "confidence": "Media-alta: el vídeo muestra con claridad la salsa tipo Big Mac y la mayoría de ingredientes. No aparecen cantidades exactas para todos los ingredientes, así que se dejan de forma operativa.",
     "ingredients": [
@@ -548,7 +548,7 @@
       "proteica",
       "batch cooking"
     ],
-    "version": "v3.5",
+    "version": "v3.8",
     "timers": [
       {
         "label": "Cocción de pasta",

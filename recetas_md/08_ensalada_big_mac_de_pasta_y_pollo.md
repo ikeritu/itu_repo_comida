@@ -6,9 +6,9 @@ Ensalada fría tipo Big Mac, alta en proteína, con pasta, pollo, lechuga, pepin
 - **Necesidad:** Quiero una comida saciante y proteica
 - **Categoría:** Ensaladas completas y cenas proteicas
 - **Dificultad:** Fácil
-- **Vídeo local:** no incluido en el repo
+- **Vídeo local:** `assets/videos/08_ensalada_big_mac_pasta_pollo.mp4`
 - **Miniatura:** `assets/thumbs/08_ensalada_big_mac_pasta_pollo.svg`
-- **Versión:** v3.5
+- **Versión:** v3.8
 
 ## Confianza de extracción
 
