@@ -1,0 +1,28 @@
+name: Link recipe 08 video
+
+on:
+  push:
+    paths:
+      - '.github/workflows/link_recipe_08_video_20261011.yml'
+      - 'scripts/link_recipe_08_video_20261011.py'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run recipe 08 video linker
+        run: python scripts/link_recipe_08_video_20261011.py
+      - name: Commit recipe 08 video link and cleanup
+        run: |
+          rm -f scripts/link_recipe_08_video_20261011.py .github/workflows/link_recipe_08_video_20261011.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/recetas_video_lab_v3.json service-worker.js README.md MANIFEST_SHA256.md recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md scripts/link_recipe_08_video_20261011.py .github/workflows/link_recipe_08_video_20261011.yml
+          git commit -m "Link receta 08 video local"
+          git push
