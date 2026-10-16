@@ -3,7 +3,7 @@
 
 Plato frío, cremoso, saciante y proteico, con manzana verde en lugar de pepino.
 
-Categoría: Comidas · Ensaladas completas
+Categoría: Ensaladas · Ensaladas completas
 
 ## Ingredientes
 

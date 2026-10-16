@@ -3,7 +3,7 @@
 
 Ensalada fría tipo Big Mac, alta en proteína, con pasta, pollo, lechuga, pepinillos y salsa cremosa.
 
-Categoría: Comidas · Ensaladas completas
+Categoría: Ensaladas · Ensaladas completas
 
 ## Ingredientes
 

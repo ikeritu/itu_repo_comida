@@ -1,7 +1,7 @@
 (function (root) {
   "use strict";
   const categories = [
-    { id: "comidas", label: "Comidas", icon: "🥗" },
+    { id: "comidas", label: "Ensaladas", icon: "🥗" },
     { id: "cenas", label: "Cenas", icon: "🍽️" },
     { id: "postres", label: "Postres y meriendas", icon: "🍫" },
     { id: "guarniciones", label: "Guarniciones", icon: "🥔" },

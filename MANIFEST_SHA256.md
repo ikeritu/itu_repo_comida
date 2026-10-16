@@ -37,9 +37,9 @@ Huellas del contenido normalizado a LF para archivos de texto.
 | `data/recetas_video_lab_v3.json` | `d21405825800f030841d6cdd8b26b0d92bcfa302140977bb106ab31961ee587a` | 38392 |
 | `data/recipes.json` | `2daf980904e68f130a7263db28a0b1b32f7958ce35c86c35940cd1806f83d3e4` | 46912 |
 | `docs/VALIDACION_V4.md` | `151bb16558c7c3074e63c432cdfc0bb6ac00a2f91987393187d537d352ac89e3` | 6518 |
-| `index.html` | `8bb2551bbdc457aaad9896817c78701fc5f5c20a546b8d080b4d9945c0fe36ad` | 42942 |
+| `index.html` | `8eba6ee743806f982528922ed749907097e37e750204a0768f251d2c1c1ea8d0` | 42942 |
 | `js/app.js` | `c20f5add8b62fdfeaca4efd78d17e09cedef0bfc2a0a23b2591df10d5157b728` | 26342 |
-| `js/core.js` | `90c94732ccd0837d7464a7bc0b8003d1571d0290b95c8e10e306d867ec8848ba` | 2836 |
+| `js/core.js` | `cf811272f29ffdb09797c7afb3ea6d4fcd14836a312764ea8d08e63570f1a441` | 2838 |
 | `js/offline.js` | `300630f819851a15bd2f57d80b93721fc1450ab31d32dc7f8bf725cfa5b2c895` | 6148 |
 | `js/state.js` | `b3b6098c67c15fa0e61216c44847351ce739d6cd40a9d45a752319cef25def04` | 4462 |
 | `js/timers.js` | `8beb7d1eeb1d6fa82dbd4d6e2b31c80f1683196a1ec292a0661830ac7c0aa08d` | 2604 |
@@ -50,9 +50,9 @@ Huellas del contenido normalizado a LF para archivos de texto.
 | `recetas_md/03_trenza_de_pan_de_ajo_y_queso.md` | `4440e729d2f382d25c469ad96a2bb6dd99058f1add70c412704d2adc677de83e` | 2691 |
 | `recetas_md/04_truco_para_que_el_guacamole_no_se_oxide.md` | `222ff1ec934d00a0757740eca50d293b60fcee80cf7b0dcdc385912fa494b3df` | 1752 |
 | `recetas_md/05_tartitas_infantiles_de_yogur_queso_crema_y_frambuesas.md` | `eec07f3216953d7d512f81b2f7b6272a241e337f6581706e6d57c96cb28da676` | 2661 |
-| `recetas_md/06_ensalada_de_patata_con_pollo_manzana_verde_y_huevo.md` | `bbb535d0915029cf675bbad2a3ce8685fc75b564f6ef04bd6e4f478f6d8a453a` | 2841 |
+| `recetas_md/06_ensalada_de_patata_con_pollo_manzana_verde_y_huevo.md` | `cd30f3d6996d49e0d8b0cc7607957c9c5943b5626600da66de9daf40c87dc224` | 2843 |
 | `recetas_md/07_minipizzas_de_garbanzos_cottage_jamon_y_queso.md` | `46e2e5f418d9d55f6f46fe6992cc1743ace1e8bc7ad5502e0eeca10178667ab0` | 3003 |
-| `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `9c29aac9c7863b5b6c705e9070c6ee48209d656240b64df32273c9ef1f11ef09` | 2778 |
+| `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `4b2d76070e8275304247e614f866680399e9ced6352f5057c804521d5741a1aa` | 2780 |
 | `run_local.bat` | `c18f7e56bb8057bf7c21e1db46d5fb0228f3ca8abac5d0affd34f9de7c09cd83` | 100 |
 | `run_local.ps1` | `ef67f0e4b396bca036446f9b2f650638d7284aac498df4d28fe74dd4c81ee8fb` | 141 |
 | `scripts/build.cjs` | `43b562742f61176a3da6a8c1c3c0849f544954be1865a11e7930db5c44dd7111` | 6589 |
@@ -61,7 +61,7 @@ Huellas del contenido normalizado a LF para archivos de texto.
 | `scripts/migrate-content.cjs` | `3b03d296ee237dc2a86a9af6b9993b8ef09d7c1089581c2fac4fc5a38b1b73f6` | 1974 |
 | `scripts/prepare-upgrade-test.cjs` | `a66e5c3b53f64100b31cc651573e32a3fee5c18620243ebc0c1f0b19daeaac8b` | 778 |
 | `scripts/serve.cjs` | `67519b56116bab813f306f197c7fe119b708789d693467b01eabd1ff14815677` | 2437 |
-| `service-worker.js` | `3be0d5559480a2085cc02c8c7d5350a7ce9841c5ab4839965b7c56c8d2bb60f5` | 3629 |
+| `service-worker.js` | `6870a8e8693b5338783d97438f39ea32bf50d6f0dbb73391e2914b1f9ff6314b` | 3629 |
 | `templates/index.html` | `9b7878b740876c6fb39d1e3cba03415de61380afd25105f2c8500b69f0b069b5` | 7529 |
 | `templates/service-worker.js` | `c07c93f31795a24963a646170cf35fcd845e687d357c48e227db2f1e23b0210d` | 2512 |
 | `tests/content.test.cjs` | `f64425d902d4c27a1d9f318b3f73e734d285204ae55666877c4aa656a0e4954d` | 1000 |
