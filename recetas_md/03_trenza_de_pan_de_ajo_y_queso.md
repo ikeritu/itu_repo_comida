@@ -1,14 +1,12 @@
+<!-- Generado desde data/recipes.json. -->
 # 🧄 Trenza de pan de ajo y queso
 
-**Tipo:** Cena informal / entrante
-**Necesidad:** Quiero una cena informal contundente
-**Vídeo local:** `assets/videos/03_trenza_pan_ajo_queso.mp4`
-**Confianza de extracción:** Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.
-
-## Objetivo
 Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.
 
-## Ingredientes / material
+Categoría: Cenas · Informales y entrantes
+
+## Ingredientes
+
 - Masa rectangular tipo hojaldre, pizza o pan.
 - Dientes de ajo pelados.
 - Aceite de oliva para confitar o dorar los ajos.
@@ -20,7 +18,8 @@ Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.
 - Pimienta.
 - Opcional: orégano.
 
-## Paso a paso
+## Preparación
+
 1. Pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva.
 2. Cocina los ajos hasta que estén tiernos y dorados, sin quemarlos.
 3. Pasa los ajos a un bol y machácalos.
@@ -38,19 +37,30 @@ Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.
 15. Hornea hasta que la masa esté dorada y el queso fundido. Referencia útil: 190 ºC durante 20–25 minutos, revisando desde el minuto 18.
 16. Deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe.
 
-## Cuándo añadir especias o sazonadores
+## Sazonadores
+
 La sal, pimienta y orégano se añaden dentro de la pasta de ajo, mantequilla y perejil, antes de untar la trenza. Así el sabor queda repartido.
 
-## Cuándo usarla
-Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.
+## Temporizadores
 
-## Cuándo NO usarla
-No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.
+- Horno orientativo: 22 min. Referencia operativa: hornear hasta dorar y queso fundido.
 
 ## Consejos
+
 - Acompáñala con ensalada para compensar.
 - No quemes los ajos: ajo quemado = amargor.
 - Si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado.
 
-## Etiquetas
-#ajo, #queso, #horno, #pan, #vegetariana
+## Origen y límites
+
+Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.
+
+## Cuándo usarla
+
+Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.
+
+## Cuándo no usarla
+
+No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.
+
+Vídeo: ../assets/videos/03_trenza_pan_ajo_queso.mp4

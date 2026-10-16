@@ -8,7 +8,7 @@
     "need": "Quiero algo dulce/proteico",
     "category": "Postres y meriendas",
     "video": "assets/videos/01_cremoso_chocolate_proteico.mp4",
-    "thumb": "assets/thumbs/01_contact_sheet.jpg",
+    "thumb": "assets/thumbs/01_preview.webp",
     "confidence": "Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.",
     "ingredients": [
       "3 hojas de gelatina.",
@@ -58,16 +58,73 @@
       {
         "label": "Gelatina hidratando",
         "minutes": 5,
-        "note": "Tiempo orientativo hasta que las hojas estén blandas."
+        "note": "Tiempo orientativo hasta que las hojas estén blandas.",
+        "id": "reloj-1"
       },
       {
         "label": "Nevera para cuajar",
         "minutes": 480,
-        "note": "Mínimo una noche; si usas menos, revisa textura."
+        "note": "Mínimo una noche; si usas menos, revisa textura.",
+        "id": "reloj-2"
       }
     ],
     "difficulty": "Media",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "postres",
+    "subcategory": "Postres proteicos",
+    "facets": [
+      "dulce",
+      "frio"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo",
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 15192426,
+    "videoRevision": "ff310915e69c85fb"
   },
   {
     "id": "02",
@@ -78,7 +135,7 @@
     "need": "Quiero una guarnición rápida",
     "category": "Guarniciones rápidas",
     "video": "assets/videos/02_patatas_fritas_airfryer.mp4",
-    "thumb": "assets/thumbs/02_contact_sheet.jpg",
+    "thumb": "assets/thumbs/02_preview.webp",
     "confidence": "Alta en el método general. Tiempos principales visibles: microondas 6 min a 800 W; airfryer unos 15 min a 185–190 ºC; último toque corto de dorado.",
     "ingredients": [
       "Patatas.",
@@ -126,21 +183,76 @@
       {
         "label": "Microondas",
         "minutes": 6,
-        "note": "800 W, bol cubierto con film apto."
+        "note": "800 W, bol cubierto con film apto.",
+        "id": "reloj-1"
       },
       {
         "label": "Airfryer base",
         "minutes": 15,
-        "note": "185–190 ºC; revisar y remover al acabar."
+        "note": "185–190 ºC; revisar y remover al acabar.",
+        "id": "reloj-2"
       },
       {
         "label": "Último dorado",
         "minutes": 5,
-        "note": "Idealmente a 200 ºC o misma temperatura si ya dora rápido."
+        "note": "Idealmente a 200 ºC o misma temperatura si ya dora rápido.",
+        "id": "reloj-3"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "guarniciones",
+    "subcategory": "Airfryer",
+    "facets": [
+      "rapido"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15",
+        "paso-16"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Microondas",
+      "Airfryer"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 10341654,
+    "videoRevision": "a4ef78e0c4ce5ca4"
   },
   {
     "id": "03",
@@ -151,7 +263,7 @@
     "need": "Quiero una cena informal contundente",
     "category": "Cenas informales y entrantes",
     "video": "assets/videos/03_trenza_pan_ajo_queso.mp4",
-    "thumb": "assets/thumbs/03_contact_sheet.jpg",
+    "thumb": "assets/thumbs/03_preview.webp",
     "confidence": "Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.",
     "ingredients": [
       "Masa rectangular tipo hojaldre, pizza o pan.",
@@ -203,11 +315,67 @@
       {
         "label": "Horno orientativo",
         "minutes": 22,
-        "note": "Referencia operativa: hornear hasta dorar y queso fundido."
+        "note": "Referencia operativa: hornear hasta dorar y queso fundido.",
+        "id": "reloj-1"
       }
     ],
     "difficulty": "Media",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "cenas",
+    "subcategory": "Informales y entrantes",
+    "facets": [
+      "compartir"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15",
+        "paso-16"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 3852481,
+    "videoRevision": "09001830406252f8"
   },
   {
     "id": "04",
@@ -218,7 +386,7 @@
     "need": "Quiero conservar guacamole",
     "category": "Técnicas y trucos",
     "video": "assets/videos/04_guacamole_no_oxida.mp4",
-    "thumb": "assets/thumbs/04_contact_sheet.jpg",
+    "thumb": "assets/thumbs/04_preview.webp",
     "confidence": "Alta: el truco se explica y se ve con claridad en el vídeo.",
     "ingredients": [
       "Guacamole o aguacate machacado.",
@@ -258,11 +426,55 @@
       {
         "label": "Revisión nevera",
         "minutes": 1440,
-        "note": "Comprueba al día siguiente que el papel sigue húmedo y en contacto."
+        "note": "Comprueba al día siguiente que el papel sigue húmedo y en contacto.",
+        "id": "reloj-1"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "tecnicas",
+    "subcategory": "Conservación",
+    "facets": [
+      "conservar"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 3944271,
+    "videoRevision": "5f9902eb5e7d1d26"
   },
   {
     "id": "05",
@@ -273,7 +485,7 @@
     "need": "Quiero una merienda infantil fácil",
     "category": "Recetas infantiles",
     "video": "assets/videos/05_tartitas_infantiles_yogur_frambuesas.mp4",
-    "thumb": "assets/thumbs/05_tartitas_infantiles_yogur_frambuesas.jpg",
+    "thumb": "assets/thumbs/05_preview.webp",
     "confidence": "Alta: receta añadida a partir del texto proporcionado por Iker y vinculada al vídeo local subido.",
     "ingredients": [
       "Galletas aptas para el niño o la niña.",
@@ -320,21 +532,73 @@
       {
         "label": "Precalentar",
         "minutes": 3,
-        "note": "Airfryer u horno a 170 °C."
+        "note": "Airfryer u horno a 170 °C.",
+        "id": "reloj-1"
       },
       {
         "label": "Horneado",
         "minutes": 14,
-        "note": "A 160 °C."
+        "note": "A 160 °C.",
+        "id": "reloj-2"
       },
       {
         "label": "Enfriado",
         "minutes": 15,
-        "note": "Antes de sacar del molde."
+        "note": "Antes de sacar del molde.",
+        "id": "reloj-3"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, como merienda/postre infantil ocasional"
+    "menu_fit": "Sí, como merienda/postre infantil ocasional",
+    "categoryId": "postres",
+    "subcategory": "Infantil",
+    "facets": [
+      "dulce",
+      "infantil"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Airfryer u horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 2519513,
+    "videoRevision": "66b7ab0c2ca9d388"
   },
   {
     "id": "06",
@@ -345,7 +609,7 @@
     "need": "Quiero una comida saciante y proteica",
     "category": "Platos fríos y ensaladas completas",
     "video": "assets/videos/06_ensalada_patata.mp4",
-    "thumb": "assets/thumbs/06_ensalada_patata.jpg",
+    "thumb": "assets/thumbs/06_preview.webp",
     "confidence": "Media: se distinguen bien los ingredientes principales y el proceso general del vídeo. La versión final sustituye el pepino original por manzana verde por preferencia de Iker. Las cantidades exactas no se leen completas, así que se indican de forma operativa.",
     "ingredients": [
       "Patatas cocidas.",
@@ -397,21 +661,77 @@
       {
         "label": "Cocción de patatas",
         "minutes": 20,
-        "note": "Tiempo orientativo, según tamaño y tipo de patata."
+        "note": "Tiempo orientativo, según tamaño y tipo de patata.",
+        "id": "reloj-1"
       },
       {
         "label": "Cocción de huevos",
         "minutes": 10,
-        "note": "Tiempo orientativo para huevo cocido."
+        "note": "Tiempo orientativo para huevo cocido.",
+        "id": "reloj-2"
       },
       {
         "label": "Enfriado en nevera",
         "minutes": 30,
-        "note": "Opcional, si quieres tomarla bien fría."
+        "note": "Opcional, si quieres tomarla bien fría.",
+        "id": "reloj-3"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "comidas",
+    "subcategory": "Ensaladas completas",
+    "facets": [
+      "frio",
+      "cena",
+      "batch"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo",
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 5065289,
+    "videoRevision": "1c279fff36e202c2"
   },
   {
     "id": "07",
@@ -476,16 +796,71 @@
       {
         "label": "Cocción de minibases",
         "minutes": 12,
-        "note": "A 190 ºC, hasta que estén firmes y ligeramente doradas."
+        "note": "A 190 ºC, hasta que estén firmes y ligeramente doradas.",
+        "id": "reloj-1"
       },
       {
         "label": "Golpe final de calor",
         "minutes": 4,
-        "note": "Orientativo: el vídeo no muestra tiempo exacto; busca queso fundido y algo gratinado."
+        "note": "Orientativo: el vídeo no muestra tiempo exacto; busca queso fundido y algo gratinado.",
+        "id": "reloj-2"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "cenas",
+    "subcategory": "Proteicas rápidas",
+    "facets": [
+      "cena",
+      "rapido"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Procesador",
+      "Airfryer u horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 0
   },
   {
     "id": "08",
@@ -496,7 +871,7 @@
     "need": "Quiero una comida saciante y proteica",
     "category": "Ensaladas completas y cenas proteicas",
     "video": "assets/videos/08_ensalada_big_mac_pasta_pollo.mp4",
-    "thumb": "assets/thumbs/08_ensalada_big_mac_pasta_pollo.svg",
+    "thumb": "assets/thumbs/08_preview.webp",
     "confidence": "Media-alta: el vídeo muestra con claridad la salsa tipo Big Mac y la mayoría de ingredientes. No aparecen cantidades exactas para todos los ingredientes, así que se dejan de forma operativa.",
     "ingredients": [
       "Yogur griego natural.",
@@ -553,15 +928,73 @@
       {
         "label": "Cocción de pasta",
         "minutes": 10,
-        "note": "Tiempo orientativo: sigue el paquete y deja la pasta al dente."
+        "note": "Tiempo orientativo: sigue el paquete y deja la pasta al dente.",
+        "id": "reloj-1"
       },
       {
         "label": "Reposo en nevera",
         "minutes": 20,
-        "note": "Opcional, para tomarla más fría y asentada."
+        "note": "Opcional, para tomarla más fría y asentada.",
+        "id": "reloj-2"
       }
     ],
     "difficulty": "Fácil",
-    "menu_fit": "Sí, si encaja con la semana"
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "comidas",
+    "subcategory": "Ensaladas completas",
+    "facets": [
+      "frio",
+      "cena",
+      "batch"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10",
+        "ing-11",
+        "ing-12"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 5106019,
+    "videoRevision": "c3c8437d8d3ea93c"
   }
 ]

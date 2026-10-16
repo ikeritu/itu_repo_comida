@@ -1,15 +1,30 @@
-# MANIFEST SHA256 — Recetario Video Lab v3.8
+# MANIFEST SHA256 — Recetario v4
+
+Huellas del contenido normalizado a LF para archivos de texto.
 
 | Archivo | SHA256 | Tamaño bytes |
-|---|---:|---:|
-| `README.md` | `7b9da48483be762627f4ffbe6a3253b2ffbd754899db943827aae647c73ef803` | 3147 |
+|---|---|---:|
+| `.gitattributes` | `1e2d8295621da256f2a4c8e2690d89e649de441fa7954418619bcd036f1e81e4` | 58 |
+| `.github/workflows/checks.yml` | `5875b30fad1f7678b16c0795301258f4e6d58ea78a53f5a053a6683f816b6fb3` | 418 |
+| `.gitignore` | `20979ae7039e2963dbcade15c7b6433dd174485c2cc81a987385aaa5e4ec1455` | 38 |
+| `README.md` | `fb4df42436e9882da1da803e85d8acc71439c48c5f190edcccf53d2ae193b643` | 4331 |
+| `assets/icons/icon-192.png` | `d019223063f589d98a4063ffd2c1d0fa7ae796111886366c3de6853acdd83373` | 5915 |
+| `assets/icons/icon-512.png` | `b6dfd67bc0b2f3e5d61805a0e6b122931978617e95ddb81b09913d7b86549245` | 15865 |
+| `assets/icons/maskable-512.png` | `b6dfd67bc0b2f3e5d61805a0e6b122931978617e95ddb81b09913d7b86549245` | 15865 |
 | `assets/thumbs/01_contact_sheet.jpg` | `971946acd8d86cd3a9f860cc7e8532d2d504ea85d11ff535eecb79e32e301d65` | 382881 |
+| `assets/thumbs/01_preview.webp` | `20a2496b004603250dfdb0d67dffbd18e138d7e99230d4dd5b800cfbdcaaa36d` | 25134 |
 | `assets/thumbs/02_contact_sheet.jpg` | `cb5b2182a4459cc46060c6392959e0728bfd0f38772f69227cb2eaf800ab6ec7` | 371770 |
+| `assets/thumbs/02_preview.webp` | `81080f9f7c6a50b5e694b4fc1544352912040e45b037a7a5ff4a6fc2b7dac011` | 15242 |
 | `assets/thumbs/03_contact_sheet.jpg` | `edcaa6031442a223536598c2933fe840831eda73cd80d8a662aa3ff7ef3c171e` | 367811 |
+| `assets/thumbs/03_preview.webp` | `7da81e9d436724a572ec770cb2bb338cc130f7cbc382ca581cfccfa89e6e5c12` | 22056 |
 | `assets/thumbs/04_contact_sheet.jpg` | `dd214755afe276a5e3d2a2e787e711110a8e346c96c3baeef5424680b4832f30` | 448453 |
+| `assets/thumbs/04_preview.webp` | `47636c90acdbc97df5f9747d59f900f7f7905646c25cc5e757ab41092fc431e2` | 25032 |
+| `assets/thumbs/05_preview.webp` | `778f2a630cad2bd614fa88009d0d6a2ad1efc0097f9023ac25791eed40090c8e` | 6650 |
 | `assets/thumbs/05_tartitas_infantiles_yogur_frambuesas.jpg` | `9ac99bf8d35f9b480de92bd27cbb0f73544e7c8b7b600459a532f538ec7de15e` | 15650 |
 | `assets/thumbs/06_ensalada_patata.jpg` | `18b27996581017ec4f086d899ea1cdfe40689fbb58dbf9f954c84d69bee62824` | 96024 |
+| `assets/thumbs/06_preview.webp` | `fc92a0a373e50acd6b05692f82a2e38e41395a4bc4fbaf04bf24bba308765cda` | 37258 |
 | `assets/thumbs/08_ensalada_big_mac_pasta_pollo.svg` | `bd3076c1f008edb5345ac5758f9a449f5e4eda219dfba872e32a0e9d7b1e9d55` | 1335 |
+| `assets/thumbs/08_preview.webp` | `33eec510efa0309f5369a20d6c78a6da5df5cb7b132f77f2bc638107d960f741` | 35738 |
 | `assets/videos/01_cremoso_chocolate_proteico.mp4` | `ff310915e69c85fba5d6ac9e4a08ac8eb572d48829910e5fb2d7bbb493228abe` | 15192426 |
 | `assets/videos/02_patatas_fritas_airfryer.mp4` | `a4ef78e0c4ce5ca4bf73be98db59362c9018f9002e0eb15dd5d448380f212d3b` | 10341654 |
 | `assets/videos/03_trenza_pan_ajo_queso.mp4` | `09001830406252f8bb72eee6c1a27ba19c22a3aae7360574a6aeaf10af2f3efb` | 3852481 |
@@ -17,18 +32,39 @@
 | `assets/videos/05_tartitas_infantiles_yogur_frambuesas.mp4` | `66b7ab0c2ca9d38857a863c1028684cc65cfba1a91cb8755176be48f92376fb2` | 2519513 |
 | `assets/videos/06_ensalada_patata.mp4` | `1c279fff36e202c21488ed246df592297ef3d162f847dc2341ea583c312cfc59` | 5065289 |
 | `assets/videos/08_ensalada_big_mac_pasta_pollo.mp4` | `c3c8437d8d3ea93cb94f640512b368b1bef6325697cbeca6b9676bae4b8d1ac2` | 5106019 |
+| `css/app.css` | `fe99d01efb147804e910bdf4f3695040a1a7bad251c606cfd1c33f22028cc4f8` | 13090 |
 | `data/recetas_video_lab_v2.json` | `1aea09040878b8b6e8bd5d7abbccc70d6eb28bdf6c68773184947a8146569c76` | 12518 |
-| `data/recetas_video_lab_v3.json` | `31ae1f49f4ecafeec16f9dc60d2fa7141243ffd2e9a9b4ff196493b732ad90ce` | 28971 |
-| `index.html` | `c63286840a70832f0f4d66f29e72be7f7b2bfc48660276cf5b744e8e95f04c35` | 65594 |
-| `manifest.webmanifest` | `a4ebf6c7a6e1f7c18fccb812529849efa08af40ae6173c51176175670bba2be8` | 306 |
-| `recetas_md/01_cremoso__natillas_de_chocolate_proteico.md` | `332c5202d73b668a68816619ff22dee810ec9fac3c791ca3912baa4b26355a67` | 2775 |
-| `recetas_md/02_patatas_fritas_en_airfryer_con_pre-coccion_en_microondas.md` | `6d29f2f285659d216fdc88183e879c703a124c54b97ab4f1d95911eaf2407248` | 2510 |
-| `recetas_md/03_trenza_de_pan_de_ajo_y_queso.md` | `7aaa4eb0f962f477d1a34c97ad9e78431f95bdb62109d33173aa205aad995b0f` | 2696 |
-| `recetas_md/04_truco_para_que_el_guacamole_no_se_oxide.md` | `d63b118580a17fc7fed329b5a0de8a038ae6ee7dd3d2135c4f711473030b3c39` | 1745 |
-| `recetas_md/05_tartitas_infantiles_de_yogur_queso_crema_y_frambuesas.md` | `e95eb03022ae0771a3e68e006572f0fbfebf294c4ac7d1427920d77a40d6e2eb` | 2806 |
-| `recetas_md/06_ensalada_de_patata_con_pollo_manzana_verde_y_huevo.md` | `fe519158b6c05be4eedac972c4c98397d0fcbc560f564adceb47bf9eb6bb974c` | 3210 |
-| `recetas_md/07_minipizzas_de_garbanzos_cottage_jamon_y_queso.md` | `acd7ad4d9360405714b579da75729e27e0083e3f2cf9502958df21e2020e6bfd` | 3354 |
-| `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `0ca21049622491f45b20ed7dfb6e7afa05a0956652dcfa303346c8dbd306ff86` | 3176 |
-| `run_local.bat` | `28324491bbf1cb24d7b3fb7af3439f7cc8d67882e3c4d33c5dafb1bd8e6a6738` | 76 |
-| `run_local.ps1` | `f4c07754520d74d3b99406070946b0b7467cf7f14c7db31706d20e6454a686be` | 91 |
-| `service-worker.js` | `9aece16e6af5902c4c853cf8255bb6e62b8192b637e9d62797d8ba6ae09cef45` | 1313 |
+| `data/recetas_video_lab_v3.json` | `d21405825800f030841d6cdd8b26b0d92bcfa302140977bb106ab31961ee587a` | 38392 |
+| `data/recipes.json` | `2daf980904e68f130a7263db28a0b1b32f7958ce35c86c35940cd1806f83d3e4` | 46912 |
+| `docs/VALIDACION_V4.md` | `151bb16558c7c3074e63c432cdfc0bb6ac00a2f91987393187d537d352ac89e3` | 6518 |
+| `index.html` | `8bb2551bbdc457aaad9896817c78701fc5f5c20a546b8d080b4d9945c0fe36ad` | 42942 |
+| `js/app.js` | `c20f5add8b62fdfeaca4efd78d17e09cedef0bfc2a0a23b2591df10d5157b728` | 26342 |
+| `js/core.js` | `90c94732ccd0837d7464a7bc0b8003d1571d0290b95c8e10e306d867ec8848ba` | 2836 |
+| `js/offline.js` | `300630f819851a15bd2f57d80b93721fc1450ab31d32dc7f8bf725cfa5b2c895` | 6148 |
+| `js/state.js` | `b3b6098c67c15fa0e61216c44847351ce739d6cd40a9d45a752319cef25def04` | 4462 |
+| `js/timers.js` | `8beb7d1eeb1d6fa82dbd4d6e2b31c80f1683196a1ec292a0661830ac7c0aa08d` | 2604 |
+| `manifest.webmanifest` | `f263b297fdd1867349489678d77120b7563efb09840ed26f4fd30da7b0df2620` | 619 |
+| `package.json` | `11fa9d9dcec5cfaf1dcdbde4e327f097a7dff46bc07d5fe0717bf57d8bb3fb30` | 261 |
+| `recetas_md/01_cremoso__natillas_de_chocolate_proteico.md` | `58cd17e5bc0ef7568aac7d751a837c47737fee9737ef2a5f4b464ff330c7aba7` | 2863 |
+| `recetas_md/02_patatas_fritas_en_airfryer_con_pre-coccion_en_microondas.md` | `ea9b625d5af832f114330dc84749964a995b0b00f7fc98c2184e08713a37eaf8` | 2625 |
+| `recetas_md/03_trenza_de_pan_de_ajo_y_queso.md` | `4440e729d2f382d25c469ad96a2bb6dd99058f1add70c412704d2adc677de83e` | 2691 |
+| `recetas_md/04_truco_para_que_el_guacamole_no_se_oxide.md` | `222ff1ec934d00a0757740eca50d293b60fcee80cf7b0dcdc385912fa494b3df` | 1752 |
+| `recetas_md/05_tartitas_infantiles_de_yogur_queso_crema_y_frambuesas.md` | `eec07f3216953d7d512f81b2f7b6272a241e337f6581706e6d57c96cb28da676` | 2661 |
+| `recetas_md/06_ensalada_de_patata_con_pollo_manzana_verde_y_huevo.md` | `bbb535d0915029cf675bbad2a3ce8685fc75b564f6ef04bd6e4f478f6d8a453a` | 2841 |
+| `recetas_md/07_minipizzas_de_garbanzos_cottage_jamon_y_queso.md` | `46e2e5f418d9d55f6f46fe6992cc1743ace1e8bc7ad5502e0eeca10178667ab0` | 3003 |
+| `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `9c29aac9c7863b5b6c705e9070c6ee48209d656240b64df32273c9ef1f11ef09` | 2778 |
+| `run_local.bat` | `c18f7e56bb8057bf7c21e1db46d5fb0228f3ca8abac5d0affd34f9de7c09cd83` | 100 |
+| `run_local.ps1` | `ef67f0e4b396bca036446f9b2f650638d7284aac498df4d28fe74dd4c81ee8fb` | 141 |
+| `scripts/build.cjs` | `4336ecd657e7a624fd470fab218d6a3183fc35810dca3afb7514acb3743c2a53` | 6408 |
+| `scripts/make-icons.py` | `74a9e23ff33a45cd83fcf2910c1cd1f9dd8c2f70894707da0b24f60e2fd202bd` | 775 |
+| `scripts/make-thumbs.cjs` | `8175a389efea553db8a6298312efda7edd27fcc0e5dc84de26b52e524efb5529` | 1245 |
+| `scripts/migrate-content.cjs` | `3b03d296ee237dc2a86a9af6b9993b8ef09d7c1089581c2fac4fc5a38b1b73f6` | 1974 |
+| `scripts/prepare-upgrade-test.cjs` | `a66e5c3b53f64100b31cc651573e32a3fee5c18620243ebc0c1f0b19daeaac8b` | 778 |
+| `scripts/serve.cjs` | `67519b56116bab813f306f197c7fe119b708789d693467b01eabd1ff14815677` | 2437 |
+| `service-worker.js` | `3be0d5559480a2085cc02c8c7d5350a7ce9841c5ab4839965b7c56c8d2bb60f5` | 3629 |
+| `templates/index.html` | `9b7878b740876c6fb39d1e3cba03415de61380afd25105f2c8500b69f0b069b5` | 7529 |
+| `templates/service-worker.js` | `c07c93f31795a24963a646170cf35fcd845e687d357c48e227db2f1e23b0210d` | 2512 |
+| `tests/content.test.cjs` | `f64425d902d4c27a1d9f318b3f73e734d285204ae55666877c4aa656a0e4954d` | 1000 |
+| `tests/core.test.cjs` | `3471cafc779c70dc6f618a942cb10073d25ae03fbe5fe03c6609f245a74d6951` | 3899 |
+| `tests/timers.test.cjs` | `c83ca789cd7a14f04f28fe007c1710a2056acdb9f38283721552572d9b37c94e` | 1983 |
+| `tests/worker.test.cjs` | `2a72699471296414134d6e6f024a37c91d25b73daaeb46390560516cf1cff486` | 3653 |

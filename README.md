@@ -1,81 +1,59 @@
-# Recetario Video Lab — Itu v3.8
+# Recetario de Itu — v4
 
-Repositorio local de recetas extraídas de vídeos y añadidas manualmente, con fichas paso a paso, vídeos locales cuando existen y modo cocinar.
+Web estática para elegir recetas, guardar favoritas y cocinar paso a paso. Conserva los enlaces `#receta-01` a `#receta-08`.
 
-## Qué cambia en v3.8
+## Uso
 
-- Enlazado el vídeo local de la receta 08: `assets/videos/08_ensalada_big_mac_pasta_pollo.mp4`.
-- Actualizada la caché PWA para que el reproductor local detecte el nuevo vídeo.
+- Busca por nombre o ingrediente; combina categoría, necesidad, favoritas y progreso.
+- Abre una receta y entra en «Cocinar paso a paso» para marcar ingredientes y pasos.
+- Los temporizadores siguen contando al cerrar el diálogo y se recuperan al volver o recargar. Con la aplicación cerrada o el dispositivo suspendido no se garantiza una alarma. El sonido es opcional.
+- El progreso se guarda en este navegador, sin cuenta ni sincronización remota. Ajustes permite exportarlo e importarlo con confirmación.
+- Una nueva versión ofrece «Actualizar ahora / Más tarde». La interfaz esencial se guarda sin descargar todos los vídeos.
+- Cada vídeo se descarga por separado, mostrando su tamaño y estado. Se puede cancelar, reintentar y eliminar sin borrar la receta. El navegador puede liberar almacenamiento: comprueba el estado antes de desconectarte.
 
-## Qué cambia en v3.7
+## Abrir y desarrollar
 
-- Añadida receta 08: `Ensalada Big Mac de pasta y pollo`.
-- Añadida miniatura propia: `08_ensalada_big_mac_pasta_pollo.svg`.
-- Actualizados datos, ficha Markdown y caché PWA/offline.
-- La receta se ha extraído del vídeo subido; el vídeo local no se incluye en el repo.
+Abrir `index.html` directamente permite consultar y cocinar con los archivos locales. Para PWA y descargas usa HTTPS o un servidor local:
 
-## Qué cambia en v3.4
+```text
+node scripts/serve.cjs
+```
 
-- Añadida receta 07: `Minipizzas de garbanzos, cottage, jamón y queso`.
-- Receta extraída del vídeo adjunto y registrada en los datos del recetario.
-- Añadida ficha Markdown completa con temporizadores y modo cocinar.
-- Actualizada la caché PWA/offline a `recetario-video-lab-v3-4`.
+Después abre http://127.0.0.1:8000. También se mantienen los lanzadores de Python existentes. No se necesitan dependencias de npm para generar o ejecutar las pruebas (Node 22 o posterior).
 
-## Qué cambia en v3.3
+## Una sola fuente editorial
 
-- Añadida receta 06: `Ensalada de patata con pollo, manzana verde y huevo`.
-- Enlazado el vídeo local: `06_ensalada_patata.mp4`.
-- Añadida miniatura propia de la receta.
-- Actualizados datos, ficha Markdown y caché PWA/offline.
-- Adaptada la receta sustituyendo el pepino del vídeo por manzana verde.
+Edita `data/recipes.json`. No edites a mano el HTML raíz, el worker raíz, el JSON v3 distribuido o las fichas Markdown: son salidas generadas.
 
-## Qué cambia en v3.2
+- `templates/index.html`: estructura de la interfaz.
+- `css/app.css`: diseño, temas, impresión y reflujo.
+- `js/core.js`: taxonomía, búsqueda y utilidades puras.
+- `js/state.js`: validación, migración y persistencia.
+- `js/timers.js`: temporizadores con reloj absoluto.
+- `js/offline.js`: descargas y ciclo de actualización.
+- `js/app.js`: interfaz y navegación.
+- `templates/service-worker.js`: precaché esencial y vídeo con Range/206.
 
-- Incorporado el vídeo local subido para la receta infantil: `05_tartitas_infantiles_yogur_frambuesas.mp4`.
-- Enlazado el vídeo en `index.html`, JSON de datos, ficha Markdown y caché PWA/offline.
-- Actualizada la miniatura de la receta a partir del vídeo.
+```text
+node scripts/build.cjs
+node scripts/build.cjs --check
+node --test tests/*.test.cjs
+```
 
-## Qué cambia en v3.1
+El build valida IDs, categorías, datos y rutas; genera versión a partir del contenido, fichas Markdown, JSON compatible v3 y huellas SHA256. Los archivos de texto se normalizan a LF. Se conserva el JSON v2 histórico por compatibilidad, congelado y sin uso en la interfaz v4.
 
-- Añadida receta infantil: `Tartitas infantiles de yogur, queso crema y frambuesas`.
-- Añadido soporte para recetas sin vídeo local, evitando enlaces rotos.
-- Añadida miniatura propia para la receta manual.
-- Añadidos temporizadores de precalentado, horneado y enfriado.
+Al añadir una receta, usa IDs estables para ingredientes y pasos: no renumeres los existentes al insertar otros. `legacyIds` conserva la correspondencia histórica de la v3 y no se reordena. Desconocidos de raciones y tiempos se expresan como `null`, no como cantidades inventadas. El build calcula tamaño y huella de cada vídeo automáticamente.
 
-## Qué cambia en v3
+Las miniaturas actuales son WebP extraídas de los vídeos existentes, con encuadres revisados. Para regenerarlas se requiere FFmpeg y `node scripts/make-thumbs.cjs`. Los iconos se pueden regenerar con Pillow y `python scripts/make-icons.py`; esas herramientas no son dependencias de la web ni del build ordinario.
 
-- `index.html` genera tarjetas, fichas, filtros y navegación desde los datos de recetas.
-- Búsqueda sin tildes: `video` encuentra `vídeo`.
-- Filtros automáticos por tipo y necesidad.
-- Estado vacío cuando no hay resultados.
-- Labels accesibles para buscador y filtros.
-- Botones descriptivos para lector de pantalla.
-- Modo cocinar con checklist de ingredientes y pasos.
-- Temporizadores útiles por receta.
-- Favoritos y estado local: pendiente, vista, cocinada, la repetiría, dominada.
-- Botón copiar con fallback si el portapapeles falla.
-- PWA/offline básica cuando se abre con servidor local.
+## Migración y publicación
 
-## Cómo abrir
+La migración automática conserva favoritos, estados y checks de v3, manteniendo también la clave antigua como copia. La primera actualización desde v3.8 puede requerir cerrar todas las pestañas antiguas y reabrir: aquella versión no tiene aviso de actualización. No borres los datos del sitio.
 
-Opción simple:
+Antes de publicar: generar, comprobar salidas y pasar pruebas. GitHub Pages puede servir directamente este repositorio. Mantén la configuración existente de Pages; no cambies el origen de publicación sin revisarlo. CI valida cada PR.
 
-1. Abre `index.html` con doble clic.
-2. Los vídeos deberían reproducirse si el navegador permite archivos locales.
+Para ensayar la transición local desde el commit auditado, ejecuta `node scripts/prepare-upgrade-test.cjs` y arranca el servidor con `PREVIEW_FIXTURE=.preview/legacy` y un puerto de prueba independiente. Quitar el archivo `.preview/legacy/active` cambia ese servidor a v4. La carpeta `.preview` está ignorada.
 
-Opción recomendada:
+## Límites y validación
 
-1. Ejecuta `run_local.bat` o `run_local.ps1`.
-2. Abre la dirección local que indique Python, normalmente `http://localhost:8000`.
-
-## Datos
-
-La copia principal de datos de esta versión está en:
-
-- `data/recetas_video_lab_v3.json`
-
-Se conserva también el JSON v2 por compatibilidad.
-
-## Nota
-
-El progreso de favoritos, estados y checks se guarda solo en el navegador mediante `localStorage`. No se envía nada a internet.
+Consulta [docs/VALIDACION_V4.md](docs/VALIDACION_V4.md) para evidencias y pendientes. No se considera cerrada la revisión de dispositivos físicos, subtítulos/alternativas audiovisuales completas, cantidades aún desconocidas ni métricas de campo. La interfaz indica esos límites y conserva el contenido original sin inventar datos.

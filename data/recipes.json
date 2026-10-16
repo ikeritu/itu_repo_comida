@@ -1,0 +1,1515 @@
+[
+  {
+    "id": "01",
+    "emoji": "🍫",
+    "title": "Cremoso / natillas de chocolate proteico",
+    "short": "Postre o merienda fría, dulce y proteica.",
+    "type": "Postre / merienda",
+    "need": "Quiero algo dulce/proteico",
+    "category": "Postres y meriendas",
+    "video": "assets/videos/01_cremoso_chocolate_proteico.mp4",
+    "thumb": "assets/thumbs/01_preview.webp",
+    "confidence": "Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "3 hojas de gelatina."
+      },
+      {
+        "id": "ing-02",
+        "text": "Agua fría para hidratar la gelatina."
+      },
+      {
+        "id": "ing-03",
+        "text": "Proteína en polvo sabor neutro o base proteica blanca en polvo. Cantidad no legible con seguridad."
+      },
+      {
+        "id": "ing-04",
+        "text": "Agua para mezclar la base proteica."
+      },
+      {
+        "id": "ing-05",
+        "text": "Leche; en el vídeo se menciona “medio”, probablemente medio litro."
+      },
+      {
+        "id": "ing-06",
+        "text": "Chocolate negro o cobertura de chocolate."
+      },
+      {
+        "id": "ing-07",
+        "text": "Azúcar o edulcorante al gusto."
+      },
+      {
+        "id": "ing-08",
+        "text": "Vainilla."
+      },
+      {
+        "id": "ing-09",
+        "text": "Opcional: creatina, solo si ya la usas y te encaja."
+      },
+      {
+        "id": "ing-10",
+        "text": "Opcional: topping tipo crema/nata proteica al servir."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas."
+      },
+      {
+        "id": "paso-02",
+        "text": "Echa la proteína o base proteica neutra en una jarra alta."
+      },
+      {
+        "id": "paso-03",
+        "text": "Añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes."
+      },
+      {
+        "id": "paso-04",
+        "text": "Pon la leche en un cazo a fuego medio."
+      },
+      {
+        "id": "paso-05",
+        "text": "Añade el chocolate al cazo y remueve con varillas hasta que se funda."
+      },
+      {
+        "id": "paso-06",
+        "text": "Añade el azúcar o edulcorante y la vainilla al cazo. Este es el momento de ajustar dulzor y aroma."
+      },
+      {
+        "id": "paso-07",
+        "text": "Calienta la mezcla sin dejar de remover hasta que esté muy caliente, cerca del hervor, pero sin necesidad de hervir fuerte."
+      },
+      {
+        "id": "paso-08",
+        "text": "Escurre la gelatina ya hidratada y añádela al cazo caliente. Remueve hasta que se disuelva por completo."
+      },
+      {
+        "id": "paso-09",
+        "text": "Vierte la mezcla caliente de chocolate sobre la jarra de la base proteica."
+      },
+      {
+        "id": "paso-10",
+        "text": "Bate bien hasta integrar la mezcla caliente con la base proteica."
+      },
+      {
+        "id": "paso-11",
+        "text": "Cuela la mezcla para dejarla más fina."
+      },
+      {
+        "id": "paso-12",
+        "text": "Reparte en vasos o recipientes. En el vídeo se sirven raciones de unos 190 g."
+      },
+      {
+        "id": "paso-13",
+        "text": "Deja enfriar y guarda en nevera una noche para que cuaje bien."
+      },
+      {
+        "id": "paso-14",
+        "text": "Sirve frío. Puedes añadir topping proteico o tomarlo tal cual."
+      }
+    ],
+    "seasoning": "La vainilla y el azúcar/edulcorante se añaden en el cazo, después de fundir el chocolate y antes de incorporar la gelatina. Ahí se corrige el sabor.",
+    "when_use": "Como postre o merienda proteica en un menú semanal.",
+    "when_not": "No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.",
+    "tips": [
+      "No inventar cantidades exactas: ajusta textura con agua/leche poco a poco.",
+      "Si queda muy espeso antes de enfriar, aligera con un poco de leche.",
+      "Para batch cooking, deja los vasos tapados en nevera."
+    ],
+    "tags": [
+      "dulce",
+      "proteico",
+      "postre",
+      "nevera",
+      "batch cooking"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Gelatina hidratando",
+        "minutes": 5,
+        "note": "Tiempo orientativo hasta que las hojas estén blandas.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Nevera para cuajar",
+        "minutes": 480,
+        "note": "Mínimo una noche; si usas menos, revisa textura.",
+        "id": "reloj-2"
+      }
+    ],
+    "difficulty": "Media",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "postres",
+    "subcategory": "Postres proteicos",
+    "facets": [
+      "dulce",
+      "frio"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo",
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 15192426
+  },
+  {
+    "id": "02",
+    "emoji": "🍟",
+    "title": "Patatas fritas en airfryer con pre-cocción en microondas",
+    "short": "Guarnición rápida con patata tierna por dentro y dorada por fuera.",
+    "type": "Guarnición",
+    "need": "Quiero una guarnición rápida",
+    "category": "Guarniciones rápidas",
+    "video": "assets/videos/02_patatas_fritas_airfryer.mp4",
+    "thumb": "assets/thumbs/02_preview.webp",
+    "confidence": "Alta en el método general. Tiempos principales visibles: microondas 6 min a 800 W; airfryer unos 15 min a 185–190 ºC; último toque corto de dorado.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Patatas."
+      },
+      {
+        "id": "ing-02",
+        "text": "Agua para remojar."
+      },
+      {
+        "id": "ing-03",
+        "text": "Papel de cocina."
+      },
+      {
+        "id": "ing-04",
+        "text": "Aceite de oliva, lo justo para embadurnar."
+      },
+      {
+        "id": "ing-05",
+        "text": "Sal al final."
+      },
+      {
+        "id": "ing-06",
+        "text": "Opcional: pimienta, pimentón, ajo en polvo, cebolla en polvo o hierbas secas."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pela las patatas y córtalas en bastones de tamaño parecido."
+      },
+      {
+        "id": "paso-02",
+        "text": "Mételas un rato en agua para retirar parte del almidón."
+      },
+      {
+        "id": "paso-03",
+        "text": "Escúrrelas muy bien."
+      },
+      {
+        "id": "paso-04",
+        "text": "Sécalas con papel de cocina. Este paso importa: cuanto menos humedad, mejor dorado."
+      },
+      {
+        "id": "paso-05",
+        "text": "Pasa las patatas a un bol amplio."
+      },
+      {
+        "id": "paso-06",
+        "text": "Añade un chorrito pequeño de aceite de oliva, solo lo justo."
+      },
+      {
+        "id": "paso-07",
+        "text": "Mezcla con las manos para que todas las patatas queden ligeramente impregnadas."
+      },
+      {
+        "id": "paso-08",
+        "text": "Cubre el bol con film transparente apto para microondas."
+      },
+      {
+        "id": "paso-09",
+        "text": "Cocina en microondas 6 minutos a 800 W."
+      },
+      {
+        "id": "paso-10",
+        "text": "Saca el bol con cuidado: habrá vapor y el film estará caliente."
+      },
+      {
+        "id": "paso-11",
+        "text": "Retira el film sin quemarte y deja salir el vapor."
+      },
+      {
+        "id": "paso-12",
+        "text": "Pasa las patatas a la cesta de la airfryer, procurando no apelmazarlas demasiado."
+      },
+      {
+        "id": "paso-13",
+        "text": "Cocina en airfryer a 185–190 ºC durante unos 15 minutos."
+      },
+      {
+        "id": "paso-14",
+        "text": "Abre, revisa y remueve o da una vuelta a las patatas."
+      },
+      {
+        "id": "paso-15",
+        "text": "Dales un último toque de dorado: 5 minutos más, idealmente a 200 ºC si tu airfryer lo permite, o a la misma temperatura si ya se están dorando rápido."
+      },
+      {
+        "id": "paso-16",
+        "text": "Saca a un plato y sazona al final."
+      }
+    ],
+    "seasoning": "La sal y las especias van al final, al sacar las patatas de la airfryer. Si echas pimentón, ajo en polvo o hierbas antes, se pueden quemar o amargar.",
+    "when_use": "Como guarnición de pollo, tortilla, hamburguesa, verduras salteadas o cena informal.",
+    "when_not": "No meterla por sistema en todos los menús: puede subir mucho la carga de hidratos. Si ya hay arroz, pasta o pan, mejor alternar.",
+    "tips": [
+      "No llenes la cesta en exceso; si haces muchas, trabaja por tandas.",
+      "El secado previo y el último toque de dorado son la clave.",
+      "Con patatas nuevas puede variar el tiempo: revisa desde el minuto 12 de airfryer."
+    ],
+    "tags": [
+      "patata",
+      "airfryer",
+      "microondas",
+      "guarnición",
+      "rápida"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Microondas",
+        "minutes": 6,
+        "note": "800 W, bol cubierto con film apto.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Airfryer base",
+        "minutes": 15,
+        "note": "185–190 ºC; revisar y remover al acabar.",
+        "id": "reloj-2"
+      },
+      {
+        "label": "Último dorado",
+        "minutes": 5,
+        "note": "Idealmente a 200 ºC o misma temperatura si ya dora rápido.",
+        "id": "reloj-3"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "guarniciones",
+    "subcategory": "Airfryer",
+    "facets": [
+      "rapido"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15",
+        "paso-16"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Microondas",
+      "Airfryer"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 10341654
+  },
+  {
+    "id": "03",
+    "emoji": "🧄",
+    "title": "Trenza de pan de ajo y queso",
+    "short": "Masa trenzada con queso fundido y cobertura de ajo, mantequilla y perejil.",
+    "type": "Cena informal / entrante",
+    "need": "Quiero una cena informal contundente",
+    "category": "Cenas informales y entrantes",
+    "video": "assets/videos/03_trenza_pan_ajo_queso.mp4",
+    "thumb": "assets/thumbs/03_preview.webp",
+    "confidence": "Media-alta en el proceso visual. El vídeo no deja ver con seguridad temperatura y tiempo de horno, así que doy una referencia operativa.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Masa rectangular tipo hojaldre, pizza o pan."
+      },
+      {
+        "id": "ing-02",
+        "text": "Dientes de ajo pelados."
+      },
+      {
+        "id": "ing-03",
+        "text": "Aceite de oliva para confitar o dorar los ajos."
+      },
+      {
+        "id": "ing-04",
+        "text": "Mantequilla blanda."
+      },
+      {
+        "id": "ing-05",
+        "text": "Perejil fresco picado."
+      },
+      {
+        "id": "ing-06",
+        "text": "Queso rallado para el relleno, tipo mozzarella o mezcla fundente."
+      },
+      {
+        "id": "ing-07",
+        "text": "Queso rallado/parmesano para cubrir."
+      },
+      {
+        "id": "ing-08",
+        "text": "Sal con moderación."
+      },
+      {
+        "id": "ing-09",
+        "text": "Pimienta."
+      },
+      {
+        "id": "ing-10",
+        "text": "Opcional: orégano."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pon los dientes de ajo pelados en un recipiente pequeño con aceite de oliva."
+      },
+      {
+        "id": "paso-02",
+        "text": "Cocina los ajos hasta que estén tiernos y dorados, sin quemarlos."
+      },
+      {
+        "id": "paso-03",
+        "text": "Pasa los ajos a un bol y machácalos."
+      },
+      {
+        "id": "paso-04",
+        "text": "Añade mantequilla blanda al bol."
+      },
+      {
+        "id": "paso-05",
+        "text": "Añade perejil fresco picado."
+      },
+      {
+        "id": "paso-06",
+        "text": "Añade sal, pimienta y, si quieres, orégano. Ojo con la sal porque el queso ya aporta bastante."
+      },
+      {
+        "id": "paso-07",
+        "text": "Mezcla hasta conseguir una pasta untuosa de ajo, mantequilla y hierbas."
+      },
+      {
+        "id": "paso-08",
+        "text": "Extiende la masa rectangular sobre papel de horno."
+      },
+      {
+        "id": "paso-09",
+        "text": "Coloca una franja generosa de queso rallado en el centro de la masa."
+      },
+      {
+        "id": "paso-10",
+        "text": "Haz cortes paralelos en los laterales de la masa, dejando libre la franja central con el queso."
+      },
+      {
+        "id": "paso-11",
+        "text": "Cierra la trenza cruzando una tira de un lado y luego una tira del otro, alternando hasta cerrar todo el relleno."
+      },
+      {
+        "id": "paso-12",
+        "text": "Pasa la trenza a una bandeja de horno si no la tenías ya encima."
+      },
+      {
+        "id": "paso-13",
+        "text": "Unta toda la superficie con la pasta de ajo, mantequilla y perejil."
+      },
+      {
+        "id": "paso-14",
+        "text": "Espolvorea queso rallado o parmesano por encima."
+      },
+      {
+        "id": "paso-15",
+        "text": "Hornea hasta que la masa esté dorada y el queso fundido. Referencia útil: 190 ºC durante 20–25 minutos, revisando desde el minuto 18."
+      },
+      {
+        "id": "paso-16",
+        "text": "Deja reposar 2–3 minutos antes de cortar para que el queso no se desparrame de golpe."
+      }
+    ],
+    "seasoning": "La sal, pimienta y orégano se añaden dentro de la pasta de ajo, mantequilla y perejil, antes de untar la trenza. Así el sabor queda repartido.",
+    "when_use": "Como cena informal de fin de semana, entrante para compartir o plato acompañado de ensalada/crema de verduras.",
+    "when_not": "No es una cena ligera. Si el menú semanal ya lleva queso, pan o masas, no la fuerces.",
+    "tips": [
+      "Acompáñala con ensalada para compensar.",
+      "No quemes los ajos: ajo quemado = amargor.",
+      "Si usas hojaldre, pincha ligeramente zonas muy hinchadas si sube demasiado."
+    ],
+    "tags": [
+      "ajo",
+      "queso",
+      "horno",
+      "pan",
+      "vegetariana"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Horno orientativo",
+        "minutes": 22,
+        "note": "Referencia operativa: hornear hasta dorar y queso fundido.",
+        "id": "reloj-1"
+      }
+    ],
+    "difficulty": "Media",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "cenas",
+    "subcategory": "Informales y entrantes",
+    "facets": [
+      "compartir"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15",
+        "paso-16"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 3852481
+  },
+  {
+    "id": "04",
+    "emoji": "🥑",
+    "title": "Truco para que el guacamole no se oxide",
+    "short": "Técnica de conservación con papel húmedo en contacto y film.",
+    "type": "Técnica / conservación",
+    "need": "Quiero conservar guacamole",
+    "category": "Técnicas y trucos",
+    "video": "assets/videos/04_guacamole_no_oxida.mp4",
+    "thumb": "assets/thumbs/04_preview.webp",
+    "confidence": "Alta: el truco se explica y se ve con claridad en el vídeo.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Guacamole o aguacate machacado."
+      },
+      {
+        "id": "ing-02",
+        "text": "Papel de cocina."
+      },
+      {
+        "id": "ing-03",
+        "text": "Agua para humedecer el papel."
+      },
+      {
+        "id": "ing-04",
+        "text": "Film transparente."
+      },
+      {
+        "id": "ing-05",
+        "text": "Recipiente, mejor si tiene tapa."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Prepara el guacamole y pásalo a un recipiente."
+      },
+      {
+        "id": "paso-02",
+        "text": "Alisa la superficie del guacamole."
+      },
+      {
+        "id": "paso-03",
+        "text": "Moja un trozo de papel de cocina."
+      },
+      {
+        "id": "paso-04",
+        "text": "Escurre el papel: debe quedar húmedo, no chorreando."
+      },
+      {
+        "id": "paso-05",
+        "text": "Coloca el papel húmedo directamente encima del guacamole, tocando toda la superficie."
+      },
+      {
+        "id": "paso-06",
+        "text": "Presiona suavemente para que no queden bolsas de aire entre el papel y el guacamole."
+      },
+      {
+        "id": "paso-07",
+        "text": "Cubre el recipiente con film transparente para que el papel no se seque."
+      },
+      {
+        "id": "paso-08",
+        "text": "Guarda en la nevera."
+      },
+      {
+        "id": "paso-09",
+        "text": "Cuando vayas a usarlo, retira el film y luego el papel húmedo."
+      }
+    ],
+    "seasoning": "No se sazona al conservar. Si preparas el guacamole desde cero, ajusta sal, lima/limón, cilantro, pimienta o picante antes de poner el papel húmedo y el film.",
+    "when_use": "Cuando prepares fajitas, tacos, bowls, tostadas o guacamole con antelación.",
+    "when_not": "No es una receta principal. Es una técnica auxiliar de conservación.",
+    "tips": [
+      "La clave es que no haya aire tocando el guacamole.",
+      "El papel húmedo evita que la superficie se reseque.",
+      "Funciona mejor que dejar el hueso porque protege toda la superficie, no solo una zona."
+    ],
+    "tags": [
+      "guacamole",
+      "aguacate",
+      "conservación",
+      "batch cooking",
+      "truco"
+    ],
+    "version": "v3",
+    "timers": [
+      {
+        "label": "Revisión nevera",
+        "minutes": 1440,
+        "note": "Comprueba al día siguiente que el papel sigue húmedo y en contacto.",
+        "id": "reloj-1"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "tecnicas",
+    "subcategory": "Conservación",
+    "facets": [
+      "conservar"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 3944271
+  },
+  {
+    "id": "05",
+    "emoji": "🍓",
+    "title": "Tartitas infantiles de yogur, queso crema y frambuesas",
+    "short": "Postre o merienda infantil tipo mini cheesecake, con base de galleta y crema de yogur.",
+    "type": "Postre infantil / merienda",
+    "need": "Quiero una merienda infantil fácil",
+    "category": "Recetas infantiles",
+    "video": "assets/videos/05_tartitas_infantiles_yogur_frambuesas.mp4",
+    "thumb": "assets/thumbs/05_preview.webp",
+    "confidence": "Alta: receta añadida a partir del texto proporcionado por Iker y vinculada al vídeo local subido.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Galletas aptas para el niño o la niña."
+      },
+      {
+        "id": "ing-02",
+        "text": "1–2 cucharadas de leche, añadidas poco a poco."
+      },
+      {
+        "id": "ing-03",
+        "text": "Yogur natural."
+      },
+      {
+        "id": "ing-04",
+        "text": "Queso crema."
+      },
+      {
+        "id": "ing-05",
+        "text": "1 huevo."
+      },
+      {
+        "id": "ing-06",
+        "text": "Frambuesas frescas para poner por encima."
+      },
+      {
+        "id": "ing-07",
+        "text": "Molde pequeño apto para airfryer u horno."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Machaca las galletas con un tenedor o con la mano hasta que queden tipo arena."
+      },
+      {
+        "id": "paso-02",
+        "text": "Añade la leche poco a poco: empieza con 1 cucharada y añade una segunda solo si hace falta, hasta conseguir una pasta húmeda que se pueda compactar."
+      },
+      {
+        "id": "paso-03",
+        "text": "Pon la mezcla de galleta dentro del molde."
+      },
+      {
+        "id": "paso-04",
+        "text": "Presiona bien con una cuchara para formar una base compacta."
+      },
+      {
+        "id": "paso-05",
+        "text": "En un bol, mezcla el yogur, el queso crema y el huevo."
+      },
+      {
+        "id": "paso-06",
+        "text": "Remueve hasta que quede una crema homogénea, sin grumos grandes."
+      },
+      {
+        "id": "paso-07",
+        "text": "Vierte la crema encima de la base de galleta."
+      },
+      {
+        "id": "paso-08",
+        "text": "Precalienta la airfryer u horno durante 3 minutos a 170 °C."
+      },
+      {
+        "id": "paso-09",
+        "text": "Hornea a 160 °C durante 14 minutos."
+      },
+      {
+        "id": "paso-10",
+        "text": "Déjalas enfriar 15 minutos antes de sacarlas del molde."
+      },
+      {
+        "id": "paso-11",
+        "text": "Añade frambuesas frescas por encima justo antes de servir."
+      },
+      {
+        "id": "paso-12",
+        "text": "Sirve y disfruta."
+      }
+    ],
+    "seasoning": "No lleva sal ni especias. La fruta se añade al final, cuando las tartitas ya han enfriado. Si algún día quieres aromatizar, una pizca de canela o vainilla iría en la crema, antes de verterla sobre la base, pero en la versión infantil básica mejor dejarla simple.",
+    "when_use": "Como merienda o postre infantil ocasional, especialmente cuando quieres algo blando, sencillo y fácil de preparar en airfryer u horno.",
+    "when_not": "No usar si el niño o la niña no toma todavía huevo, lácteos, gluten/galleta o frutos rojos, o si hay alergias/intolerancias. Para menores de 12 meses conviene revisar ingredientes concretos y evitar galletas azucaradas o miel.",
+    "tips": [
+      "La clave de la base es añadir la leche poco a poco: si te pasas, quedará demasiado blanda.",
+      "Deja enfriar antes de desmoldar para que no se rompan.",
+      "Usa moldes pequeños de silicona si quieres que salgan porciones infantiles fáciles de manejar.",
+      "Para una versión menos dulce, usa yogur natural sin azúcar y galletas sencillas."
+    ],
+    "tags": [
+      "infantil",
+      "merienda",
+      "airfryer",
+      "yogur",
+      "frambuesas",
+      "postre"
+    ],
+    "version": "v3.2",
+    "timers": [
+      {
+        "label": "Precalentar",
+        "minutes": 3,
+        "note": "Airfryer u horno a 170 °C.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Horneado",
+        "minutes": 14,
+        "note": "A 160 °C.",
+        "id": "reloj-2"
+      },
+      {
+        "label": "Enfriado",
+        "minutes": 15,
+        "note": "Antes de sacar del molde.",
+        "id": "reloj-3"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, como merienda/postre infantil ocasional",
+    "categoryId": "postres",
+    "subcategory": "Infantil",
+    "facets": [
+      "dulce",
+      "infantil"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Airfryer u horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 2519513
+  },
+  {
+    "id": "06",
+    "emoji": "🥔",
+    "title": "Ensalada de patata con pollo, manzana verde y huevo",
+    "short": "Plato frío, cremoso, saciante y proteico, con manzana verde en lugar de pepino.",
+    "type": "Comida / cena fría",
+    "need": "Quiero una comida saciante y proteica",
+    "category": "Platos fríos y ensaladas completas",
+    "video": "assets/videos/06_ensalada_patata.mp4",
+    "thumb": "assets/thumbs/06_preview.webp",
+    "confidence": "Media: se distinguen bien los ingredientes principales y el proceso general del vídeo. La versión final sustituye el pepino original por manzana verde por preferencia de Iker. Las cantidades exactas no se leen completas, así que se indican de forma operativa.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Patatas cocidas."
+      },
+      {
+        "id": "ing-02",
+        "text": "Huevos cocidos."
+      },
+      {
+        "id": "ing-03",
+        "text": "Manzana verde cortada en dados pequeños, en sustitución del pepino del vídeo."
+      },
+      {
+        "id": "ing-04",
+        "text": "Pollo cocido desmenuzado o troceado."
+      },
+      {
+        "id": "ing-05",
+        "text": "Zanahoria cocida en trozos."
+      },
+      {
+        "id": "ing-06",
+        "text": "Yogur natural espeso o yogur griego natural."
+      },
+      {
+        "id": "ing-07",
+        "text": "1 cucharada de mostaza."
+      },
+      {
+        "id": "ing-08",
+        "text": "Un pequeño toque de mahonesa ligera."
+      },
+      {
+        "id": "ing-09",
+        "text": "Opcional: sal y pimienta al gusto."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pon en un bol una base de yogur natural espeso o yogur griego."
+      },
+      {
+        "id": "paso-02",
+        "text": "Añade una cucharada de mostaza."
+      },
+      {
+        "id": "paso-03",
+        "text": "Añade un pequeño toque de mahonesa ligera."
+      },
+      {
+        "id": "paso-04",
+        "text": "Mezcla bien hasta obtener una salsa cremosa y uniforme."
+      },
+      {
+        "id": "paso-05",
+        "text": "Añade al bol las patatas cocidas."
+      },
+      {
+        "id": "paso-06",
+        "text": "Añade huevo cocido."
+      },
+      {
+        "id": "paso-07",
+        "text": "Añade manzana verde cortada en dados pequeños, mejor al final para que mantenga textura fresca y no se oxide demasiado."
+      },
+      {
+        "id": "paso-08",
+        "text": "Añade pollo cocido."
+      },
+      {
+        "id": "paso-09",
+        "text": "Añade también zanahoria cocida."
+      },
+      {
+        "id": "paso-10",
+        "text": "Mezcla o corta ligeramente dentro del bol para integrar los ingredientes con la salsa."
+      },
+      {
+        "id": "paso-11",
+        "text": "Ajusta la textura y remueve hasta que quede una ensalada cremosa."
+      },
+      {
+        "id": "paso-12",
+        "text": "Sirve y decora con huevo cocido por encima."
+      }
+    ],
+    "seasoning": "La mostaza y la mahonesa ligera se añaden al inicio, mezcladas con el yogur para formar la salsa. Si decides añadir sal o pimienta, hazlo también en ese momento, antes de incorporar la patata, el pollo, la zanahoria y la manzana verde.",
+    "when_use": "Como comida completa fría, cena saciante o plato de batch cooking para dejar hecho con antelación.",
+    "when_not": "No es la mejor opción si buscas una cena muy ligera o si el menú de ese día ya lleva bastante patata, huevo o salsas cremosas.",
+    "tips": [
+      "La manzana verde sustituye al pepino del vídeo: aporta frescor, un punto ácido y textura crujiente.",
+      "Añade la manzana en dados pequeños y mézclala al final para que mantenga mejor la textura.",
+      "Si quieres una textura más ligera, usa yogur natural alto en proteína o yogur griego ligero.",
+      "Puedes dejar algunos trozos grandes de patata o chafarlos un poco para que la salsa quede más integrada.",
+      "Se puede guardar en nevera y servir fría."
+    ],
+    "tags": [
+      "patata",
+      "pollo",
+      "huevo",
+      "manzana verde",
+      "ensalada",
+      "fría",
+      "proteica",
+      "batch cooking"
+    ],
+    "version": "v3.3",
+    "timers": [
+      {
+        "label": "Cocción de patatas",
+        "minutes": 20,
+        "note": "Tiempo orientativo, según tamaño y tipo de patata.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Cocción de huevos",
+        "minutes": 10,
+        "note": "Tiempo orientativo para huevo cocido.",
+        "id": "reloj-2"
+      },
+      {
+        "label": "Enfriado en nevera",
+        "minutes": 30,
+        "note": "Opcional, si quieres tomarla bien fría.",
+        "id": "reloj-3"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "comidas",
+    "subcategory": "Ensaladas completas",
+    "facets": [
+      "frio",
+      "cena",
+      "batch"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo",
+      "Nevera"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 5065289
+  },
+  {
+    "id": "07",
+    "emoji": "🍕",
+    "title": "Minipizzas de garbanzos, cottage, jamón y queso",
+    "short": "Minipizzas proteicas y saciantes con base de garbanzos, huevo y queso cottage.",
+    "type": "Cena / airfryer",
+    "need": "Quiero una cena saciante y proteica",
+    "category": "Cenas proteicas rápidas",
+    "video": "",
+    "thumb": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201280%20720%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fff7ed%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fed7aa%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%221280%22%20height%3D%22720%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%3Ccircle%20cx%3D%22260%22%20cy%3D%22230%22%20r%3D%22132%22%20fill%3D%22%23f59e0b%22%20opacity%3D%220.22%22/%3E%0A%20%20%3Ccircle%20cx%3D%221010%22%20cy%3D%22520%22%20r%3D%22180%22%20fill%3D%22%23d97706%22%20opacity%3D%220.16%22/%3E%0A%20%20%3Crect%20x%3D%22116%22%20y%3D%22104%22%20width%3D%221048%22%20height%3D%22512%22%20rx%3D%2248%22%20fill%3D%22%23fffaf0%22%20stroke%3D%22%23d97706%22%20stroke-width%3D%228%22%20opacity%3D%220.94%22/%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22260%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%22104%22%20font-weight%3D%22900%22%3E%F0%9F%8D%95%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22378%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2258%22%20font-weight%3D%22900%22%20fill%3D%22%237c2d12%22%3EMinipizzas%20de%20garbanzos%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22456%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2238%22%20font-weight%3D%22800%22%20fill%3D%22%2392400e%22%3Ecottage%20%C2%B7%20jam%C3%B3n%20cocido%20%C2%B7%20queso%3C/text%3E%0A%20%20%3Ctext%20x%3D%22640%22%20y%3D%22530%22%20text-anchor%3D%22middle%22%20font-family%3D%22system-ui%2C%20Segoe%20UI%2C%20Arial%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%20fill%3D%22%236d645b%22%3ECena%20saciante%20y%20proteica%3C/text%3E%0A%3C/svg%3E",
+    "confidence": "Media-alta: en el vídeo se distinguen 150 g de garbanzos cocidos, huevo, 2 cucharadas de queso cottage, sal, formación de minibases, cocción 12 minutos a 190 ºC, tomate, queso rallado y jamón cocido. El segundo golpe de calor no muestra un tiempo exacto, así que se indica de forma orientativa.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "150 g de garbanzos cocidos."
+      },
+      {
+        "id": "ing-02",
+        "text": "1 huevo."
+      },
+      {
+        "id": "ing-03",
+        "text": "2 cucharadas de queso cottage."
+      },
+      {
+        "id": "ing-04",
+        "text": "Sal."
+      },
+      {
+        "id": "ing-05",
+        "text": "Tomate o salsa de tomate para cubrir las bases."
+      },
+      {
+        "id": "ing-06",
+        "text": "Queso rallado."
+      },
+      {
+        "id": "ing-07",
+        "text": "Jamón cocido extra en lonchas."
+      },
+      {
+        "id": "ing-08",
+        "text": "Opcional: orégano u otras hierbas al gusto."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pon 150 g de garbanzos cocidos en una picadora o procesador."
+      },
+      {
+        "id": "paso-02",
+        "text": "Añade el huevo."
+      },
+      {
+        "id": "paso-03",
+        "text": "Añade 2 cucharadas de queso cottage."
+      },
+      {
+        "id": "paso-04",
+        "text": "Añade sal en este momento, antes de triturar la base."
+      },
+      {
+        "id": "paso-05",
+        "text": "Tritura hasta conseguir una masa densa y manejable."
+      },
+      {
+        "id": "paso-06",
+        "text": "Coloca papel de horno en una bandeja o en la cubeta de la airfryer."
+      },
+      {
+        "id": "paso-07",
+        "text": "Forma minibases redondas con ayuda de una cuchara, intentando que queden de grosor parecido."
+      },
+      {
+        "id": "paso-08",
+        "text": "Cocina las bases 12 minutos a 190 ºC, en horno o airfryer, hasta que estén firmes y ligeramente doradas."
+      },
+      {
+        "id": "paso-09",
+        "text": "Saca las bases con cuidado."
+      },
+      {
+        "id": "paso-10",
+        "text": "Pon tomate o salsa de tomate sobre cada base."
+      },
+      {
+        "id": "paso-11",
+        "text": "Añade queso rallado."
+      },
+      {
+        "id": "paso-12",
+        "text": "Añade jamón cocido extra en trozos o lonchas pequeñas."
+      },
+      {
+        "id": "paso-13",
+        "text": "Termina con un poco más de queso rallado por encima."
+      },
+      {
+        "id": "paso-14",
+        "text": "Da otro golpe de calor hasta que el queso se funda y se gratine ligeramente. Como referencia, empieza revisando a los 3-5 minutos."
+      },
+      {
+        "id": "paso-15",
+        "text": "Sirve caliente."
+      }
+    ],
+    "seasoning": "La sal se añade a la mezcla de garbanzos, huevo y queso cottage antes de triturar, para que la base quede sazonada por dentro. Si usas orégano u otras hierbas, añádelas sobre el tomate y el queso antes del segundo golpe de calor, o al final al servir.",
+    "when_use": "Como cena rápida, saciante y proteica, especialmente cuando quieres algo tipo pizza sin hacer una masa tradicional.",
+    "when_not": "No es la mejor opción si ese día ya has metido muchas legumbres, queso o embutido cocido. Tampoco conviene si buscas una cena muy ligera.",
+    "tips": [
+      "Escurre bien los garbanzos para que la masa no quede demasiado líquida.",
+      "Haz las bases finas y similares entre sí para que se cocinen de forma uniforme.",
+      "Si la masa queda muy blanda, déjala reposar unos minutos antes de formar las bases.",
+      "El segundo golpe de calor es solo para fundir el queso y calentar el jamón; revisa pronto para que no se resequen.",
+      "Puedes variar el topping con atún, pavo, verduras muy finas o champiñones laminados."
+    ],
+    "tags": [
+      "garbanzos",
+      "cottage",
+      "huevo",
+      "pizza",
+      "jamón cocido",
+      "queso",
+      "airfryer",
+      "proteica"
+    ],
+    "version": "v3.4",
+    "timers": [
+      {
+        "label": "Cocción de minibases",
+        "minutes": 12,
+        "note": "A 190 ºC, hasta que estén firmes y ligeramente doradas.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Golpe final de calor",
+        "minutes": 4,
+        "note": "Orientativo: el vídeo no muestra tiempo exacto; busca queso fundido y algo gratinado.",
+        "id": "reloj-2"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "cenas",
+    "subcategory": "Proteicas rápidas",
+    "facets": [
+      "cena",
+      "rapido"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13",
+        "paso-14",
+        "paso-15"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Procesador",
+      "Airfryer u horno"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 0
+  },
+  {
+    "id": "08",
+    "emoji": "🍔",
+    "title": "Ensalada Big Mac de pasta y pollo",
+    "short": "Ensalada fría tipo Big Mac, alta en proteína, con pasta, pollo, lechuga, pepinillos y salsa cremosa.",
+    "type": "Comida / cena fría",
+    "need": "Quiero una comida saciante y proteica",
+    "category": "Ensaladas completas y cenas proteicas",
+    "video": "assets/videos/08_ensalada_big_mac_pasta_pollo.mp4",
+    "thumb": "assets/thumbs/08_preview.webp",
+    "confidence": "Media-alta: el vídeo muestra con claridad la salsa tipo Big Mac y la mayoría de ingredientes. No aparecen cantidades exactas para todos los ingredientes, así que se dejan de forma operativa.",
+    "ingredients": [
+      {
+        "id": "ing-01",
+        "text": "Yogur griego natural."
+      },
+      {
+        "id": "ing-02",
+        "text": "Agua de pepinillos."
+      },
+      {
+        "id": "ing-03",
+        "text": "Ketchup cero o ketchup ligero."
+      },
+      {
+        "id": "ing-04",
+        "text": "Mostaza."
+      },
+      {
+        "id": "ing-05",
+        "text": "Ajo en polvo."
+      },
+      {
+        "id": "ing-06",
+        "text": "Pimentón."
+      },
+      {
+        "id": "ing-07",
+        "text": "Sal."
+      },
+      {
+        "id": "ing-08",
+        "text": "Pasta corta tipo tiburones, cocida y escurrida."
+      },
+      {
+        "id": "ing-09",
+        "text": "Cebolla morada cortada fina."
+      },
+      {
+        "id": "ing-10",
+        "text": "Pepinillos picados."
+      },
+      {
+        "id": "ing-11",
+        "text": "Pollo cocido o cocinado, troceado o desmenuzado."
+      },
+      {
+        "id": "ing-12",
+        "text": "Mucha lechuga troceada."
+      }
+    ],
+    "steps": [
+      {
+        "id": "paso-01",
+        "text": "Pon yogur griego natural en un bol grande."
+      },
+      {
+        "id": "paso-02",
+        "text": "Añade un chorrito de agua de pepinillos para aligerar la salsa y darle sabor."
+      },
+      {
+        "id": "paso-03",
+        "text": "Añade ketchup cero o ketchup ligero."
+      },
+      {
+        "id": "paso-04",
+        "text": "Añade mostaza."
+      },
+      {
+        "id": "paso-05",
+        "text": "Añade ajo en polvo, pimentón y sal."
+      },
+      {
+        "id": "paso-06",
+        "text": "Remueve bien hasta obtener una salsa cremosa y uniforme tipo Big Mac."
+      },
+      {
+        "id": "paso-07",
+        "text": "Añade la pasta corta cocida y escurrida."
+      },
+      {
+        "id": "paso-08",
+        "text": "Añade cebolla morada cortada fina."
+      },
+      {
+        "id": "paso-09",
+        "text": "Añade pepinillos picados."
+      },
+      {
+        "id": "paso-10",
+        "text": "Añade pollo cocido o cocinado, troceado o desmenuzado."
+      },
+      {
+        "id": "paso-11",
+        "text": "Añade mucha lechuga troceada."
+      },
+      {
+        "id": "paso-12",
+        "text": "Mezcla todo muy bien hasta que la salsa cubra la pasta, el pollo y las verduras."
+      },
+      {
+        "id": "paso-13",
+        "text": "Sirve fría o ligeramente templada, según prefieras."
+      }
+    ],
+    "seasoning": "La sal, el ajo en polvo y el pimentón se añaden al principio, dentro de la salsa de yogur, agua de pepinillos, ketchup y mostaza. Así el sabor queda repartido antes de incorporar la pasta, el pollo, la cebolla, los pepinillos y la lechuga.",
+    "when_use": "Como comida fría completa, cena saciante o receta de batch cooking cuando quieres algo con sabor tipo hamburguesa pero en formato ensalada.",
+    "when_not": "No es la mejor opción si no te gustan los pepinillos o si ese día ya has comido bastante pasta, salsas o pollo. Tampoco conviene dejarla muchas horas mezclada con la lechuga si quieres que siga crujiente.",
+    "tips": [
+      "Escurre bien la pasta antes de mezclar para que la salsa no se agüe.",
+      "Si la vas a guardar, deja la lechuga aparte y añádela justo antes de comer.",
+      "El agua de pepinillos es importante para el sabor Big Mac; añade poco a poco para no dejar la salsa líquida.",
+      "Puedes usar pollo asado, pechuga cocida o pollo a la plancha troceado.",
+      "Si quieres más sabor a hamburguesa, aumenta un poco la mostaza y el pepinillo."
+    ],
+    "tags": [
+      "pasta",
+      "pollo",
+      "ensalada",
+      "Big Mac",
+      "yogur griego",
+      "pepinillos",
+      "lechuga",
+      "proteica",
+      "batch cooking"
+    ],
+    "version": "v3.8",
+    "timers": [
+      {
+        "label": "Cocción de pasta",
+        "minutes": 10,
+        "note": "Tiempo orientativo: sigue el paquete y deja la pasta al dente.",
+        "id": "reloj-1"
+      },
+      {
+        "label": "Reposo en nevera",
+        "minutes": 20,
+        "note": "Opcional, para tomarla más fría y asentada.",
+        "id": "reloj-2"
+      }
+    ],
+    "difficulty": "Fácil",
+    "menu_fit": "Sí, si encaja con la semana",
+    "categoryId": "comidas",
+    "subcategory": "Ensaladas completas",
+    "facets": [
+      "frio",
+      "cena",
+      "batch"
+    ],
+    "legacyIds": {
+      "ingredients": [
+        "ing-01",
+        "ing-02",
+        "ing-03",
+        "ing-04",
+        "ing-05",
+        "ing-06",
+        "ing-07",
+        "ing-08",
+        "ing-09",
+        "ing-10",
+        "ing-11",
+        "ing-12"
+      ],
+      "steps": [
+        "paso-01",
+        "paso-02",
+        "paso-03",
+        "paso-04",
+        "paso-05",
+        "paso-06",
+        "paso-07",
+        "paso-08",
+        "paso-09",
+        "paso-10",
+        "paso-11",
+        "paso-12",
+        "paso-13"
+      ]
+    },
+    "servings": null,
+    "activeMinutes": null,
+    "totalMinutes": null,
+    "equipment": [
+      "Cazo"
+    ],
+    "review": {
+      "date": "2026-10-16",
+      "status": "partial",
+      "note": "Método documentado. Raciones y cantidades incompletas: pendientes de confirmar."
+    },
+    "origin": {
+      "kind": "video",
+      "note": "Receta documentada a partir de un vídeo; algunas cantidades son orientativas."
+    },
+    "transcript": null,
+    "videoBytes": 5106019
+  }
+]
