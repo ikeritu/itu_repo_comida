@@ -188,7 +188,12 @@ const manifest =
     })
     .join("\n") +
   "\n";
-if (!checking) fs.writeFileSync("MANIFEST_SHA256.md", manifest);
+if (checking) {
+  assert(
+    fs.readFileSync("MANIFEST_SHA256.md", "utf8").replace(/\r\n/g, "\n") === manifest,
+    "MANIFEST_SHA256.md desactualizado: vuelve a generar las salidas",
+  );
+} else fs.writeFileSync("MANIFEST_SHA256.md", manifest);
 console.log(
   `Datos válidos: ${recipes.length} recetas. Build ${build}. ${checking ? "Salidas verificadas." : "Salidas generadas."}`,
 );

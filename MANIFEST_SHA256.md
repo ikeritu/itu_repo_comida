@@ -55,7 +55,7 @@ Huellas del contenido normalizado a LF para archivos de texto.
 | `recetas_md/08_ensalada_big_mac_de_pasta_y_pollo.md` | `9c29aac9c7863b5b6c705e9070c6ee48209d656240b64df32273c9ef1f11ef09` | 2778 |
 | `run_local.bat` | `c18f7e56bb8057bf7c21e1db46d5fb0228f3ca8abac5d0affd34f9de7c09cd83` | 100 |
 | `run_local.ps1` | `ef67f0e4b396bca036446f9b2f650638d7284aac498df4d28fe74dd4c81ee8fb` | 141 |
-| `scripts/build.cjs` | `4336ecd657e7a624fd470fab218d6a3183fc35810dca3afb7514acb3743c2a53` | 6408 |
+| `scripts/build.cjs` | `43b562742f61176a3da6a8c1c3c0849f544954be1865a11e7930db5c44dd7111` | 6589 |
 | `scripts/make-icons.py` | `74a9e23ff33a45cd83fcf2910c1cd1f9dd8c2f70894707da0b24f60e2fd202bd` | 775 |
 | `scripts/make-thumbs.cjs` | `8175a389efea553db8a6298312efda7edd27fcc0e5dc84de26b52e524efb5529` | 1245 |
 | `scripts/migrate-content.cjs` | `3b03d296ee237dc2a86a9af6b9993b8ef09d7c1089581c2fac4fc5a38b1b73f6` | 1974 |
