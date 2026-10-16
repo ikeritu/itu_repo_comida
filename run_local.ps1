@@ -1,2 +1,3 @@
-Write-Host "Recetario Video Lab Itu v3 - http://localhost:8000"
-python -m http.server 8000
+Set-Location -LiteralPath $PSScriptRoot
+Write-Host "Recetario de Itu v4 - http://127.0.0.1:8000"
+python -m http.server 8000 --bind 127.0.0.1

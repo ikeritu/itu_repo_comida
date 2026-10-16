@@ -1,14 +1,12 @@
+<!-- Generado desde data/recipes.json. -->
 # 🍫 Cremoso / natillas de chocolate proteico
 
-**Tipo:** Postre / merienda
-**Necesidad:** Quiero algo dulce/proteico
-**Vídeo local:** `assets/videos/01_cremoso_chocolate_proteico.mp4`
-**Confianza de extracción:** Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.
-
-## Objetivo
 Postre o merienda fría, dulce y proteica.
 
-## Ingredientes / material
+Categoría: Postres y meriendas · Postres proteicos
+
+## Ingredientes
+
 - 3 hojas de gelatina.
 - Agua fría para hidratar la gelatina.
 - Proteína en polvo sabor neutro o base proteica blanca en polvo. Cantidad no legible con seguridad.
@@ -20,7 +18,8 @@ Postre o merienda fría, dulce y proteica.
 - Opcional: creatina, solo si ya la usas y te encaja.
 - Opcional: topping tipo crema/nata proteica al servir.
 
-## Paso a paso
+## Preparación
+
 1. Pon las 3 hojas de gelatina en agua fría y deja que se hidraten hasta que estén blandas.
 2. Echa la proteína o base proteica neutra en una jarra alta.
 3. Añade agua poco a poco sobre la proteína y bate con varillas hasta conseguir una crema espesa, sin grumos grandes.
@@ -36,19 +35,31 @@ Postre o merienda fría, dulce y proteica.
 13. Deja enfriar y guarda en nevera una noche para que cuaje bien.
 14. Sirve frío. Puedes añadir topping proteico o tomarlo tal cual.
 
-## Cuándo añadir especias o sazonadores
+## Sazonadores
+
 La vainilla y el azúcar/edulcorante se añaden en el cazo, después de fundir el chocolate y antes de incorporar la gelatina. Ahí se corrige el sabor.
 
-## Cuándo usarla
-Como postre o merienda proteica en un menú semanal.
+## Temporizadores
 
-## Cuándo NO usarla
-No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.
+- Gelatina hidratando: 5 min. Tiempo orientativo hasta que las hojas estén blandas.
+- Nevera para cuajar: 480 min. Mínimo una noche; si usas menos, revisa textura.
 
 ## Consejos
+
 - No inventar cantidades exactas: ajusta textura con agua/leche poco a poco.
 - Si queda muy espeso antes de enfriar, aligera con un poco de leche.
 - Para batch cooking, deja los vasos tapados en nevera.
 
-## Etiquetas
-#dulce, #proteico, #postre, #nevera, #batch_cooking
+## Origen y límites
+
+Media: el proceso se ve bien; varias cantidades exactas no son totalmente legibles. Mantengo visibles solo las cantidades que se aprecian claramente.
+
+## Cuándo usarla
+
+Como postre o merienda proteica en un menú semanal.
+
+## Cuándo no usarla
+
+No usar como cena principal. Tampoco conviene meterlo si el menú ya va cargado de lácteos, dulces o chocolate.
+
+Vídeo: ../assets/videos/01_cremoso_chocolate_proteico.mp4

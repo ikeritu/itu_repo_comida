@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es" data-build="__BUILD__">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recetario de Itu · Elige, prepara y repite</title>
+    <meta
+      name="description"
+      content="Tus recetas a mano: comidas, cenas, postres y trucos. Guarda favoritas y cocina paso a paso."
+    />
+    <meta name="theme-color" content="#92501c" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png" />
+    <link rel="stylesheet" href="css/app.css?build=__BUILD__" />
+  </head>
+  <body>
+    <a class="skip" href="#catalogTitle">Saltar a las recetas</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#inicio" aria-label="Recetario de Itu, inicio"
+        ><span aria-hidden="true">🍳</span> itu<span class="wordmark-dot"
+          >.</span
+        ><small>EL RECETARIO</small></a
+      >
+      <div class="header-actions">
+        <button id="themeBtn" aria-label="Cambiar a modo oscuro">
+          Modo oscuro
+        </button>
+        <details class="settings">
+          <summary>Ajustes</summary>
+          <div class="settings-panel">
+            <h2>Tu recetario</h2>
+            <p>
+              Favoritas, checks y tiempos se guardan en este navegador. No se
+              sincronizan entre dispositivos.
+            </p>
+            <button id="exportBtn">Exportar progreso</button
+            ><label class="file-button"
+              >Importar progreso<input
+                id="importFile"
+                type="file"
+                accept="application/json,.json"
+            /></label>
+            <button id="resetBtn">Borrar todo el progreso</button
+            ><button id="printAll">Imprimir catálogo</button>
+            <p id="storageUsage"></p>
+            <small>v4.0 · __BUILD__</small>
+          </div>
+        </details>
+      </div>
+    </header>
+    <div class="wrap notices">
+      <p id="storageWarning" role="alert" hidden></p>
+      <div id="updateNotice" class="notice" hidden>
+        <p>
+          Hay una nueva versión. Tu progreso y tus tiempos se conservarán al
+          recargar.
+        </p>
+        <button id="updateNow">Actualizar ahora</button
+        ><button id="updateLater">Más tarde</button>
+      </div>
+    </div>
+    <main id="main" class="wrap">
+      <section id="catalogView">
+        <header class="intro" id="inicio">
+          <p class="eyebrow">MENOS VUELTAS. MÁS COCINA.</p>
+          <h1>Hoy, ¿qué te apetece?</h1>
+          <p>Tus ideas para comer bien, guardadas en un solo sitio.</p>
+        </header>
+        <form
+          id="filters"
+          role="search"
+          aria-label="Buscar recetas"
+          class="filters"
+        >
+          <label class="search-label" for="search"
+            >Busca por receta o ingrediente<input
+              id="search"
+              type="search"
+              placeholder="Prueba: pollo, patata, chocolate…"
+              autocomplete="off"
+          /></label>
+          <div class="filter-row">
+            <label
+              >Necesidad<select id="needFilter">
+                <option value="">Cualquier idea</option>
+                <option value="cena">Para cenar</option>
+                <option value="rapido">Algo rápido</option>
+                <option value="frio">Para tomar frío</option>
+                <option value="batch">Preparar con antelación</option>
+                <option value="dulce">Algo dulce</option>
+                <option value="infantil">Infantil</option>
+                <option value="conservar">Conservar</option>
+                <option value="compartir">Compartir</option>
+              </select></label
+            >
+            <label
+              >Progreso<select id="stateFilter">
+                <option value="">Cualquier estado</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="vista">Vista</option>
+                <option value="cocinada">Cocinada</option>
+                <option value="repetiria">La repetiría</option>
+                <option value="dominada">Dominada</option>
+              </select></label
+            >
+            <label class="toggle"
+              ><input id="favoriteFilter" type="checkbox" /> Solo
+              favoritas</label
+            >
+          </div>
+        </form>
+        <nav
+          id="categories"
+          class="categories"
+          aria-label="Categorías de recetas"
+        ></nav>
+        <nav
+          id="subcategories"
+          class="categories"
+          aria-label="Subsecciones de la categoría"
+          hidden
+        ></nav>
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" id="activeFilters">TU COLECCIÓN</p>
+            <h2 id="catalogTitle" tabindex="-1">Todas las recetas</h2>
+          </div>
+          <div>
+            <span id="count" role="status"></span>
+            <button id="clearFilters" class="text-button">
+              Limpiar filtros
+            </button>
+          </div>
+        </div>
+        <div id="cards" class="cards"></div>
+        <div id="emptyState" class="empty" hidden>
+          <h3>No encontramos esa combinación</h3>
+          <p>Prueba otro ingrediente o empieza de nuevo.</p>
+          <button data-action="clear">Limpiar filtros</button>
+        </div>
+      </section>
+      <section id="detailView" hidden aria-label="Ficha de receta">
+        <a href="#inicio" id="backCatalog" class="back-link"
+          >← Volver a las recetas</a
+        >
+        <div id="recipeDetail"></div>
+      </section>
+      <aside
+        id="activeTimers"
+        class="active-timers"
+        aria-label="Temporizadores de cocina"
+        hidden
+      ></aside>
+    </main>
+    <footer class="wrap site-footer">
+      <span>Hecho para cocinar a tu ritmo.</span
+      ><span id="offlineStatus" role="status"
+        >Comprobando disponibilidad sin conexión…</span
+      >
+    </footer>
+    <dialog id="cookModal" aria-labelledby="cookTitle">
+      <header class="dialog-head">
+        <div>
+          <p class="eyebrow">PASO A PASO</p>
+          <h2 id="cookTitle"></h2>
+        </div>
+        <button id="closeCook">Cerrar</button>
+      </header>
+      <div id="cookBody" class="dialog-body"></div>
+    </dialog>
+    <dialog id="importModal" aria-labelledby="importTitle">
+      <div class="dialog-body">
+        <h2 id="importTitle">Importar progreso</h2>
+        <p id="importSummary"></p>
+        <p>
+          Se reemplazará el progreso actual por el archivo. Exporta primero si
+          quieres conservar una copia.
+        </p>
+        <button id="confirmImport">Reemplazar progreso</button
+        ><button id="cancelImport">Cancelar</button>
+      </div>
+    </dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <noscript
+      ><p class="wrap">
+        Activa JavaScript para buscar y guardar progreso. También puedes
+        consultar las fichas de la carpeta recetas_md del repositorio.
+      </p></noscript
+    >
+    <script id="recipes-data" type="application/json">
+      __RECIPES__
+    </script>
+    <script src="js/core.js?build=__BUILD__"></script>
+    <script src="js/state.js?build=__BUILD__"></script>
+    <script src="js/timers.js?build=__BUILD__"></script>
+    <script src="js/offline.js?build=__BUILD__"></script>
+    <script src="js/app.js?build=__BUILD__"></script>
+  </body>
+</html>
